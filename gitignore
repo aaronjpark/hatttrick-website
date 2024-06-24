@@ -1,8 +1,0 @@
-__pycache__
-.coverage
-.DS_Store
-.mypy_cache
-.pylintrc
-*.pyc
-*.tmp
-cs373-idb-tests
