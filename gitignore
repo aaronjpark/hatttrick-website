@@ -5,4 +5,4 @@ __pycache__
 .pylintrc
 *.pyc
 *.tmp
-cs373-collatz-tests
+cs373-idb-tests
