@@ -1,0 +1,60 @@
+Leagues:
+Premier League
+Name - Premier League
+Country - England
+Current Champion - Manchester City
+Standings 
+Top Scorer - Erling Haaland
+La Liga
+Name - La Liga
+Country - Spain
+Current Champion - Real Madrid
+Standings 
+Top Scorer - Alexander Sørloth
+Bundesliga
+Name - Bundesliga
+Country - Germany
+Current Champion - Bayern Leverkusen
+Standings
+Top Scorer - Harry Kane
+
+Teams:
+Manchester City
+Name - Manchester City
+League - Premier League
+Stadium - Etihad
+City/Location - Manchester, England
+Trophy Count - 27
+FC Barcelona 
+Name - FC Barcelona 
+League - La Liga 
+Stadium - Spotify Camp Nou
+City/Location - Barcelona, Spain
+Trophy Count - 98
+Bayern Munich
+Name - FC Bayern Munich
+League - Bundesliga 
+Stadium - Allianz Arena
+City/Location - Munich, Germany 
+Trophy Count - 84
+
+
+Players:
+Haaland
+Name - Erling Haaland
+Age - 23
+Club - Manchester City
+Position - Striker (ST)
+Nationality - Norway
+Pedri
+Name - Pedri Gonazlez 
+Age - 21
+Club - FC Barcelona
+Position - Midfielder (CM)
+Nationality - Spain
+Musiala
+Name - Jamal Musiala
+Age - 20
+Club - Bayern Munich
+Position - Attacking Midfielder (CAM)
+Nationality - Germany
