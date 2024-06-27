@@ -28,7 +28,39 @@
 
     <div class="container">
         <h1>Clubs</h1>
-        <div id="clubs"></div>
+        
+        <div class="card mb-3">
+            <div class="card-body">
+                <h2>Manchester City</h2>
+                <p><strong>Name:</strong> Manchester City</p>
+                <p><strong>League:</strong> Premier League</p>
+                <p><strong>Stadium:</strong> Etihad</p>
+                <p><strong>City/Location:</strong> Manchester, England</p>
+                <p><strong>Trophy Count:</strong> 27</p>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h2>FC Barcelona</h2>
+                <p><strong>Name:</strong> FC Barcelona</p>
+                <p><strong>League:</strong> La Liga</p>
+                <p><strong>Stadium:</strong> Spotify Camp Nou</p>
+                <p><strong>City/Location:</strong> Barcelona, Spain</p>
+                <p><strong>Trophy Count:</strong> 98</p>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <h2>Bayern Munich</h2>
+                <p><strong>Name:</strong> FC Bayern Munich</p>
+                <p><strong>League:</strong> Bundesliga</p>
+                <p><strong>Stadium:</strong> Allianz Arena</p>
+                <p><strong>City/Location:</strong> Munich, Germany</p>
+                <p><strong>Trophy Count:</strong> 84</p>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -36,17 +68,5 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $.get('/api/teams', function(data) {
-                let teamsHtml = '';
-                data.teams.forEach(team => {
-                    teamsHtml += `<p>${team.name} - ${team.venue}</p>`;
-                });
-                $('#clubs').html(teamsHtml);
-            });
-        });
-    </script>
 </body>
 </html>
