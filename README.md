@@ -2,7 +2,14 @@
 
 
 
-## Getting started
+## Canvas Group Number 2
+
+## Team Members:
+Diego Campoos
+Diego Pozuelo Clachar
+Aaaron Park
+Angel Cerda
+Benjamin Anzaldua
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
