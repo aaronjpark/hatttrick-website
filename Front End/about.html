@@ -81,6 +81,9 @@
                 let members = {};
                 commitsData.forEach(commit => {
                     let committerName = commit.committer_name;
+                    if(committerName=="ang3lCerda"){
+                        committerName="Angel Cerda"
+                    }
                     if (!members[committerName]) {
                         members[committerName] = { issues: 0, commits: 0 };
                     }
