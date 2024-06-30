@@ -1,0 +1,8 @@
+{
+    "data_sources": [
+        "https://developers.google.com/youtube/v3",
+        "https://stackoverflow.com/",
+        "https://www.football-data.org/",
+        "https://www.google.com/imghp?hl=en&authuser=0&ogbl"
+    ]
+}

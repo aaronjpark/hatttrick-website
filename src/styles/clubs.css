@@ -1,0 +1,23 @@
+.club-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .club-img {
+    object-fit: cover;
+    height: 100%;
+    width: 250px;
+    max-height: 300px; /* Adjust as necessary */
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
