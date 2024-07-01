@@ -16,7 +16,7 @@
         "role": "Front-end",
         "img_src": "./teamimgs/Aaron Park.JPEG",
         "gitlab_id": "aaronjpark",
-        "description": " ",
+        "description": "I enjoy traveling and am aiming towards a career in AI and machine learning!",
         "issues": 0,
         "commits": 0,
         "email": "aaronj.park0304@gmail.com",
@@ -50,7 +50,7 @@
         "role": "Back-end",
         "img_src": "../teamimgs/Diego Pozuelo.JPEG",
         "gitlab_id": "dpozuelo",
-        "description": " ",
+        "description": "My name is Diego Pozuelo, I am a CS student at the University of Texas at austin. I am from Costa Rica and I am about to start my fourth year at UT. ",
         "issues": 0,
         "commits": 0,
         "unit_tests": 0

@@ -127,7 +127,37 @@ function About() {
                                 <a href={member} target="_blank" rel="noopener noreferrer">{member}</a>
                             </li>
                         ))}
+
                     </ul>
+                    <h1 className="Postman API">Postman API</h1>
+                    <ul>
+                        <li>
+                            <a href="https://software-engineering-3016.postman.co/workspace/Software-Engineering-Workspace~3f64ce8f-8b3b-487e-a067-56d3a2e3d512/collection/36528627-9970bfc9-552b-4d2f-9543-d02690a67499?action=share&creator=36528627">
+                                            API Documentation
+                            </a>
+                        </li>
+                    </ul>
+                    <h1 className="Postman API">Gitlab Information</h1>
+                    <ul>
+                        <li>
+                            <a href="https://gitlab.com/diegocampos2/cs373-idb/-/wikis/Home-Hattrick?redirected_from=home">
+                                            Gitlab Wiki
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://gitlab.com/diegocampos2/cs373-idb/-/issues">
+                                            Issue Tracker
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://gitlab.com/diegocampos2/cs373-idb">
+                                            Gitlab Repo
+                            </a>
+                        </li>
+                    
+                </div>
+
+                <div>
                 </div>
             </div>
         </div>
