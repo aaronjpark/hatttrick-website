@@ -1,0 +1,44 @@
+[
+    {
+        "name": "React",
+        "description": "Front-End Development",
+        "img_src": "./toolsimgs/react.png"
+    },
+
+    {
+        "name": "Python",
+        "description": "Back-End Development",
+        "img_src": "./toolsimgs/python.png"
+    },
+    {
+        "name": "Google Cloud",
+        "description": "Website Hosting",
+        "img_src": "./toolsimgs/googlec.png"
+    },
+    {
+        "name": "Bootstrap",
+        "description": "Styling",
+        "img_src": "./toolsimgs/bootstrap.png"
+    },
+    {
+        "name": "Gitlab",
+        "description": "Code Collaboration",
+        "img_src": "./toolsimgs/gitlab.png"
+    },
+    {
+        "name": "Postman",
+        "description": "API Documentation",
+        "img_src": "./toolsimgs/postman.png"
+    },
+    {
+        "name": "Discord",
+        "description": "Group Communication",
+        "img_src": "./toolsimgs/discord.png"
+    },
+
+    {
+        "name": "VS Code",
+        "description": "Integrated Development Environment",
+        "img_src": "./toolsimgs/vscode.png"
+    }
+]

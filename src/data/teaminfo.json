@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Angel Cerda",
+        "role": "Fullstack",
+        "img_src": "../teamimgs/Angel Cerda.JPEG",
+        "gitlab_id": "ang3lCerda",
+        "description": "I am currently a junios CS major at UT Austin. In my free time, I like to play videogames and listen to music.",
+        "issues": 0,
+        "commits": 0,
+        "email": "Cerda086@gmail.com",
+        "unit_tests": 0
+
+    },
+    {
+        "name": "Aaron Park",
+        "role": "Front-end",
+        "img_src": "./teamimgs/Aaron Park.JPEG",
+        "gitlab_id": "aaronjpark",
+        "description": "I enjoy traveling and am aiming towards a career in AI and machine learning!",
+        "issues": 0,
+        "commits": 0,
+        "email": "aaronj.park0304@gmail.com",
+        "unit_tests": 0
+    },    
+    {
+        "name": "Benjamin Anzaldua",
+        "role": "Front-end",
+        "email": "benjamin.anzaldua@utexas.edu",
+        "img_src": "../teamimgs/Benjamin Anzaldua.JPEG",
+        "gitlab_id": "BenjaminAnz",
+        "description": "I am a CS student at the University of Texas at Austin.I enjoy hanging out with my family and friends and am aiming towards a career in software engineering or game development!",
+        "issues": 0,
+        "commits": 0,
+        "unit_tests": 0
+    },
+    {
+        "name": "Diego Campos",
+        "email": "diegocampos@utexas.edu",
+        "role": "Team Leader",
+        "img_src": "../teamimgs/Diego Campos.JPEG",
+        "gitlab_id": "diegocampos2",
+        "description": "Hello! I'm 21 years old pursing a Computer Science degree with a minor in Spanish. I have a strong passion for technology and innovation.",
+        "issues": 0,
+        "commits": 0,
+        "unit_tests": 0
+    },
+    {
+        "name": "Diego Pozuelo",
+        "email": "dpozuelo@utexas.edu",
+        "role": "Back-end",
+        "img_src": "../teamimgs/Diego Pozuelo.JPEG",
+        "gitlab_id": "dpozuelo",
+        "description": "My name is Diego Pozuelo, I am a CS student at the University of Texas at austin. I am from Costa Rica and I am about to start my fourth year at UT.  ",
+        "issues": 0,
+        "commits": 0,
+        "unit_tests": 0
+    }
+]
