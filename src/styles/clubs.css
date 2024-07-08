@@ -1,23 +1,81 @@
-.club-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .club-img {
-    object-fit: cover;
-    height: 100%;
-    width: 250px;
-    max-height: 300px; /* Adjust as necessary */
-  }
-  
-  .container {
-    margin-top: 50px;
-  }
-  
-  footer {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Flex container for entire page */
+.clubs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Grid container for teams */
+.teams-grid {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Flex row for teams */
+.teams-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Individual team card */
+.team-card {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease-in-out;
+  flex: 1 0 300px; /* Ensures all cards in a row have equal width */
+}
+
+.team-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styles */
+.team-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Card body styles */
+.team-card .card-body {
+  padding: 10px;
+}
+
+/* Card title styles */
+.team-card .card-title {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Card text styles */
+.team-card .card-text {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+/* Link styles */
+.team-card .btn {
+  margin-top: 10px;
+}
