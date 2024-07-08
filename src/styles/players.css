@@ -1,23 +1,82 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Flex container for entire page */
+.players-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Grid container for players */
+.players-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust as needed for spacing between cards */
+  max-width: 1200px;
+}
+
+/* Individual player card */
 .player-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .player-img {
-    object-fit: cover;
-    height: 100%;
-    width: 300px;
-    max-height: 300px; /* Adjust as necessary */
-  }
-  
-  .container {
-    margin-top: 50px;
-  }
-  
-  footer {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
+  width: calc(25% - 20px); /* 25% width for each player card with 20px gap */
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.player-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styles */
+.player-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Card body styles */
+.player-card .card-body {
+  padding: 10px;
+}
+
+/* Card title styles */
+.player-card .card-title {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Card text styles */
+.player-card .card-text {
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* Bold specific text */
+.player-card .card-text b {
+  font-weight: bold;
+}
+
+/* Link styles */
+.player-card .btn {
+  margin-top: 10px;
+}

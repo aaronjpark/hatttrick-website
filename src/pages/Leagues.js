@@ -59,6 +59,42 @@ function Leagues() {
           </div>
         </div>
       </div>
+
+      <div className="card mb-3 league-card">
+        <div className="row g-0">
+          <div className="col-md-8">
+            <div className="card-body">
+              <h2>Serie A</h2>
+              <p><strong>Country:</strong> Italy</p>
+              <p><strong>Current Champion:</strong> Inter Milan </p>
+              <p><strong>Top Scorer:</strong> Lautaro Martínez</p>
+              <p><strong>Year Founded:</strong> 1929</p>
+              <p><strong>Games Per Season:</strong> 38</p>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <img src="../Assets/bundesligalogo.png" className="img-fluid rounded-end league-img" alt="Bundesliga" />
+          </div>
+        </div>
+      </div>
+
+      <div className="card mb-3 league-card">
+        <div className="row g-0">
+          <div className="col-md-8">
+            <div className="card-body">
+              <h2>League 1</h2>
+              <p><strong>Country:</strong> France</p>
+              <p><strong>Current Champion:</strong> Paris Saint-Germain F.C.</p>
+              <p><strong>Top Scorer:</strong> Kylian Mbappé</p>
+              <p><strong>Year Founded:</strong> 1932</p>
+              <p><strong>Games Per Season:</strong> 38</p>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <img src="../Assets/bundesligalogo.png" className="img-fluid rounded-end league-img" alt="Bundesliga" />
+          </div>
+        </div>
+      </div> 
       
       <footer>
         <small>Copyright © 2024. Hatttrick. All Rights Reserved.</small>

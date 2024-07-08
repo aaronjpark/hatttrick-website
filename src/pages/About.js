@@ -74,7 +74,7 @@ function About() {
     }, [commitsFetched, issuesFetched]);
 
     return (
-        <div className="about-page-container">            
+                   
             <div className="people">
                 <h1 className="about-header">Our Team</h1>
                 
@@ -130,31 +130,40 @@ function About() {
                     </ul>
                     
                     <h1 className="sources-header">Postman API</h1>
+                    <ul>
                         <li>
                             <a href="https://software-engineering-3016.postman.co/workspace/Software-Engineering-Workspace~3f64ce8f-8b3b-487e-a067-56d3a2e3d512/collection/36528627-9970bfc9-552b-4d2f-9543-d02690a67499?action=share&creator=36528627">
                                 Postman API
                             </a>
+                       
                         </li>
-                   
+                     </ul>
                     <h1 className="sources-header">Gitab Info</h1>
+
                     <ul>
+                        <li>
                         <a href="https://gitlab.com/diegocampos2/cs373-idb">
                                     Gitlab Repo
                          </a>
+                         </li>
                     </ul>
                     <ul>
+                    <li>
                         <a href="https://gitlab.com/diegocampos2/cs373-idb/-/wikis/Home-Hattrick?redirected_from=home">
                                     Gitlab Wiki
                          </a>
+                         </li>
                     </ul>
                     <ul>
+                    <li>
                         <a href="https://gitlab.com/diegocampos2/cs373-idb/-/issues">
                                     Gitlab Issues
                          </a>
+                    </li>
                     </ul>
                 </div>
             </div>
-        </div>
+       
     );
 }
 
