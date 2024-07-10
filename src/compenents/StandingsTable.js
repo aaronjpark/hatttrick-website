@@ -24,7 +24,7 @@ const TableComponent = ({ data }) => {
             <tr key={index}>
               <td>{data[teamName].position}</td>
               <td>
-                <Link to={`/club/${teamName}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                <Link to={`/club/${teamName}`} className="link">
                   {teamName}
                 </Link>
               </td>

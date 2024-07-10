@@ -47,7 +47,7 @@ const PlayerInfo = () => {
                 <li className="list-group-item"><strong>Position:</strong> {player.position}</li>
                 <li className="list-group-item">
                   <strong>Club: </strong> 
-                  <Link to={`/club/${player.club}`} style={{ textDecoration: 'none' }}>
+                  <Link to={`/club/${player.club}`} className='link'>
                     {player.club}
                   </Link>
                 </li>

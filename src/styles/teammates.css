@@ -33,4 +33,16 @@
     text-decoration: none; /* No underline */
     font-weight: bold; /* Optional: if you want the name to be bold */
   }
+
+  .link {
+    text-decoration: none;
+    color: #000; /* Normal color */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  .link:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    color: #000000; /* Change color on hover, if desired */
+  }
+  
   

@@ -11,7 +11,7 @@ const Teammates = ({ teammates }) => {
             <img src={player.photo} alt={player.name} className="teammate-photo" />
             <div className="teammate-info">
               {/* Update the player name to be a clickable link */}
-              <h4><Link to={`/player/${encodeURIComponent(player.name)}`}>{player.name}</Link></h4>
+              <h4><Link to={`/player/${encodeURIComponent(player.name)}`} className='link'>{player.name}</Link></h4>
               <p>{player.position}</p>
             </div>
           </div>

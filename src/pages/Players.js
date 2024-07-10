@@ -80,7 +80,7 @@ function Players() {
             />
             <div className="card-body">
               <h3 className="card-title">
-                <Link to={`/player/${encodeURIComponent(player.name)}`} className="link-style">
+                <Link to={`/player/${encodeURIComponent(player.name)}`} className="link">
                   {player.name}
                 </Link>
               </h3>
@@ -88,7 +88,7 @@ function Players() {
               <p className="card-text"><b>Number:</b> {player.number}</p>
               <p className="card-text"><b>Position:</b> {player.position}</p>
               <p className="card-text"><b>Club:</b>
-                <Link to={`/club/${encodeURIComponent(player.club)}`}>
+                <Link to={`/club/${encodeURIComponent(player.club)}`} className="link">
                   {player.club}
                 </Link>
               </p>

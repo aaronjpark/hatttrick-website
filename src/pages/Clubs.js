@@ -64,11 +64,13 @@ function Clubs() {
               />
               <div className="card-body">
                 <h3 className="card-title">
-                  <Link to={`/club/${encodeURIComponent(teamName)}`} className="club-link">
+                  <Link to={`/club/${encodeURIComponent(teamName)}`} className="link">
                     {teamName}
                   </Link>
                 </h3>
-                <p className="card-text">League: {league}</p>
+                <p className="card-text">
+                  League: <Link to={`/league/${encodeURIComponent(league)}`} className="link">{league}</Link>
+                </p>
                 <p className="card-text">Coach: {team.coach}</p>
                 <p className="card-text">Founded: {team.founded}</p>
                 <p className="card-text">Venue: {team.venue}</p>
