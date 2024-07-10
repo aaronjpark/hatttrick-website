@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from './file.png'; // Adjust the path according to your project structure
 
 function Navbar() {
   return (
@@ -7,9 +8,7 @@ function Navbar() {
       <div className="container">
         <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
           <Link to="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <svg className="bi me-2" width="40" height="32">
-              <use xlinkHref="#bootstrap"></use>
-            </svg>
+            <img src={logo} alt="Hatttrick Logo" width="60" height="50" className="me-2" />
             <span className="fs-4"><strong>Hatttrick</strong></span>
           </Link>
 

@@ -31,4 +31,4 @@ def get_team_details(league_name, team_name):
         return jsonify({"error": "Team not found"}), 404
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5002)

@@ -12,7 +12,7 @@ const League = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:5000/standings/${id}`);
+        const response = await axios.get(`http://127.0.0.1:5002/standings/${id}`);
         setStandingsData(response.data);
         console.log(response)
       } catch (error) {
@@ -31,9 +31,7 @@ const League = () => {
 
           <TableComponent data={standingsData} /> {/* Pass fetched data as prop */}
 
-          <footer className="mt-5">
-            <small className="text-muted">Copyright © 2024. Hatttrick. All Rights Reserved.</small>
-          </footer>
+          
         </div>
       </div>
     </div>

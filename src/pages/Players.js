@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/players.css';
 
 function Players() {
@@ -35,7 +36,7 @@ function Players() {
     return players.slice(startIndex, endIndex);
   };
 
-  // Function to handle navigating to previous pages
+  // Function to handle navigating to previous and next pages
   const goToPreviousPages = () => {
     if (currentPage > 2) {
       setCurrentPage(currentPage - 2);
@@ -44,7 +45,6 @@ function Players() {
     }
   };
 
-  // Function to handle navigating to next pages
   const goToNextPages = () => {
     if (currentPage < totalPages - 1) {
       setCurrentPage(currentPage + 2);
@@ -62,7 +62,7 @@ function Players() {
   const paginationStyle = {
     display: 'flex',
     justifyContent: 'center',
-    marginTop: '20px', // Adjust margin as needed
+    marginTop: '20px',
   };
 
   return (
@@ -79,16 +79,23 @@ function Players() {
               alt={player.name}
             />
             <div className="card-body">
-              <h3 className="card-title">{player.name}</h3>
-              <p className="card-text"><b>Age: </b>{player.age}</p>
-              <p className="card-text"><b>Number: </b> {player.number}</p>
-              <p className="card-text"><b>Position: </b> {player.position}</p>
-              <p className="card-text"><b>Club: </b> {player.club}</p>
+              <h3 className="card-title">
+                <Link to={`/player/${encodeURIComponent(player.name)}`} className="link-style">
+                  {player.name}
+                </Link>
+              </h3>
+              <p className="card-text"><b>Age:</b> {player.age}</p>
+              <p className="card-text"><b>Number:</b> {player.number}</p>
+              <p className="card-text"><b>Position:</b> {player.position}</p>
+              <p className="card-text"><b>Club:</b>
+                <Link to={`/club/${encodeURIComponent(player.club)}`}>
+                  {player.club}
+                </Link>
+              </p>
             </div>
           </div>
         ))}
       </div>
-      {/* Pagination */}
       <div style={paginationStyle}>
         <nav aria-label="Page navigation example">
           <ul className="pagination">
