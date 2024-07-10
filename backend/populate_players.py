@@ -5,7 +5,6 @@ def populate_players():
     # Database connection parameters
     conn = psycopg2.connect(
         dbname='hatttrick_db',
-        user='postgres',
         host='localhost'
     )
     cur = conn.cursor()
@@ -14,31 +13,26 @@ def populate_players():
         players = json.load(f)
 
     for player in players:
-        name = player['name']
-        age = player['age']
-        number = player['number']
-        position = player['position']
-        photo = player['photo']
-        club = player['club']
+        name = player.get('name')
+        age = player.get('age')
+        number = player.get('number')
+        position = player.get('position')
+        photo = player.get('photo')
+        club = player.get('club')
+
+        # Check for null values in required fields
+        if not all([name, age, number, position, club]):
+            print(f"Skipping player due to missing data: {player}")
+            continue
 
         # Debugging: Print club name
         print(f"Processing player: {name}, Club: {club}")
-
-        # Check if the club exists in the teams table
-        cur.execute("SELECT id FROM teams WHERE name = %s;", (club,))
-        result = cur.fetchone()
-
-        if result is None:
-            print(f"Club {club} not found in teams table")
-            continue
-        else:
-            club_id = result[0]
 
         cur.execute("""
             INSERT INTO players (name, age, number, position, photo, club)
             VALUES (%s, %s, %s, %s, %s, %s)
             ON CONFLICT (name) DO NOTHING;
-        """, (name, age, number, position, photo, club_id))
+        """, (name, age, number, position, photo, club))
     
     conn.commit()
     cur.close()

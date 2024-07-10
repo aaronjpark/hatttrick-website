@@ -28,8 +28,8 @@ def get_all_teams():
         league_id, team_id, name, address, crest, website, venue, founded, coach, area = team
         if league_id not in teams_data:
             teams_data[league_id] = {'teams': {}}
-        teams_data[league_id]['teams'][name] = {
-            'id': team_id,
+        teams_data[league_id]['teams'][team_id] = {
+            'id': team_id,            
             'address': address,
             'crest': crest,
             'website': website,

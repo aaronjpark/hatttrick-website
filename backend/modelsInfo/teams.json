@@ -72,7 +72,7 @@
                 "coach": "Pep Guardiola",
                 "area": "England"
             },
-            "Manchester": {
+            "Manchester United": {
                 "id": 66,
                 "address": "Sir Matt Busby Way Manchester M16 0RA",
                 "crest": "https://crests.football-data.org/66.png",
@@ -432,7 +432,7 @@
                 "coach": "Nuri Şahin",
                 "area": "Germany"
             },
-            "Bayern München": {
+            "Bayern Munich": {
                 "id": 5,
                 "address": "Säbenerstr. 51 München 81547",
                 "crest": "https://crests.football-data.org/5.svg",
