@@ -4,7 +4,7 @@ from psycopg2.extras import RealDictCursor
 
 app = Flask(__name__)
 
-# Database connection
+# Database connectionls
 def get_db_connection():
     conn = psycopg2.connect(
         dbname="hatttrick_db",
