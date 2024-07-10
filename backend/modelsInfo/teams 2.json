@@ -1,0 +1,987 @@
+{
+    "Premier League": {
+        "id": 1,
+        "teams": {
+            "Arsenal ": {
+                "id": 57,
+                "address": "75 Drayton Park London N5 1BU",
+                "crest": "https://crests.football-data.org/57.png",
+                "website": "http://www.arsenal.com",
+                "venue": "Emirates Stadium",
+                "founded": 1886,
+                "coach": "Mikel Arteta",
+                "area": "England"
+            },
+            "Aston Villa": {
+                "id": 58,
+                "address": "Villa Park Birmingham B6 6HE",
+                "crest": "https://crests.football-data.org/58.png",
+                "website": "http://www.avfc.co.uk",
+                "venue": "Villa Park",
+                "founded": 1872,
+                "coach": "Unai Emery",
+                "area": "England"
+            },
+            "Chelsea": {
+                "id": 61,
+                "address": "Fulham Road London SW6 1HS",
+                "crest": "https://crests.football-data.org/61.png",
+                "website": "http://www.chelseafc.com",
+                "venue": "Stamford Bridge",
+                "founded": 1905,
+                "coach": "Enzo Maresca",
+                "area": "England"
+            },
+            "Everton": {
+                "id": 62,
+                "address": "Goodison Park Liverpool L4 4EL",
+                "crest": "https://crests.football-data.org/62.png",
+                "website": "http://www.evertonfc.com",
+                "venue": "Goodison Park",
+                "founded": 1878,
+                "coach": "Sean Dyche",
+                "area": "England"
+            },
+            "Fulham": {
+                "id": 63,
+                "address": "Craven Cottage, Stevenage Road London SW6 6HH",
+                "crest": "https://crests.football-data.org/63.svg",
+                "website": "http://www.fulhamfc.com",
+                "venue": "Craven Cottage",
+                "founded": 1879,
+                "coach": "Marco Silva",
+                "area": "England"
+            },
+            "Liverpool": {
+                "id": 64,
+                "address": "Anfield Road Liverpool L4 0TH",
+                "crest": "https://crests.football-data.org/64.png",
+                "website": "http://www.liverpoolfc.tv",
+                "venue": "Anfield",
+                "founded": 1892,
+                "coach": "Arne Slot",
+                "area": "England"
+            },
+            "Manchester City": {
+                "id": 65,
+                "address": "SportCity Manchester M11 3FF",
+                "crest": "https://crests.football-data.org/65.png",
+                "website": "https://www.mancity.com",
+                "venue": "Etihad Stadium",
+                "founded": 1880,
+                "coach": "Pep Guardiola",
+                "area": "England"
+            },
+            "Manchester": {
+                "id": 66,
+                "address": "Sir Matt Busby Way Manchester M16 0RA",
+                "crest": "https://crests.football-data.org/66.png",
+                "website": "http://www.manutd.com",
+                "venue": "Old Trafford",
+                "founded": 1878,
+                "coach": "Erik ten Hag",
+                "area": "England"
+            },
+            "Newcastle United": {
+                "id": 67,
+                "address": "Sports Direct Arena Newcastle upon Tyne NE1 4ST",
+                "crest": "https://crests.football-data.org/67.png",
+                "website": "http://www.nufc.co.uk",
+                "venue": "St. James' Park",
+                "founded": 1881,
+                "coach": "Eddie Howe",
+                "area": "England"
+            },
+            "Tottenham": {
+                "id": 73,
+                "address": "Bill Nicholson Way, 748 High Road London N17 0AP",
+                "crest": "https://crests.football-data.org/73.png",
+                "website": "http://www.tottenhamhotspur.com",
+                "venue": "Tottenham Hotspur Stadium",
+                "founded": 1882,
+                "coach": "Ange Postecoglou",
+                "area": "England"
+            },
+            "Wolves": {
+                "id": 76,
+                "address": "Waterloo Road Wolverhampton WV1 4QR",
+                "crest": "https://crests.football-data.org/76.svg",
+                "website": "http://www.wolves.co.uk",
+                "venue": "Molineux Stadium",
+                "founded": 1877,
+                "coach": "Gary O'Neil",
+                "area": "England"
+            },
+            "Burnley": {
+                "id": 328,
+                "address": "Harry Potts Way Burnley BB10 4BX",
+                "crest": "https://crests.football-data.org/328.png",
+                "website": "http://www.burnleyfootballclub.com",
+                "venue": "Turf Moor",
+                "founded": 1881,
+                "coach": "Craig Bellamy",
+                "area": "England"
+            },
+            "Nottingham Forest": {
+                "id": 351,
+                "address": "Pavilion Road, West Bridgeford Nottingham NG2 5GJ",
+                "crest": "https://crests.football-data.org/351.png",
+                "website": "http://www.nottinghamforest.co.uk",
+                "venue": "The City Ground",
+                "founded": 1865,
+                "coach": "Nuno Espírito Santo",
+                "area": "England"
+            },
+            "Crystal Palace": {
+                "id": 354,
+                "address": "Whitehorse Lane London SE25 6PU",
+                "crest": "https://crests.football-data.org/354.png",
+                "website": "http://www.cpfc.co.uk",
+                "venue": "Selhurst Park",
+                "founded": 1905,
+                "coach": "Oliver Glasner",
+                "area": "England"
+            },
+            "Sheffield Utd": {
+                "id": 356,
+                "address": "Bramall Lane Sheffield, Yorkshire S2 4SU",
+                "crest": "https://crests.football-data.org/356.svg",
+                "website": "http://www.sufc.co.uk",
+                "venue": "Bramall Lane",
+                "founded": null,
+                "coach": "Chris Wilder",
+                "area": "England"
+            },
+            "Luton": {
+                "id": 389,
+                "address": "1 Maple Road Luton LU4 8AW",
+                "crest": "https://crests.football-data.org/389.png",
+                "website": "http://www.lutontown.co.uk",
+                "venue": "Kenilworth Road Stadium",
+                "founded": 1885,
+                "coach": "Rob Edwards",
+                "area": "England"
+            },
+            "Brighton": {
+                "id": 397,
+                "address": "44 North Road Brighton & Hove BN1 1YR",
+                "crest": "https://crests.football-data.org/397.svg",
+                "website": "http://www.seagulls.co.uk",
+                "venue": "The American Express Community Stadium",
+                "founded": 1898,
+                "coach": "Fabian Hürzeler",
+                "area": "England"
+            },
+            "Brentford": {
+                "id": 402,
+                "address": "Braemar Road Brentford TW8 0NT",
+                "crest": "https://crests.football-data.org/402.png",
+                "website": "http://www.brentfordfc.co.uk",
+                "venue": "Griffin Park",
+                "founded": 1889,
+                "coach": "Thomas Frank",
+                "area": "England"
+            },
+            "West Ham": {
+                "id": 563,
+                "address": "Queen Elizabeth Olympic Park, London London E20 2ST",
+                "crest": "https://crests.football-data.org/563.png",
+                "website": "http://www.whufc.com",
+                "venue": "London Stadium",
+                "founded": 1895,
+                "coach": "Julen Lopetegui",
+                "area": "England"
+            },
+            "Bournemouth": {
+                "id": 1044,
+                "address": "Dean Court, Kings Park Bournemouth BH7 7AF",
+                "crest": "https://crests.football-data.org/1044.png",
+                "website": "http://www.afcb.co.uk",
+                "venue": "Vitality Stadium",
+                "founded": 1890,
+                "coach": "Iraola",
+                "area": "England"
+            }
+        }
+    },
+    "Ligue 1": {
+        "id": 2,
+        "teams": {
+            "Toulouse": {
+                "id": 511,
+                "address": "1 allée Gabriel Biénèsm, BP 54023 Toulouse 31028",
+                "crest": "https://crests.football-data.org/511.png",
+                "website": "http://www.tfc.info",
+                "venue": "Stadium Municipal",
+                "founded": 1937,
+                "coach": "Carles Martínez",
+                "area": "France"
+            },
+            "Stade Brestois 29": {
+                "id": 512,
+                "address": "Port de Plaisance, 470 bis rue Alain Colas Brest 29200",
+                "crest": "https://crests.football-data.org/512.png",
+                "website": "http://www.stade-brestois.com",
+                "venue": "Stade Francis-Le Blé",
+                "founded": 1903,
+                "coach": "Eric Roy",
+                "area": "France"
+            },
+            "Olympique de Marseille": {
+                "id": 516,
+                "address": "La Commanderie, 33, traverse de La Martine Marseille 13012",
+                "crest": "https://crests.football-data.org/516.png",
+                "website": "http://www.om.net",
+                "venue": "Orange Vélodrome",
+                "founded": 1898,
+                "coach": "Roberto De Zerbi",
+                "area": "France"
+            },
+            "Montpellier": {
+                "id": 518,
+                "address": "Domaine de Grammont CS 79041 Montpellier 34967",
+                "crest": "https://crests.football-data.org/518.png",
+                "website": "http://www.mhscfoot.com",
+                "venue": "Stade de la Mosson",
+                "founded": 1970,
+                "coach": "Michel Der Zakarian",
+                "area": "France"
+            },
+            "Lille": {
+                "id": 521,
+                "address": "Grand Rue 59, 780 Camphin-en-Pévèle Lille null",
+                "crest": "https://crests.football-data.org/521.svg",
+                "website": "http://www.losc.fr",
+                "venue": "Stade Pierre-Mauroy",
+                "founded": 1944,
+                "coach": "Bruno Génésio",
+                "area": "France"
+            },
+            "Nice": {
+                "id": 522,
+                "address": "35, avenue du Ray Nice 06100",
+                "crest": "https://crests.football-data.org/522.png",
+                "website": "http://www.ogcnice.com",
+                "venue": "Stade de Nice",
+                "founded": 1904,
+                "coach": null,
+                "area": "France"
+            },
+            "Lyon": {
+                "id": 523,
+                "address": "350 avenue Jean Jaurès Lyon 69007",
+                "crest": "https://crests.football-data.org/523.svg",
+                "website": "http://www.olweb.fr",
+                "venue": "Groupama Stadium",
+                "founded": 1896,
+                "coach": "Pierre Sage",
+                "area": "France"
+            },
+            "Paris Saint Germain": {
+                "id": 524,
+                "address": "24, rue de Commandant Guibaud Paris 7501",
+                "crest": "https://crests.football-data.org/524.png",
+                "website": "http://www.psg.fr",
+                "venue": "Parc des Princes",
+                "founded": 1904,
+                "coach": "Luis Enrique",
+                "area": "France"
+            },
+            "Lorient": {
+                "id": 525,
+                "address": "Tade Yves Allainmat<br>Rue Du Tour Des Portes, BP 404 Lorient 56104",
+                "crest": "https://crests.football-data.org/525.png",
+                "website": "http://www.fclweb.fr",
+                "venue": "Stade Yves Allainmat - Le Moustoir",
+                "founded": 1926,
+                "coach": "Regis Le Bris",
+                "area": "France"
+            },
+            "Rennes": {
+                "id": 529,
+                "address": "La Piverdière - Chemin de la Taupinais CS 5390 Rennes 35039",
+                "crest": "https://crests.football-data.org/529.png",
+                "website": "http://www.staderennais.com",
+                "venue": "Roazhon Park",
+                "founded": 1901,
+                "coach": "Julien Stéphan",
+                "area": "France"
+            },
+            "Le Havre AC": {
+                "id": 533,
+                "address": "2 route du château BP 90 Saint-Laurent-de-Brèvedent 76700",
+                "crest": "https://crests.football-data.org/533.png",
+                "website": "http://www.hac-foot.com",
+                "venue": "Stade Océane",
+                "founded": 1872,
+                "coach": "Didier Digard",
+                "area": "France"
+            },
+            "Clermont Foot": {
+                "id": 541,
+                "address": "Rue Adrien Mabrut Clermont-Ferrand 63100",
+                "crest": "https://crests.football-data.org/541.svg",
+                "website": "http://www.clermontfoot.com",
+                "venue": "Stade Gabriel Montpied",
+                "founded": 1911,
+                "coach": "Pascal Gastien",
+                "area": "France"
+            },
+            "Nantes": {
+                "id": 543,
+                "address": "Centre Sportif José Arribas, La Jonelière Nantes 44240",
+                "crest": "https://crests.football-data.org/543.png",
+                "website": "http://www.fcnantes.com",
+                "venue": "Stade de la Beaujoire - Louis Fonteneau",
+                "founded": 1943,
+                "coach": "Antoine Kombouare",
+                "area": "France"
+            },
+            "Metz": {
+                "id": 545,
+                "address": "3, allée Saint Symphonien, BP 40292 Metz 5700",
+                "crest": "https://crests.football-data.org/545.svg",
+                "website": "http://www.fcmetz.com",
+                "venue": "Stade Saint-Symphorien",
+                "founded": 1919,
+                "coach": "László Bölöni",
+                "area": "France"
+            },
+            "Lens": {
+                "id": 546,
+                "address": "33 rue Arthur Lamendin Avion 62210",
+                "crest": "https://crests.football-data.org/546.png",
+                "website": "http://www.rclens.fr",
+                "venue": "Stade Bollaert-Delelis",
+                "founded": 1906,
+                "coach": "Will Still",
+                "area": "France"
+            },
+            "Reims": {
+                "id": 547,
+                "address": "26 rue Robert-Fulton Reims 51100",
+                "crest": "https://crests.football-data.org/547.png",
+                "website": "http://www.stade-de-reims.com",
+                "venue": "Stade Auguste-Delaune II",
+                "founded": 1909,
+                "coach": "Luka Elsner",
+                "area": "France"
+            },
+            "Monaco": {
+                "id": 548,
+                "address": "Avenue des Castellans Monaco 98000",
+                "crest": "https://crests.football-data.org/548.png",
+                "website": "http://www.asmonaco.com",
+                "venue": "Stade Louis II.",
+                "founded": 1919,
+                "coach": "Adi Hütter",
+                "area": "Monaco"
+            },
+            "Strasbourg": {
+                "id": 576,
+                "address": "12 Rue Extenwoerth Strasbourg 67000",
+                "crest": "https://crests.football-data.org/576.png",
+                "website": "http://www.rcstrasbourgalsace.fr",
+                "venue": "Stade de la Meinau",
+                "founded": 1906,
+                "coach": "Patrick Vieira",
+                "area": "France"
+            }
+        }
+    },
+    "Bundesliga": {
+        "id": 3,
+        "teams": {
+            "FC Köln": {
+                "id": 1,
+                "address": "Franz-Kremer-Allee 1 Köln 50937",
+                "crest": "https://crests.football-data.org/1.png",
+                "website": "http://www.fc-koeln.de",
+                "venue": "RheinEnergieSTADION",
+                "founded": 1948,
+                "coach": "Gerhard Struber",
+                "area": "Germany"
+            },
+            "1899 Hoffenheim": {
+                "id": 2,
+                "address": "Horrenberger Straße 58 Zuzenhausen 74939",
+                "crest": "https://crests.football-data.org/2.png",
+                "website": "http://www.achtzehn99.de",
+                "venue": "PreZero Arena",
+                "founded": 1921,
+                "coach": "Pellegrino Matarazzo",
+                "area": "Germany"
+            },
+            "Bayer Leverkusen": {
+                "id": 3,
+                "address": "Bismarckstr. 122-124 Leverkusen 51373",
+                "crest": "https://crests.football-data.org/3.png",
+                "website": "http://www.bayer04.de",
+                "venue": "BayArena",
+                "founded": 1904,
+                "coach": "Xabi Alonso",
+                "area": "Germany"
+            },
+            "Borussia Dortmund": {
+                "id": 4,
+                "address": "Rheinlanddamm 207-209 Dortmund 44137",
+                "crest": "https://crests.football-data.org/4.png",
+                "website": "http://www.bvb.de",
+                "venue": "Signal Iduna Park",
+                "founded": 1909,
+                "coach": "Nuri Şahin",
+                "area": "Germany"
+            },
+            "Bayern Munchen": {
+                "id": 5,
+                "address": "Säbenerstr. 51 München 81547",
+                "crest": "https://crests.football-data.org/5.svg",
+                "website": "http://www.fcbayern.de",
+                "venue": "Allianz Arena",
+                "founded": 1900,
+                "coach": "Vincent Kompany",
+                "area": "Germany"
+            },
+            "VfB Stuttgart": {
+                "id": 10,
+                "address": "Mercedesstraße 109 Stuttgart 70372",
+                "crest": "https://crests.football-data.org/10.png",
+                "website": "http://www.vfb.de",
+                "venue": "Mercedes-Benz Arena",
+                "founded": 1893,
+                "coach": "Sebastian Hoeneß",
+                "area": "Germany"
+            },
+            "VfL Wolfsburg": {
+                "id": 11,
+                "address": "In den Allerwiesen 1 Wolfsburg 38446",
+                "crest": "https://crests.football-data.org/11.svg",
+                "website": "http://www.vfl-wolfsburg.de",
+                "venue": "Volkswagen Arena",
+                "founded": 1945,
+                "coach": "Ralph Hasenhüttl",
+                "area": "Germany"
+            },
+            "Werder Bremen": {
+                "id": 12,
+                "address": "Franz-Böhmert-Str. 1c Bremen 28205",
+                "crest": "https://crests.football-data.org/12.svg",
+                "website": "http://www.werder.de",
+                "venue": "Weserstadion",
+                "founded": 1899,
+                "coach": "Ole Werner",
+                "area": "Germany"
+            },
+            "FSV Mainz 05": {
+                "id": 15,
+                "address": "Dr.-Martin-Luther-King-Weg 20 Mainz 55122",
+                "crest": "https://crests.football-data.org/15.png",
+                "website": "http://www.mainz05.de",
+                "venue": "Opel Arena",
+                "founded": 1905,
+                "coach": "Bo Henriksen",
+                "area": "Germany"
+            },
+            "FC Augsburg": {
+                "id": 16,
+                "address": "Donauwörther Straße 170 Augsburg 86154",
+                "crest": "https://crests.football-data.org/16.png",
+                "website": "http://www.fcaugsburg.de",
+                "venue": "WWK Arena",
+                "founded": 1907,
+                "coach": "Jess Thorup",
+                "area": "Germany"
+            },
+            "SC Freiburg": {
+                "id": 17,
+                "address": "Schwarzwaldstraße 193 Freiburg 79117",
+                "crest": "https://crests.football-data.org/17.svg",
+                "website": "http://www.scfreiburg.com",
+                "venue": "Schwarzwald-Stadion",
+                "founded": 1912,
+                "coach": "Julian Schuster",
+                "area": "Germany"
+            },
+            "Borussia Monchengladbach": {
+                "id": 18,
+                "address": "Hennes-Weisweiler-Allee 1 Mönchengladbach 41179",
+                "crest": "https://crests.football-data.org/18.png",
+                "website": "http://www.borussia.de",
+                "venue": "Stadion im Borussia-Park",
+                "founded": 1900,
+                "coach": "Gerardo Seoane",
+                "area": "Germany"
+            },
+            "Eintracht Frankfurt": {
+                "id": 19,
+                "address": "Mörfelder Landstraße 362 Frankfurt am Main 60528",
+                "crest": "https://crests.football-data.org/19.svg",
+                "website": "http://www.eintracht.de",
+                "venue": "Deutsche Bank Park",
+                "founded": 1899,
+                "coach": "Dino Toppmöller",
+                "area": "Germany"
+            },
+            "Union Berlin": {
+                "id": 28,
+                "address": "An der Wuhlheide 263 Berlin 12555",
+                "crest": "https://crests.football-data.org/28.svg",
+                "website": "http://www.fc-union-berlin.de",
+                "venue": "Stadion An der Alten Försterei",
+                "founded": 1906,
+                "coach": "Bo Svensson",
+                "area": "Germany"
+            },
+            "Vfl Bochum": {
+                "id": 36,
+                "address": "Castroper Straße 145 Bochum 44791",
+                "crest": "https://crests.football-data.org/36.png",
+                "website": "http://www.vfl-bochum.de",
+                "venue": "Vonovia Ruhrstadion",
+                "founded": 1849,
+                "coach": "Peter Zeidler",
+                "area": "Germany"
+            },
+            "FC Heidenheim": {
+                "id": 44,
+                "address": "Schloßhaustraße 162 Heidenheim 89522",
+                "crest": "https://crests.football-data.org/44.svg",
+                "website": "http://www.fc-heidenheim.de",
+                "venue": "Voith-Arena",
+                "founded": 1846,
+                "coach": "Frank Schmidt",
+                "area": "Germany"
+            },
+            "SV Darmstadt 98": {
+                "id": 55,
+                "address": "Nieder-Ramstädter-Straße 170 Darmstadt 64285",
+                "crest": "https://crests.football-data.org/55.png",
+                "website": "http://www.sv98.de",
+                "venue": "Merck-Stadion am Böllenfalltor",
+                "founded": 1898,
+                "coach": "Torsten Lieberknecht",
+                "area": "Germany"
+            },
+            "RB Leipzig": {
+                "id": 721,
+                "address": "Neumarkt 29-33 Leipzig 04109",
+                "crest": "https://crests.football-data.org/721.png",
+                "website": "http://www.dierotenbullen.com",
+                "venue": "Red Bull Arena",
+                "founded": 2009,
+                "coach": "Marco Rose",
+                "area": "Germany"
+            }
+        }
+    },
+    "Serie A": {
+        "id": 4,
+        "teams": {
+            "AC Milan": {
+                "id": 98,
+                "address": "Via Filippo Turati 3 Milano 20121",
+                "crest": "https://crests.football-data.org/98.png",
+                "website": "http://www.acmilan.com",
+                "venue": "Stadio Giuseppe Meazza",
+                "founded": 1899,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Fiorentina": {
+                "id": 99,
+                "address": "Viale Manfredo Fanti 4 Firenze 50137",
+                "crest": "https://crests.football-data.org/99.png",
+                "website": "http://www.acffiorentina.it",
+                "venue": "Stadio Artemio Franchi",
+                "founded": 1926,
+                "coach": null,
+                "area": "Italy"
+            },
+            "AS Roma": {
+                "id": 100,
+                "address": "Via di Trigoria km. 3,600 Roma 00128",
+                "crest": "https://crests.football-data.org/100.png",
+                "website": "http://www.asroma.it",
+                "venue": "Stadio Olimpico",
+                "founded": 1927,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Atalanta": {
+                "id": 102,
+                "address": "Corso Europa, 46, Zingonia Ciserano 24040",
+                "crest": "https://crests.football-data.org/102.png",
+                "website": "http://www.atalanta.it",
+                "venue": "Stadio Atleti Azzurri d'Italia",
+                "founded": 1904,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Bologna": {
+                "id": 103,
+                "address": "Via Casteldebole 10 Bologna 40132",
+                "crest": "https://crests.football-data.org/103.png",
+                "website": "http://www.bolognafc.it",
+                "venue": "Stadio Renato Dall'Ara",
+                "founded": 1909,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Cagliari": {
+                "id": 104,
+                "address": "Viale la Plaia 15 Cagliari 09123",
+                "crest": "https://crests.football-data.org/104.png",
+                "website": "http://www.cagliaricalcio.net",
+                "venue": "Sardegna Arena",
+                "founded": 1920,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Genoa": {
+                "id": 107,
+                "address": "Via Ronchi, 67 Genova 16155",
+                "crest": "https://crests.football-data.org/107.png",
+                "website": "http://www.genoacfc.it",
+                "venue": "Stadio Comunale Luigi Ferraris",
+                "founded": 1893,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Inter": {
+                "id": 108,
+                "address": "Corso Vittorio Emanuele II 9 Milano 20122",
+                "crest": "https://crests.football-data.org/108.png",
+                "website": "http://www.inter.it",
+                "venue": "Stadio Giuseppe Meazza",
+                "founded": 1908,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Juventus": {
+                "id": 109,
+                "address": "Corso Galileo Ferraris, 32 Torino 10128",
+                "crest": "https://crests.football-data.org/109.png",
+                "website": "http://www.juventus.com",
+                "venue": "Allianz Stadium",
+                "founded": 1897,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Lazio": {
+                "id": 110,
+                "address": "Via di Santa Cornelia, 1000 Formello 00060",
+                "crest": "https://crests.football-data.org/110.png",
+                "website": "http://www.sslazio.it",
+                "venue": "Stadio Olimpico",
+                "founded": 1900,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Napoli": {
+                "id": 113,
+                "address": "Centro Tecnico di Castel Volturno, Via S.S. Domitana, Km 35 Castel Volturno 81030",
+                "crest": "https://crests.football-data.org/113.png",
+                "website": "http://www.sscnapoli.it",
+                "venue": "Stadio San Paolo",
+                "founded": 1904,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Udinese": {
+                "id": 115,
+                "address": "Via Agostino e Angelo Candolini 2 Udine 33100",
+                "crest": "https://crests.football-data.org/115.png",
+                "website": "http://www.udinese.it",
+                "venue": "Dacia Arena",
+                "founded": 1896,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Empoli": {
+                "id": 445,
+                "address": "Piazza Matteotti Empoli 50053",
+                "crest": "https://crests.football-data.org/445.png",
+                "website": "http://www.empolicalcio.net",
+                "venue": "Stadio Carlo Castellani",
+                "founded": 1920,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Verona": {
+                "id": 450,
+                "address": "Via Evangelista Torricelli, 37 Verona 37136",
+                "crest": "https://crests.football-data.org/450.png",
+                "website": "http://www.hellasverona.it",
+                "venue": "Stadio Marc'Antonio Bentegodi",
+                "founded": 1903,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Salernitana": {
+                "id": 455,
+                "address": "Via San Leonardo, 51 Salerno 84131",
+                "crest": "https://crests.football-data.org/455.png",
+                "website": "http://www.ussalernitana1919.it",
+                "venue": "Stadio Arechi",
+                "founded": 1919,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Frosinone": {
+                "id": 470,
+                "address": "Via Marittima, 2 Frosinone 03100",
+                "crest": "https://crests.football-data.org/470.png",
+                "website": "http://www.frosinonecalcio.com",
+                "venue": "Stadio Benito Stirpe",
+                "founded": 1912,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Sassuolo": {
+                "id": 471,
+                "address": "Piazza Risorgimento, 47 Sassuolo 41049",
+                "crest": "https://crests.football-data.org/471.png",
+                "website": "http://www.sassuolocalcio.it",
+                "venue": "Mapei Stadium - Città del Tricolore",
+                "founded": 1920,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Torino": {
+                "id": 586,
+                "address": "Via Arcivescovado 1 Torino 10122",
+                "crest": "https://crests.football-data.org/586.png",
+                "website": "http://www.torinofc.it",
+                "venue": "Stadio Olimpico di Torino",
+                "founded": 1894,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Lecce": {
+                "id": 5890,
+                "address": "Via Templari 11 Lecce 73100",
+                "crest": "https://crests.football-data.org/5890.png",
+                "website": "http://www.uslecce.it",
+                "venue": "Stadio Comunale Via Del Mare",
+                "founded": 1908,
+                "coach": null,
+                "area": "Italy"
+            },
+            "Monza": {
+                "id": 5911,
+                "address": "Via Ragazzi del '99, 14 Monza 20900",
+                "crest": "https://crests.football-data.org/5911.png",
+                "website": "http://www.monza1912.it",
+                "venue": "Stadio Comunale Brianteo",
+                "founded": 1912,
+                "coach": null,
+                "area": "Italy"
+            }
+        }
+    },
+    "Primera Division": {
+        "id": 5,
+        "teams": {
+            "Athletic Club": {
+                "id": 77,
+                "address": "Ibaigane, Alameda Mazarredo, 23 Bilbao 48009",
+                "crest": "https://crests.football-data.org/77.png",
+                "website": "http://www.athletic-club.eus",
+                "venue": "San Mamés",
+                "founded": 1898,
+                "coach": "Ernesto Valverde",
+                "area": "Spain"
+            },
+            "Atletico Madrid": {
+                "id": 78,
+                "address": "Paseo Virgen del Puerto, 67 Madrid 28005",
+                "crest": "https://crests.football-data.org/78.svg",
+                "website": "http://www.clubatleticodemadrid.com",
+                "venue": "Estadio Wanda Metropolitano",
+                "founded": 1903,
+                "coach": "Diego Simeone",
+                "area": "Spain"
+            },
+            "Osasuna": {
+                "id": 79,
+                "address": "Calle del Sadar, s/n Pamplona 31006",
+                "crest": "https://crests.football-data.org/79.svg",
+                "website": "http://www.osasuna.es",
+                "venue": "Estadio El Sadar",
+                "founded": 1920,
+                "coach": "Moreno",
+                "area": "Spain"
+            },
+            "Barcelona": {
+                "id": 81,
+                "address": "Avenida Arístides Maillol s/n Barcelona 08028",
+                "crest": "https://crests.football-data.org/81.svg",
+                "website": "http://www.fcbarcelona.com",
+                "venue": "Camp Nou",
+                "founded": 1899,
+                "coach": "Hansi Flick",
+                "area": "Spain"
+            },
+            "Getafe": {
+                "id": 82,
+                "address": "Avenida Teresa de Calcuta, s/n Getafe 28903",
+                "crest": "https://crests.football-data.org/82.png",
+                "website": "http://www.getafecf.com",
+                "venue": "Coliseum Alfonso Pérez",
+                "founded": 1946,
+                "coach": "Pepe Bordalás",
+                "area": "Spain"
+            },
+            "Granada CF": {
+                "id": 83,
+                "address": "Calle del Pintor Manuel Maldonado, s/n Granada 18007",
+                "crest": "https://crests.football-data.org/83.svg",
+                "website": "http://www.granadacf.es",
+                "venue": "Estadio Nuevo Los Cármenes",
+                "founded": 1931,
+                "coach": null,
+                "area": "Spain"
+            },
+            "Real Madrid": {
+                "id": 86,
+                "address": "Avenida Concha Espina, 1 Madrid 28036",
+                "crest": "https://crests.football-data.org/86.png",
+                "website": "http://www.realmadrid.com",
+                "venue": "Estadio Santiago Bernabéu",
+                "founded": 1902,
+                "coach": "Carlo Ancelotti",
+                "area": "Spain"
+            },
+            "Rayo Vallecano": {
+                "id": 87,
+                "address": "Calle del Payaso Fofó, s/n Madrid 28018",
+                "crest": "https://crests.football-data.org/87.svg",
+                "website": "http://www.rayovallecano.es",
+                "venue": "Estadio del Rayo Vallecano",
+                "founded": 1924,
+                "coach": "Iñigo Pérez",
+                "area": "Spain"
+            },
+            "Mallorca": {
+                "id": 89,
+                "address": "Son Moix, Calle Camí dels Reis, s/n Palma de Mallorca 07011",
+                "crest": "https://crests.football-data.org/89.png",
+                "website": "http://www.rcdmallorca.es",
+                "venue": "Iberostar Estadi",
+                "founded": 1916,
+                "coach": "Jagoba Arrasate",
+                "area": "Spain"
+            },
+            "Real Betis": {
+                "id": 90,
+                "address": "Avenida de Heliópolis, s/n Sevilla 41012",
+                "crest": "https://crests.football-data.org/90.png",
+                "website": "http://www.realbetisbalompie.es",
+                "venue": "Estadio Benito Villamarín",
+                "founded": 1907,
+                "coach": "Manuel Pellegrini",
+                "area": "Spain"
+            },
+            "Real Sociedad": {
+                "id": 92,
+                "address": "Anoeta Pasalekua, 1 San Sebastián 20014",
+                "crest": "https://crests.football-data.org/92.svg",
+                "website": "http://www.realsociedad.com",
+                "venue": "Estadio Municipal de Anoeta",
+                "founded": 1903,
+                "coach": "Imanol Alguacil",
+                "area": "Spain"
+            },
+            "Villarreal": {
+                "id": 94,
+                "address": "Camino Miralcamp, s/n Villarreal 12540",
+                "crest": "https://crests.football-data.org/94.png",
+                "website": "http://www.villarrealcf.es",
+                "venue": "Estadio de la Cerámica",
+                "founded": 1923,
+                "coach": "Marcelino",
+                "area": "Spain"
+            },
+            "Valencia": {
+                "id": 95,
+                "address": "Plaza del Valencia Club de Fútbol, 2 Valencia 46010",
+                "crest": "https://crests.football-data.org/95.svg",
+                "website": "http://www.valenciacf.com",
+                "venue": "Estadio de Mestalla",
+                "founded": 1919,
+                "coach": "Rubén Baraja",
+                "area": "Spain"
+            },
+            "Alaves": {
+                "id": 263,
+                "address": "Mendizorroza, Paseo Cervantes, s/n Vitoria 01007",
+                "crest": "https://crests.football-data.org/263.png",
+                "website": "http://www.alaves.com",
+                "venue": "Estadio de Mendizorroza",
+                "founded": 1921,
+                "coach": "Luís García",
+                "area": "Spain"
+            },
+            "Cadiz": {
+                "id": 264,
+                "address": "Plaza de Madrid, s/n Cádiz 11010",
+                "crest": "https://crests.football-data.org/264.png",
+                "website": "http://www.cadizcf.com",
+                "venue": "Estadio Ramón de Carranza",
+                "founded": 1910,
+                "coach": null,
+                "area": "Spain"
+            },
+            "Almeria": {
+                "id": 267,
+                "address": "Calle Alcalde Santiago Martínez Cabrejas, 5 Almería 04007",
+                "crest": "https://crests.football-data.org/267.png",
+                "website": "http://www.udalmeriasad.com",
+                "venue": "Estadio de los Juegos Mediterráneos",
+                "founded": 1989,
+                "coach": null,
+                "area": "Spain"
+            },
+            "Las Palmas": {
+                "id": 275,
+                "address": "Calle Pío XII, 29 Las Palmas de Gran Canaria 35005",
+                "crest": "https://crests.football-data.org/275.png",
+                "website": "http://www.udlaspalmas.es",
+                "venue": "Estadio de Gran Canaria",
+                "founded": 1949,
+                "coach": "Luis Carrión",
+                "area": "Spain"
+            },
+            "Girona": {
+                "id": 298,
+                "address": "Avinguda de Montilivi, 141 Girona 17003",
+                "crest": "https://crests.football-data.org/298.png",
+                "website": "http://www.gironafc.cat",
+                "venue": "Estadi Municipal de Montilivi",
+                "founded": 1930,
+                "coach": "Michel",
+                "area": "Spain"
+            },
+            "Celta Vigo": {
+                "id": 558,
+                "address": "Calle del Conde de Gondomar, 1 Vigo 36203",
+                "crest": "https://crests.football-data.org/558.svg",
+                "website": "http://www.celtavigo.net",
+                "venue": "Estadio de Balaídos",
+                "founded": 1923,
+                "coach": "Claudio",
+                "area": "Spain"
+            },
+            "Sevilla": {
+                "id": 559,
+                "address": "Calle Sevilla Fútbol Club, s/n Sevilla 41005",
+                "crest": "https://crests.football-data.org/559.svg",
+                "website": "http://www.sevillafc.es",
+                "venue": "Estadio Ramón Sánchez Pizjuán",
+                "founded": 1905,
+                "coach": "Garcia Pimienta",
+                "area": "Spain"
+            }
+        }
+    }
+}
