@@ -35,35 +35,16 @@
                 "goals_against": 41,
                 "goal_difference": 45
             },
-            "Manchester City": {
-                "id": 65,
-                "address": "SportCity Manchester M11 3FF",
-                "crest": "https://crests.football-data.org/65.png",
-                "website": "https://www.mancity.com",
-                "venue": "Etihad Stadium",
-                "founded": 1880,
-                "coach": "Pep Guardiola",
-                "area": "England"
-            },
-            "Manchester United": {
-                "id": 66,
-                "address": "Sir Matt Busby Way Manchester M16 0RA",
-                "crest": "https://crests.football-data.org/66.png",
-                "website": "http://www.manutd.com",
-                "venue": "Old Trafford",
-                "founded": 1878,
-                "coach": "Erik ten Hag",
-                "area": "England"
-            },
-            "Newcastle United": {
-                "id": 67,
-                "address": "Sports Direct Arena Newcastle upon Tyne NE1 4ST",
-                "crest": "https://crests.football-data.org/67.png",
-                "website": "http://www.nufc.co.uk",
-                "venue": "St. James' Park",
-                "founded": 1881,
-                "coach": "Eddie Howe",
-                "area": "England"
+            "Aston Villa": {
+                "id": 58,
+                "position": 4,
+                "team_crest": "https://crests.football-data.org/58.png",
+                "points": 68,
+                "games_won": 20,
+                "games_lost": 10,
+                "goals_for": 76,
+                "goals_against": 61,
+                "goal_difference": 15
             },
             "Tottenham Hotspur": {
                 "id": 73,
@@ -451,33 +432,14 @@
         "standings": {
             "Bayer Leverkusen": {
                 "id": 3,
-                "address": "Bismarckstr. 122-124 Leverkusen 51373",
-                "crest": "https://crests.football-data.org/3.png",
-                "website": "http://www.bayer04.de",
-                "venue": "BayArena",
-                "founded": 1904,
-                "coach": "Xabi Alonso",
-                "area": "Germany"
-            },
-            "Borussia Dortmund": {
-                "id": 4,
-                "address": "Rheinlanddamm 207-209 Dortmund 44137",
-                "crest": "https://crests.football-data.org/4.png",
-                "website": "http://www.bvb.de",
-                "venue": "Signal Iduna Park",
-                "founded": 1909,
-                "coach": "Nuri Şahin",
-                "area": "Germany"
-            },
-            "Bayern Munich": {
-                "id": 5,
-                "address": "Säbenerstr. 51 München 81547",
-                "crest": "https://crests.football-data.org/5.svg",
-                "website": "http://www.fcbayern.de",
-                "venue": "Allianz Arena",
-                "founded": 1900,
-                "coach": "Vincent Kompany",
-                "area": "Germany"
+                "position": 1,
+                "team_crest": "https://crests.football-data.org/3.png",
+                "points": 90,
+                "games_won": 28,
+                "games_lost": 0,
+                "goals_for": 89,
+                "goals_against": 24,
+                "goal_difference": 65
             },
             "VfB Stuttgart": {
                 "id": 10,
@@ -490,7 +452,7 @@
                 "goals_against": 39,
                 "goal_difference": 39
             },
-            "Bayern M\u00fcnchen": {
+            "Bayern Munchen": {
                 "id": 5,
                 "position": 3,
                 "team_crest": "https://crests.football-data.org/5.svg",

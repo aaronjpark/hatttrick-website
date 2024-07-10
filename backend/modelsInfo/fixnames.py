@@ -1,8 +1,8 @@
 import json
 
-def load_data(file_path):
+def load_data(filepath):
     """Load JSON data from a file."""
-    with open(file_path, 'r') as file:
+    with open(filepath, 'r') as file:
         return json.load(file)
 
 def save_data(data, file_path):
