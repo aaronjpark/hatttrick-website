@@ -2,7 +2,7 @@
     "Premier League": {
         "id": 1,
         "standings": {
-            "Manchester City FC": {
+            "Manchester City": {
                 "id": 65,
                 "position": 1,
                 "team_crest": "https://crests.football-data.org/65.png",
@@ -13,7 +13,7 @@
                 "goals_against": 34,
                 "goal_difference": 62
             },
-            "Arsenal FC": {
+            "Arsenal ": {
                 "id": 57,
                 "position": 2,
                 "team_crest": "https://crests.football-data.org/57.png",
@@ -24,7 +24,7 @@
                 "goals_against": 29,
                 "goal_difference": 62
             },
-            "Liverpool FC": {
+            "Liverpool": {
                 "id": 64,
                 "position": 3,
                 "team_crest": "https://crests.football-data.org/64.png",
@@ -35,7 +35,7 @@
                 "goals_against": 41,
                 "goal_difference": 45
             },
-            "Aston Villa FC": {
+            "Aston Villa": {
                 "id": 58,
                 "position": 4,
                 "team_crest": "https://crests.football-data.org/58.png",
@@ -46,7 +46,7 @@
                 "goals_against": 61,
                 "goal_difference": 15
             },
-            "Tottenham Hotspur FC": {
+            "Tottenham Hotspur": {
                 "id": 73,
                 "position": 5,
                 "team_crest": "https://crests.football-data.org/73.png",
@@ -57,7 +57,7 @@
                 "goals_against": 61,
                 "goal_difference": 13
             },
-            "Chelsea FC": {
+            "Chelsea": {
                 "id": 61,
                 "position": 6,
                 "team_crest": "https://crests.football-data.org/61.png",
@@ -68,7 +68,7 @@
                 "goals_against": 63,
                 "goal_difference": 14
             },
-            "Newcastle United FC": {
+            "Newcastle United": {
                 "id": 67,
                 "position": 7,
                 "team_crest": "https://crests.football-data.org/67.png",
@@ -79,7 +79,7 @@
                 "goals_against": 62,
                 "goal_difference": 23
             },
-            "Manchester United FC": {
+            "Manchester United": {
                 "id": 66,
                 "position": 8,
                 "team_crest": "https://crests.football-data.org/66.png",
@@ -90,7 +90,7 @@
                 "goals_against": 58,
                 "goal_difference": -1
             },
-            "West Ham United FC": {
+            "West Ham": {
                 "id": 563,
                 "position": 9,
                 "team_crest": "https://crests.football-data.org/563.png",
@@ -101,7 +101,7 @@
                 "goals_against": 74,
                 "goal_difference": -14
             },
-            "Crystal Palace FC": {
+            "Crystal Palace": {
                 "id": 354,
                 "position": 10,
                 "team_crest": "https://crests.football-data.org/354.png",
@@ -112,7 +112,7 @@
                 "goals_against": 58,
                 "goal_difference": -1
             },
-            "Brighton & Hove Albion FC": {
+            "Brighton": {
                 "id": 397,
                 "position": 11,
                 "team_crest": "https://crests.football-data.org/397.svg",
@@ -123,7 +123,7 @@
                 "goals_against": 62,
                 "goal_difference": -7
             },
-            "Everton FC": {
+            "Everton": {
                 "id": 62,
                 "position": 12,
                 "team_crest": "https://crests.football-data.org/62.png",
@@ -134,7 +134,7 @@
                 "goals_against": 51,
                 "goal_difference": -11
             },
-            "AFC Bournemouth": {
+            "Bournemouth": {
                 "id": 1044,
                 "position": 13,
                 "team_crest": "https://crests.football-data.org/1044.png",
@@ -145,7 +145,7 @@
                 "goals_against": 67,
                 "goal_difference": -13
             },
-            "Fulham FC": {
+            "Fulham": {
                 "id": 63,
                 "position": 14,
                 "team_crest": "https://crests.football-data.org/63.svg",
@@ -156,7 +156,7 @@
                 "goals_against": 61,
                 "goal_difference": -6
             },
-            "Wolverhampton Wanderers FC": {
+            "Wolves": {
                 "id": 76,
                 "position": 15,
                 "team_crest": "https://crests.football-data.org/76.svg",
@@ -167,7 +167,7 @@
                 "goals_against": 65,
                 "goal_difference": -15
             },
-            "Brentford FC": {
+            "Brentford": {
                 "id": 402,
                 "position": 16,
                 "team_crest": "https://crests.football-data.org/402.png",
@@ -178,7 +178,7 @@
                 "goals_against": 65,
                 "goal_difference": -9
             },
-            "Nottingham Forest FC": {
+            "Nottingham Forest": {
                 "id": 351,
                 "position": 17,
                 "team_crest": "https://crests.football-data.org/351.png",
@@ -189,7 +189,7 @@
                 "goals_against": 67,
                 "goal_difference": -18
             },
-            "Luton Town FC": {
+            "Luton": {
                 "id": 389,
                 "position": 18,
                 "team_crest": "https://crests.football-data.org/389.png",
@@ -200,7 +200,7 @@
                 "goals_against": 85,
                 "goal_difference": -33
             },
-            "Burnley FC": {
+            "Burnley": {
                 "id": 328,
                 "position": 19,
                 "team_crest": "https://crests.football-data.org/328.png",
@@ -211,7 +211,7 @@
                 "goals_against": 78,
                 "goal_difference": -37
             },
-            "Sheffield United FC": {
+            "Sheffield Utd": {
                 "id": 356,
                 "position": 20,
                 "team_crest": "https://crests.football-data.org/356.svg",
@@ -227,7 +227,7 @@
     "Ligue 1": {
         "id": 2,
         "standings": {
-            "Paris Saint-Germain FC": {
+            "Paris Saint Germain": {
                 "id": 524,
                 "position": 1,
                 "team_crest": "https://crests.football-data.org/524.png",
@@ -238,7 +238,7 @@
                 "goals_against": 33,
                 "goal_difference": 48
             },
-            "AS Monaco FC": {
+            "Monaco": {
                 "id": 548,
                 "position": 2,
                 "team_crest": "https://crests.football-data.org/548.png",
@@ -260,7 +260,7 @@
                 "goals_against": 34,
                 "goal_difference": 19
             },
-            "Lille OSC": {
+            "Lille": {
                 "id": 521,
                 "position": 4,
                 "team_crest": "https://crests.football-data.org/521.svg",
@@ -271,7 +271,7 @@
                 "goals_against": 34,
                 "goal_difference": 18
             },
-            "OGC Nice": {
+            "Nice": {
                 "id": 522,
                 "position": 5,
                 "team_crest": "https://crests.football-data.org/522.png",
@@ -282,7 +282,7 @@
                 "goals_against": 29,
                 "goal_difference": 11
             },
-            "Olympique Lyonnais": {
+            "Lyon": {
                 "id": 523,
                 "position": 6,
                 "team_crest": "https://crests.football-data.org/523.svg",
@@ -293,7 +293,7 @@
                 "goals_against": 55,
                 "goal_difference": -6
             },
-            "Racing Club de Lens": {
+            "Lens": {
                 "id": 546,
                 "position": 7,
                 "team_crest": "https://crests.football-data.org/546.png",
@@ -315,7 +315,7 @@
                 "goals_against": 41,
                 "goal_difference": 11
             },
-            "Stade de Reims": {
+            "Reims": {
                 "id": 547,
                 "position": 9,
                 "team_crest": "https://crests.football-data.org/547.png",
@@ -326,7 +326,7 @@
                 "goals_against": 47,
                 "goal_difference": -5
             },
-            "Stade Rennais FC 1901": {
+            "Rennes": {
                 "id": 529,
                 "position": 10,
                 "team_crest": "https://crests.football-data.org/529.png",
@@ -337,7 +337,7 @@
                 "goals_against": 46,
                 "goal_difference": 7
             },
-            "Toulouse FC": {
+            "Toulouse": {
                 "id": 511,
                 "position": 11,
                 "team_crest": "https://crests.football-data.org/511.png",
@@ -348,7 +348,7 @@
                 "goals_against": 46,
                 "goal_difference": -4
             },
-            "Montpellier HSC": {
+            "Montpellier": {
                 "id": 518,
                 "position": 12,
                 "team_crest": "https://crests.football-data.org/518.png",
@@ -359,7 +359,7 @@
                 "goals_against": 48,
                 "goal_difference": -5
             },
-            "RC Strasbourg Alsace": {
+            "Strasbourg": {
                 "id": 576,
                 "position": 13,
                 "team_crest": "https://crests.football-data.org/576.png",
@@ -370,7 +370,7 @@
                 "goals_against": 50,
                 "goal_difference": -12
             },
-            "FC Nantes": {
+            "Nantes": {
                 "id": 543,
                 "position": 14,
                 "team_crest": "https://crests.football-data.org/543.png",
@@ -392,7 +392,7 @@
                 "goals_against": 45,
                 "goal_difference": -11
             },
-            "FC Lorient": {
+            "Lorient": {
                 "id": 525,
                 "position": 16,
                 "team_crest": "https://crests.football-data.org/525.png",
@@ -403,7 +403,7 @@
                 "goals_against": 66,
                 "goal_difference": -23
             },
-            "FC Metz": {
+            "Metz": {
                 "id": 545,
                 "position": 17,
                 "team_crest": "https://crests.football-data.org/545.svg",
@@ -414,7 +414,7 @@
                 "goals_against": 58,
                 "goal_difference": -23
             },
-            "Clermont Foot 63": {
+            "Clermont Foot": {
                 "id": 541,
                 "position": 18,
                 "team_crest": "https://crests.football-data.org/541.svg",
@@ -430,7 +430,7 @@
     "Bundesliga": {
         "id": 3,
         "standings": {
-            "Bayer 04 Leverkusen": {
+            "Bayer Leverkusen": {
                 "id": 3,
                 "position": 1,
                 "team_crest": "https://crests.football-data.org/3.png",
@@ -452,7 +452,7 @@
                 "goals_against": 39,
                 "goal_difference": 39
             },
-            "FC Bayern München": {
+            "Bayern M\u00fcnchen": {
                 "id": 5,
                 "position": 3,
                 "team_crest": "https://crests.football-data.org/5.svg",
@@ -496,7 +496,7 @@
                 "goals_against": 50,
                 "goal_difference": 1
             },
-            "TSG 1899 Hoffenheim": {
+            "1899 Hoffenheim": {
                 "id": 2,
                 "position": 7,
                 "team_crest": "https://crests.football-data.org/2.png",
@@ -507,7 +507,7 @@
                 "goals_against": 66,
                 "goal_difference": 0
             },
-            "1. FC Heidenheim 1846": {
+            "FC Heidenheim": {
                 "id": 44,
                 "position": 8,
                 "team_crest": "https://crests.football-data.org/44.svg",
@@ -518,7 +518,7 @@
                 "goals_against": 55,
                 "goal_difference": -5
             },
-            "SV Werder Bremen": {
+            "Werder Bremen": {
                 "id": 12,
                 "position": 9,
                 "team_crest": "https://crests.football-data.org/12.svg",
@@ -562,7 +562,7 @@
                 "goals_against": 56,
                 "goal_difference": -15
             },
-            "1. FSV Mainz 05": {
+            "FSV Mainz 05": {
                 "id": 15,
                 "position": 13,
                 "team_crest": "https://crests.football-data.org/15.png",
@@ -573,7 +573,7 @@
                 "goals_against": 51,
                 "goal_difference": -12
             },
-            "Borussia Mönchengladbach": {
+            "Borussia Monchengladbach": {
                 "id": 18,
                 "position": 14,
                 "team_crest": "https://crests.football-data.org/18.png",
@@ -584,7 +584,7 @@
                 "goals_against": 67,
                 "goal_difference": -11
             },
-            "1. FC Union Berlin": {
+            "Union Berlin": {
                 "id": 28,
                 "position": 15,
                 "team_crest": "https://crests.football-data.org/28.svg",
@@ -595,7 +595,7 @@
                 "goals_against": 58,
                 "goal_difference": -25
             },
-            "VfL Bochum 1848": {
+            "Vfl Bochum": {
                 "id": 36,
                 "position": 16,
                 "team_crest": "https://crests.football-data.org/36.png",
@@ -606,7 +606,7 @@
                 "goals_against": 74,
                 "goal_difference": -32
             },
-            "1. FC Köln": {
+            "FC K\u00f6ln": {
                 "id": 1,
                 "position": 17,
                 "team_crest": "https://crests.football-data.org/1.png",
@@ -633,7 +633,7 @@
     "Serie A": {
         "id": 4,
         "standings": {
-            "FC Internazionale Milano": {
+            "Inter": {
                 "id": 108,
                 "position": 1,
                 "team_crest": "https://crests.football-data.org/108.png",
@@ -655,7 +655,7 @@
                 "goals_against": 49,
                 "goal_difference": 27
             },
-            "Juventus FC": {
+            "Juventus": {
                 "id": 109,
                 "position": 3,
                 "team_crest": "https://crests.football-data.org/109.png",
@@ -666,7 +666,7 @@
                 "goals_against": 31,
                 "goal_difference": 23
             },
-            "Atalanta BC": {
+            "Atalanta": {
                 "id": 102,
                 "position": 4,
                 "team_crest": "https://crests.football-data.org/102.png",
@@ -677,7 +677,7 @@
                 "goals_against": 42,
                 "goal_difference": 30
             },
-            "Bologna FC 1909": {
+            "Bologna": {
                 "id": 103,
                 "position": 5,
                 "team_crest": "https://crests.football-data.org/103.png",
@@ -699,7 +699,7 @@
                 "goals_against": 46,
                 "goal_difference": 19
             },
-            "SS Lazio": {
+            "Lazio": {
                 "id": 110,
                 "position": 7,
                 "team_crest": "https://crests.football-data.org/110.png",
@@ -710,7 +710,7 @@
                 "goals_against": 39,
                 "goal_difference": 10
             },
-            "ACF Fiorentina": {
+            "Fiorentina": {
                 "id": 99,
                 "position": 8,
                 "team_crest": "https://crests.football-data.org/99.png",
@@ -721,7 +721,7 @@
                 "goals_against": 46,
                 "goal_difference": 15
             },
-            "SSC Napoli": {
+            "Napoli": {
                 "id": 113,
                 "position": 9,
                 "team_crest": "https://crests.football-data.org/113.png",
@@ -732,7 +732,7 @@
                 "goals_against": 48,
                 "goal_difference": 7
             },
-            "Torino FC": {
+            "Torino": {
                 "id": 586,
                 "position": 10,
                 "team_crest": "https://crests.football-data.org/586.png",
@@ -743,7 +743,7 @@
                 "goals_against": 36,
                 "goal_difference": 0
             },
-            "Genoa CFC": {
+            "Genoa": {
                 "id": 107,
                 "position": 11,
                 "team_crest": "https://crests.football-data.org/107.png",
@@ -754,7 +754,7 @@
                 "goals_against": 45,
                 "goal_difference": 0
             },
-            "AC Monza": {
+            "Monza": {
                 "id": 5911,
                 "position": 12,
                 "team_crest": "https://crests.football-data.org/5911.png",
@@ -765,7 +765,7 @@
                 "goals_against": 51,
                 "goal_difference": -12
             },
-            "Hellas Verona FC": {
+            "Verona": {
                 "id": 450,
                 "position": 13,
                 "team_crest": "https://crests.football-data.org/450.png",
@@ -776,7 +776,7 @@
                 "goals_against": 51,
                 "goal_difference": -13
             },
-            "US Lecce": {
+            "Lecce": {
                 "id": 5890,
                 "position": 14,
                 "team_crest": "https://crests.football-data.org/5890.png",
@@ -787,7 +787,7 @@
                 "goals_against": 54,
                 "goal_difference": -22
             },
-            "Udinese Calcio": {
+            "Udinese": {
                 "id": 115,
                 "position": 15,
                 "team_crest": "https://crests.football-data.org/115.png",
@@ -798,7 +798,7 @@
                 "goals_against": 53,
                 "goal_difference": -16
             },
-            "Empoli FC": {
+            "Empoli": {
                 "id": 445,
                 "position": 16,
                 "team_crest": "https://crests.football-data.org/445.png",
@@ -809,7 +809,7 @@
                 "goals_against": 54,
                 "goal_difference": -25
             },
-            "Cagliari Calcio": {
+            "Cagliari": {
                 "id": 104,
                 "position": 17,
                 "team_crest": "https://crests.football-data.org/104.png",
@@ -820,7 +820,7 @@
                 "goals_against": 68,
                 "goal_difference": -26
             },
-            "Frosinone Calcio": {
+            "Frosinone": {
                 "id": 470,
                 "position": 18,
                 "team_crest": "https://crests.football-data.org/470.png",
@@ -831,7 +831,7 @@
                 "goals_against": 69,
                 "goal_difference": -25
             },
-            "US Sassuolo Calcio": {
+            "Sassuolo": {
                 "id": 471,
                 "position": 19,
                 "team_crest": "https://crests.football-data.org/471.png",
@@ -842,7 +842,7 @@
                 "goals_against": 75,
                 "goal_difference": -32
             },
-            "US Salernitana 1919": {
+            "Salernitana": {
                 "id": 455,
                 "position": 20,
                 "team_crest": "https://crests.football-data.org/455.png",
@@ -858,7 +858,7 @@
     "Primera Division": {
         "id": 5,
         "standings": {
-            "Real Madrid CF": {
+            "Real Madrid": {
                 "id": 86,
                 "position": 1,
                 "team_crest": "https://crests.football-data.org/86.png",
@@ -869,7 +869,7 @@
                 "goals_against": 26,
                 "goal_difference": 61
             },
-            "FC Barcelona": {
+            "Barcelona": {
                 "id": 81,
                 "position": 2,
                 "team_crest": "https://crests.football-data.org/81.svg",
@@ -880,7 +880,7 @@
                 "goals_against": 44,
                 "goal_difference": 35
             },
-            "Girona FC": {
+            "Girona": {
                 "id": 298,
                 "position": 3,
                 "team_crest": "https://crests.football-data.org/298.png",
@@ -891,7 +891,7 @@
                 "goals_against": 46,
                 "goal_difference": 39
             },
-            "Club Atlético de Madrid": {
+            "Atletico Madrid": {
                 "id": 78,
                 "position": 4,
                 "team_crest": "https://crests.football-data.org/78.svg",
@@ -913,7 +913,7 @@
                 "goals_against": 37,
                 "goal_difference": 24
             },
-            "Real Sociedad de Fútbol": {
+            "Real Sociedad": {
                 "id": 92,
                 "position": 6,
                 "team_crest": "https://crests.football-data.org/92.svg",
@@ -924,7 +924,7 @@
                 "goals_against": 39,
                 "goal_difference": 12
             },
-            "Real Betis Balompié": {
+            "Real Betis": {
                 "id": 90,
                 "position": 7,
                 "team_crest": "https://crests.football-data.org/90.png",
@@ -935,7 +935,7 @@
                 "goals_against": 45,
                 "goal_difference": 3
             },
-            "Villarreal CF": {
+            "Villarreal": {
                 "id": 94,
                 "position": 8,
                 "team_crest": "https://crests.football-data.org/94.png",
@@ -946,7 +946,7 @@
                 "goals_against": 65,
                 "goal_difference": 0
             },
-            "Valencia CF": {
+            "Valencia": {
                 "id": 95,
                 "position": 9,
                 "team_crest": "https://crests.football-data.org/95.svg",
@@ -957,7 +957,7 @@
                 "goals_against": 45,
                 "goal_difference": -5
             },
-            "Deportivo Alavés": {
+            "Alaves": {
                 "id": 263,
                 "position": 10,
                 "team_crest": "https://crests.football-data.org/263.png",
@@ -968,7 +968,7 @@
                 "goals_against": 46,
                 "goal_difference": -10
             },
-            "CA Osasuna": {
+            "Osasuna": {
                 "id": 79,
                 "position": 11,
                 "team_crest": "https://crests.football-data.org/79.svg",
@@ -979,7 +979,7 @@
                 "goals_against": 56,
                 "goal_difference": -11
             },
-            "Getafe CF": {
+            "Getafe": {
                 "id": 82,
                 "position": 12,
                 "team_crest": "https://crests.football-data.org/82.png",
@@ -990,7 +990,7 @@
                 "goals_against": 54,
                 "goal_difference": -12
             },
-            "Sevilla FC": {
+            "Sevilla": {
                 "id": 559,
                 "position": 13,
                 "team_crest": "https://crests.football-data.org/559.svg",
@@ -1001,7 +1001,7 @@
                 "goals_against": 54,
                 "goal_difference": -6
             },
-            "RC Celta de Vigo": {
+            "Celta Vigo": {
                 "id": 558,
                 "position": 14,
                 "team_crest": "https://crests.football-data.org/558.svg",
@@ -1012,7 +1012,7 @@
                 "goals_against": 57,
                 "goal_difference": -11
             },
-            "RCD Mallorca": {
+            "Mallorca": {
                 "id": 89,
                 "position": 15,
                 "team_crest": "https://crests.football-data.org/89.png",
@@ -1023,7 +1023,7 @@
                 "goals_against": 44,
                 "goal_difference": -11
             },
-            "UD Las Palmas": {
+            "Las Palmas": {
                 "id": 275,
                 "position": 16,
                 "team_crest": "https://crests.football-data.org/275.png",
@@ -1034,7 +1034,7 @@
                 "goals_against": 47,
                 "goal_difference": -14
             },
-            "Rayo Vallecano de Madrid": {
+            "Rayo Vallecano": {
                 "id": 87,
                 "position": 17,
                 "team_crest": "https://crests.football-data.org/87.svg",
@@ -1045,7 +1045,7 @@
                 "goals_against": 48,
                 "goal_difference": -19
             },
-            "Cádiz CF": {
+            "Cadiz": {
                 "id": 264,
                 "position": 18,
                 "team_crest": "https://crests.football-data.org/264.png",
@@ -1056,7 +1056,7 @@
                 "goals_against": 55,
                 "goal_difference": -29
             },
-            "UD Almería": {
+            "Almeria": {
                 "id": 267,
                 "position": 19,
                 "team_crest": "https://crests.football-data.org/267.png",
