@@ -1,12 +1,12 @@
 runtime: python
 env: flex
-entrypoint: gunicorn -b :$PORT main:app
+entrypoint: gunicorn -b :$PORT app:app
 
 runtime_config:
   operating_system: ubuntu22
 
 env_variables:
-  DB_STRING: 'postgresql+psycopg2://postgres:Pozuelo1@/hatttrickdb?host=/cloudsql/hattrick-428116:us-central1:hatttrickdb'
+  DB_STRING: 'postgresql+psycopg2://cerda086:Pozuelo1@/hatttrickdb?host=/cloudsql/hattrick-428116:us-central1:hatttrickdb'
 
 beta_settings:
   cloud_sql_instances: hattrick-428116:us-central1:hatttrickdb
