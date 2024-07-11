@@ -3,13 +3,13 @@ from flask_cors import CORS
 import psycopg2
 
 app = Flask(__name__)
-CORS(app, origins=['http://localhost:3000'])
+CORS(app, origins=['http://34.45.23.119:hattrick-428116:us-central1:hatttrickdb'])
 
 # Database connection
 def get_db_connection():
     conn = psycopg2.connect(
-        host="localhost",
-        database="hatttrick_db"
+        host="34.45.23.119",
+        database="hatttrickdb"
     )
     return conn
 

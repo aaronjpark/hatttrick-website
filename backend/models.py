@@ -10,7 +10,7 @@ app.app_context().push()
 
 # Configuration
 USER = "cerda086"
-PASSWORD = "Pozuelo1"  
+PASSWORD = "Pozuelo1"
 PUBLIC_IP_ADDRESS = "34.45.23.119"
 DBNAME = "hatttrickdb"
 
