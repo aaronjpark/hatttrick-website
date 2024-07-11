@@ -1,8 +1,6 @@
-#!/usr/bin/env python3
-
 from flask import Flask, jsonify, render_template
 from flask_cors import CORS
-from models import app, db, League, Team, Player, Standing
+from backend.models import app, db, League, Team, Player, Standing
 
 CORS(app, origins=['http://34.45.23.119:hattrick-428116:us-central1:hatttrickdb'])
 
@@ -62,5 +60,5 @@ def get_player_by_name(name):
 
     return jsonify(player.serialize())
 
-if __name__ == '__app__':
+if __name__ == '__main__':
     app.run(debug=True)

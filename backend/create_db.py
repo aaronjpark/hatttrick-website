@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import json
-from models import app, db, League, Team, Player, Standing
+from backend.models import app, db, League, Team, Player, Standing
 
 def load_json(filename):
     with open(filename) as file:
@@ -63,7 +63,6 @@ def populate_standings():
 with app.app_context():
     db.drop_all()
     db.create_all()
-
     populate_leagues()
     populate_teams()
     populate_players()

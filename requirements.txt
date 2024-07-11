@@ -1,5 +1,11 @@
-Flask==2.0.2
-Flask-Cors==3.0.10
-Flask-SQLAlchemy==2.5.1
-psycopg2-binary==2.9.3
-gunicorn==20.1.0
+Click
+Flask
+Flask-SQLAlchemy
+Flask-Cors
+Jinja2
+pep8
+psycopg2
+requests
+SQLAlchemy
+gunicorn
+coverage
