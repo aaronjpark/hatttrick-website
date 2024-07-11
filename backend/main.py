@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, render_template
 from flask_cors import CORS
-from backend.models import app, db, League, Team, Player, Standing
+from backend.create_db import app, db, League, Team, Player, Standing
 
 CORS(app, origins=['http://34.45.23.119:hattrick-428116:us-central1:hatttrickdb'])
 
