@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.app_context().push()
 
 # Configuration
-USER = "cerda086"
+USER = "postgress"
 PASSWORD = "Pozuelo1"
 PUBLIC_IP_ADDRESS = "34.45.23.119"
 DBNAME = "hatttrickdb"
