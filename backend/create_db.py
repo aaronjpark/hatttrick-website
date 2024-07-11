@@ -9,6 +9,7 @@ def load_json(filename):
     return data
 
 def populate_leagues():
+    print(check)
     leagues = load_json('modelsInfo/leagues.json')
     for league_name, league_info in leagues.items():
         league_id = league_info['id']
