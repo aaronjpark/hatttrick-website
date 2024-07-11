@@ -59,10 +59,12 @@ def populate_standings():
             db.session.add(standing)
     db.session.commit()
 
-db.drop_all()
-db.create_all()
+# Use the app context explicitly to address the warning
+with app.app_context():
+    db.drop_all()
+    db.create_all()
 
-populate_leagues()
-populate_teams()
-populate_players()
-populate_standings()
+    populate_leagues()
+    populate_teams()
+    populate_players()
+    populate_standings()
