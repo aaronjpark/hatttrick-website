@@ -1,10 +1,11 @@
 import json
 import psycopg2
+import sqlalchemy
 
 def populate_players():
     # Database connection parameters
     conn = psycopg2.connect(
-        dbname='hatttrick_db',
+        dbname='hatttrickdb',
         host='localhost'
     )
     cur = conn.cursor()
