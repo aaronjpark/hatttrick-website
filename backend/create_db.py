@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import json
-from backend.models import app, db, League, Team, Player, Standing
+from backend.create_db import app, db, League, Team, Player, Standing
 
 def load_json(filename):
     with open(filename) as file:
