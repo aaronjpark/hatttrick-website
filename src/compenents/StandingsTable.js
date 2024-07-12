@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TableComponent = ({ data }) => {
   return (
-    <div className="table-container"> {/* Apply custom padding */}
-      <table className="table table-striped table-bordered text-center"> {/* Add text-center class */}
+    <div className="table-container">
+      <table className="table table-striped table-bordered text-center">
         <thead className="thead-dark">
           <tr>
             <th>Position</th>
@@ -22,7 +23,11 @@ const TableComponent = ({ data }) => {
           {Object.keys(data).map((teamName, index) => (
             <tr key={index}>
               <td>{data[teamName].position}</td>
-              <td>{teamName}</td>
+              <td>
+                <Link to={`/club/${teamName}`} className="link">
+                  {teamName}
+                </Link>
+              </td>
               <td>
                 <img src={data[teamName].team_crest} alt={teamName} className="team-crest" />
               </td>

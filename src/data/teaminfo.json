@@ -1,7 +1,7 @@
 [
     {
         "name": "Angel Cerda",
-        "role": "Fullstack",
+        "role": "Full-Stack",
         "img_src": "../teamimgs/Angel Cerda.JPEG",
         "gitlab_id": "ang3lCerda",
         "description": "I am currently a junios CS major at UT Austin. In my free time, I like to play videogames and listen to music.",
@@ -13,7 +13,7 @@
     },
     {
         "name": "Aaron Park",
-        "role": "Front-end",
+        "role": "Full-Stack",
         "img_src": "./teamimgs/Aaron Park.JPEG",
         "gitlab_id": "aaronjpark",
         "description": "I enjoy traveling and am aiming towards a career in AI and machine learning!",

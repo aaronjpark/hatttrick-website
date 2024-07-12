@@ -68,15 +68,21 @@ body, html {
 .player-card .card-text {
   margin-top: 5px;
   font-size: 1rem;
-  font-weight: normal;
-}
-
-/* Bold specific text */
-.player-card .card-text b {
-  font-weight: bold;
 }
 
 /* Link styles */
 .player-card .btn {
   margin-top: 10px;
+}
+
+
+.link {
+  text-decoration: none;
+  color: #000; /* Normal color */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.link:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
+  color: #000000; /* Change color on hover, if desired */
 }

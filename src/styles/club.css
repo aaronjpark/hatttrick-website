@@ -1,0 +1,73 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main container for the Club page */
+  .club-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles for the Club page */
+  .club-details-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid container for the club details */
+  .club-details-grid {
+    width: 100%;
+    max-width: 800px; /* Larger width for better visibility */
+  }
+  
+  /* Individual club card */
+  .club-details-card {
+    width: 100%;
+    margin: 0 auto; /* Centering the card */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .club-details-card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Larger image for better visibility */
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  /* Card body styles with increased padding and font size for better readability */
+  .club-details-card .card-body {
+    padding: 20px;
+  }
+  
+  .club-details-card .card-title {
+    margin-top: 10px;
+    font-size: 2rem; /* Larger font size for title */
+    font-weight: bold;
+  }
+  
+  .club-details-card .card-text {
+    margin-top: 10px;
+    font-size: 1.2rem; /* Larger text for readability */
+  }
+  
+  /* clubs.css */
+  .link {
+    text-decoration: none;
+    color: #000; /* Normal color */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+
+  .link:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    color: #000000; /* Change color on hover, if desired */
+  }

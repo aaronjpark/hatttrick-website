@@ -75,4 +75,4 @@ def get_team_details(league_id, team_id):
         return jsonify({"error": f"Team with ID '{team_id}' not found in League with ID '{league_id}'."}), 404
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5002)

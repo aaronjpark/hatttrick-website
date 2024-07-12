@@ -1,0 +1,49 @@
+{
+  "Leagues": [
+    {
+      "League": "Premier League",
+      "Country": "England",
+      "Current Champion": "Manchester City",
+      "Top Scorer": "E. Haaland",
+      "Year Founded": 1992,
+      "Games Per Season": 38,
+      "Img": "./Assets/premier league.png"
+    },
+    {
+      "League": "Primera Division",
+      "Country": "Spain",
+      "Current Champion": "Real Madrid",
+      "Top Scorer": "A. Sørloth",
+      "Year Founded": 1929,
+      "Games Per Season": 38,
+      "Img": "./Assets/laligalogo.png"
+    },
+    {
+      "League": "Bundesliga",
+      "Country": "Germany",
+      "Current Champion": "Bayern Leverkusen",
+      "Top Scorer": "H. Kane",
+      "Year Founded": 1962,
+      "Games Per Season": 34,
+      "Img": "./Assets/bundesligalogo.png"
+    },
+    {
+      "League": "Serie A",
+      "Country": "Italy",
+      "Current Champion": "Inter Milan",
+      "Top Scorer": "Lautaro Martínez",
+      "Year Founded": 1929,
+      "Games Per Season": 38,
+      "Img": "./Assets/serieA.jpg"
+    },
+    {
+      "League": "Ligue 1",
+      "Country": "France",
+      "Current Champion": "Paris Saint-Germain F.C.",
+      "Top Scorer": "A. Lacazette",
+      "Year Founded": 1932,
+      "Games Per Season": 38,
+      "Img": "./Assets/ligue-1-logo.png"
+    }
+  ]
+}

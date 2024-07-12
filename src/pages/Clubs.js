@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/clubs.css';
 
 function Clubs() {
@@ -7,7 +8,7 @@ function Clubs() {
   const perPage = 12; // Number of teams per page
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/teams')
+    fetch('http://127.0.0.1:5001/teams')
       .then(response => response.json())
       .then(data => {
         console.log('Fetched data:', data); // Debugging to see fetched data structure
@@ -62,8 +63,14 @@ function Clubs() {
                 alt={teamName}
               />
               <div className="card-body">
-                <h3 className="card-title">{teamName}</h3>
-                <p className="card-text">League: {league}</p>
+                <h3 className="card-title">
+                  <Link to={`/club/${encodeURIComponent(teamName)}`} className="link">
+                    {teamName}
+                  </Link>
+                </h3>
+                <p className="card-text">
+                  League: <Link to={`/league/${encodeURIComponent(league)}`} className="link">{league}</Link>
+                </p>
                 <p className="card-text">Coach: {team.coach}</p>
                 <p className="card-text">Founded: {team.founded}</p>
                 <p className="card-text">Venue: {team.venue}</p>

@@ -1,0 +1,48 @@
+.teammates-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px; 
+    margin: 0 auto; /* Center the container */
+    max-width: 80%; /* Limit the maximum width */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Adds shadow for better visibility */
+    background-color: #f9f9f9; /* Light background for the container */
+  }
+  
+  .teammates-container h3 {
+    width: 100%; /* Full width to separate from cards */
+    text-align: center; /* Center the text */
+    color: #333; /* Darker text color for contrast */
+    margin-bottom: 15px; /* Space below the header */
+  }
+  
+  .teammate-card {
+    flex: 0 0 auto;
+    width: 180px; /* Smaller card width */
+    margin-right: 15px; /* Space between cards */
+    text-align: center;
+  }
+  
+  .teammate-photo {
+    width: 100%;
+    height: 160px; /* Smaller photo height */
+    object-fit: cover;
+  }
+  
+  .teammate-info h4 a {
+    color: inherit; /* Use the same color as the parent element */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Optional: if you want the name to be bold */
+  }
+
+  .link {
+    text-decoration: none;
+    color: #000; /* Normal color */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  .link:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    color: #000000; /* Change color on hover, if desired */
+  }
+  
+  
