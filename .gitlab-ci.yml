@@ -56,5 +56,5 @@ deploy:
     entrypoint: ['']
   script:
     - kubectl config get-contexts
-    - kubectl config use-context diegocampos2/cs373-idb:kubernetes-agent:kubernetes-agent
+    - kubectl config use-context diegocampos2/cs373-idb:kubernetes-agent
     - kubectl get pods
