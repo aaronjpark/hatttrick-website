@@ -48,6 +48,9 @@ deploy-job:      # This job runs in the deploy stage.
     - echo "Deploying application..."
     - echo "Application successfully deployed."
 
+include:
+- template: Auto-DevOps.gitlab-ci.yml
+
 deploy:
   variables:
     KUBE_CONTEXT: diegocampos2/cs373-idb:kubernetes-agent:kubernetes-agent
