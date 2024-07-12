@@ -2,7 +2,7 @@
     "Premier League": {
         "id": 1,
         "teams": {
-            "Arsenal ": {
+            "Arsenal FC": {
                 "id": 57,
                 "address": "75 Drayton Park London N5 1BU",
                 "crest": "https://crests.football-data.org/57.png",
@@ -12,7 +12,7 @@
                 "coach": "Mikel Arteta",
                 "area": "England"
             },
-            "Aston Villa": {
+            "Aston Villa FC": {
                 "id": 58,
                 "address": "Villa Park Birmingham B6 6HE",
                 "crest": "https://crests.football-data.org/58.png",
@@ -22,7 +22,7 @@
                 "coach": "Unai Emery",
                 "area": "England"
             },
-            "Chelsea": {
+            "Chelsea FC": {
                 "id": 61,
                 "address": "Fulham Road London SW6 1HS",
                 "crest": "https://crests.football-data.org/61.png",
@@ -32,7 +32,7 @@
                 "coach": "Enzo Maresca",
                 "area": "England"
             },
-            "Everton": {
+            "Everton FC": {
                 "id": 62,
                 "address": "Goodison Park Liverpool L4 4EL",
                 "crest": "https://crests.football-data.org/62.png",
@@ -42,7 +42,7 @@
                 "coach": "Sean Dyche",
                 "area": "England"
             },
-            "Fulham": {
+            "Fulham FC": {
                 "id": 63,
                 "address": "Craven Cottage, Stevenage Road London SW6 6HH",
                 "crest": "https://crests.football-data.org/63.svg",
@@ -54,13 +54,14 @@
             },
             "Liverpool": {
                 "id": 64,
-                "address": "Anfield Road Liverpool L4 0TH",
-                "crest": "https://crests.football-data.org/64.png",
-                "website": "http://www.liverpoolfc.tv",
-                "venue": "Anfield",
-                "founded": 1892,
-                "coach": "Arne Slot",
-                "area": "England"
+                "position": 3,
+                "team_crest": "https://crests.football-data.org/64.png",
+                "points": 82,
+                "games_won": 24,
+                "games_lost": 4,
+                "goals_for": 86,
+                "goals_against": 41,
+                "goal_difference": 45
             },
             "Manchester City": {
                 "id": 65,
@@ -92,17 +93,18 @@
                 "coach": "Eddie Howe",
                 "area": "England"
             },
-            "Tottenham": {
+            "Tottenham Hotspur FC": {
                 "id": 73,
-                "address": "Bill Nicholson Way, 748 High Road London N17 0AP",
-                "crest": "https://crests.football-data.org/73.png",
-                "website": "http://www.tottenhamhotspur.com",
-                "venue": "Tottenham Hotspur Stadium",
-                "founded": 1882,
-                "coach": "Ange Postecoglou",
-                "area": "England"
+                "position": 5,
+                "team_crest": "https://crests.football-data.org/73.png",
+                "points": 66,
+                "games_won": 20,
+                "games_lost": 12,
+                "goals_for": 74,
+                "goals_against": 61,
+                "goal_difference": 13
             },
-            "Wolves": {
+            "Wolverhampton Wanderers FC": {
                 "id": 76,
                 "address": "Waterloo Road Wolverhampton WV1 4QR",
                 "crest": "https://crests.football-data.org/76.svg",
@@ -112,7 +114,7 @@
                 "coach": "Gary O'Neil",
                 "area": "England"
             },
-            "Burnley": {
+            "Burnley FC": {
                 "id": 328,
                 "address": "Harry Potts Way Burnley BB10 4BX",
                 "crest": "https://crests.football-data.org/328.png",
@@ -122,7 +124,7 @@
                 "coach": "Craig Bellamy",
                 "area": "England"
             },
-            "Nottingham Forest": {
+            "Nottingham Forest FC": {
                 "id": 351,
                 "address": "Pavilion Road, West Bridgeford Nottingham NG2 5GJ",
                 "crest": "https://crests.football-data.org/351.png",
@@ -134,15 +136,16 @@
             },
             "Crystal Palace": {
                 "id": 354,
-                "address": "Whitehorse Lane London SE25 6PU",
-                "crest": "https://crests.football-data.org/354.png",
-                "website": "http://www.cpfc.co.uk",
-                "venue": "Selhurst Park",
-                "founded": 1905,
-                "coach": "Oliver Glasner",
-                "area": "England"
+                "position": 10,
+                "team_crest": "https://crests.football-data.org/354.png",
+                "points": 49,
+                "games_won": 13,
+                "games_lost": 15,
+                "goals_for": 57,
+                "goals_against": 58,
+                "goal_difference": -1
             },
-            "Sheffield Utd": {
+            "Sheffield United FC": {
                 "id": 356,
                 "address": "Bramall Lane Sheffield, Yorkshire S2 4SU",
                 "crest": "https://crests.football-data.org/356.svg",
@@ -152,7 +155,7 @@
                 "coach": "Chris Wilder",
                 "area": "England"
             },
-            "Luton": {
+            "Luton Town FC": {
                 "id": 389,
                 "address": "1 Maple Road Luton LU4 8AW",
                 "crest": "https://crests.football-data.org/389.png",
@@ -162,7 +165,7 @@
                 "coach": "Rob Edwards",
                 "area": "England"
             },
-            "Brighton": {
+            "Brighton & Hove Albion FC": {
                 "id": 397,
                 "address": "44 North Road Brighton & Hove BN1 1YR",
                 "crest": "https://crests.football-data.org/397.svg",
@@ -174,15 +177,16 @@
             },
             "Brentford": {
                 "id": 402,
-                "address": "Braemar Road Brentford TW8 0NT",
-                "crest": "https://crests.football-data.org/402.png",
-                "website": "http://www.brentfordfc.co.uk",
-                "venue": "Griffin Park",
-                "founded": 1889,
-                "coach": "Thomas Frank",
-                "area": "England"
+                "position": 16,
+                "team_crest": "https://crests.football-data.org/402.png",
+                "points": 39,
+                "games_won": 10,
+                "games_lost": 19,
+                "goals_for": 56,
+                "goals_against": 65,
+                "goal_difference": -9
             },
-            "West Ham": {
+            "West Ham United FC": {
                 "id": 563,
                 "address": "Queen Elizabeth Olympic Park, London London E20 2ST",
                 "crest": "https://crests.football-data.org/563.png",
@@ -192,7 +196,7 @@
                 "coach": "Julen Lopetegui",
                 "area": "England"
             },
-            "Bournemouth": {
+            "AFC Bournemouth": {
                 "id": 1044,
                 "address": "Dean Court, Kings Park Bournemouth BH7 7AF",
                 "crest": "https://crests.football-data.org/1044.png",
@@ -207,7 +211,7 @@
     "Ligue 1": {
         "id": 2,
         "teams": {
-            "Toulouse": {
+            "Toulouse FC": {
                 "id": 511,
                 "address": "1 allée Gabriel Biénèsm, BP 54023 Toulouse 31028",
                 "crest": "https://crests.football-data.org/511.png",
@@ -237,7 +241,7 @@
                 "coach": "Roberto De Zerbi",
                 "area": "France"
             },
-            "Montpellier": {
+            "Montpellier HSC": {
                 "id": 518,
                 "address": "Domaine de Grammont CS 79041 Montpellier 34967",
                 "crest": "https://crests.football-data.org/518.png",
@@ -249,35 +253,38 @@
             },
             "Lille": {
                 "id": 521,
-                "address": "Grand Rue 59, 780 Camphin-en-Pévèle Lille null",
-                "crest": "https://crests.football-data.org/521.svg",
-                "website": "http://www.losc.fr",
-                "venue": "Stade Pierre-Mauroy",
-                "founded": 1944,
-                "coach": "Bruno Génésio",
-                "area": "France"
+                "position": 4,
+                "team_crest": "https://crests.football-data.org/521.svg",
+                "points": 59,
+                "games_won": 16,
+                "games_lost": 7,
+                "goals_for": 52,
+                "goals_against": 34,
+                "goal_difference": 18
             },
             "Nice": {
                 "id": 522,
-                "address": "35, avenue du Ray Nice 06100",
-                "crest": "https://crests.football-data.org/522.png",
-                "website": "http://www.ogcnice.com",
-                "venue": "Stade de Nice",
-                "founded": 1904,
-                "coach": null,
-                "area": "France"
+                "position": 5,
+                "team_crest": "https://crests.football-data.org/522.png",
+                "points": 55,
+                "games_won": 15,
+                "games_lost": 9,
+                "goals_for": 40,
+                "goals_against": 29,
+                "goal_difference": 11
             },
             "Lyon": {
                 "id": 523,
-                "address": "350 avenue Jean Jaurès Lyon 69007",
-                "crest": "https://crests.football-data.org/523.svg",
-                "website": "http://www.olweb.fr",
-                "venue": "Groupama Stadium",
-                "founded": 1896,
-                "coach": "Pierre Sage",
-                "area": "France"
+                "position": 6,
+                "team_crest": "https://crests.football-data.org/523.svg",
+                "points": 53,
+                "games_won": 16,
+                "games_lost": 13,
+                "goals_for": 49,
+                "goals_against": 55,
+                "goal_difference": -6
             },
-            "Paris Saint Germain": {
+            "Paris Saint-Germain FC": {
                 "id": 524,
                 "address": "24, rue de Commandant Guibaud Paris 7501",
                 "crest": "https://crests.football-data.org/524.png",
@@ -287,7 +294,7 @@
                 "coach": "Luis Enrique",
                 "area": "France"
             },
-            "Lorient": {
+            "FC Lorient": {
                 "id": 525,
                 "address": "Tade Yves Allainmat<br>Rue Du Tour Des Portes, BP 404 Lorient 56104",
                 "crest": "https://crests.football-data.org/525.png",
@@ -299,25 +306,38 @@
             },
             "Rennes": {
                 "id": 529,
-                "address": "La Piverdière - Chemin de la Taupinais CS 5390 Rennes 35039",
-                "crest": "https://crests.football-data.org/529.png",
-                "website": "http://www.staderennais.com",
-                "venue": "Roazhon Park",
-                "founded": 1901,
-                "coach": "Julien Stéphan",
-                "area": "France"
+                "position": 10,
+                "team_crest": "https://crests.football-data.org/529.png",
+                "points": 46,
+                "games_won": 12,
+                "games_lost": 12,
+                "goals_for": 53,
+                "goals_against": 46,
+                "goal_difference": 7
             },
-            "Le Havre AC": {
-                "id": 533,
-                "address": "2 route du château BP 90 Saint-Laurent-de-Brèvedent 76700",
-                "crest": "https://crests.football-data.org/533.png",
-                "website": "http://www.hac-foot.com",
-                "venue": "Stade Océane",
-                "founded": 1872,
-                "coach": "Didier Digard",
-                "area": "France"
+            "Toulouse": {
+                "id": 511,
+                "position": 11,
+                "team_crest": "https://crests.football-data.org/511.png",
+                "points": 43,
+                "games_won": 11,
+                "games_lost": 13,
+                "goals_for": 42,
+                "goals_against": 46,
+                "goal_difference": -4
             },
-            "Clermont Foot": {
+            "Montpellier": {
+                "id": 518,
+                "position": 12,
+                "team_crest": "https://crests.football-data.org/518.png",
+                "points": 42,
+                "games_won": 10,
+                "games_lost": 12,
+                "goals_for": 43,
+                "goals_against": 48,
+                "goal_difference": -5
+            },
+            "Clermont Foot 63": {
                 "id": 541,
                 "address": "Rue Adrien Mabrut Clermont-Ferrand 63100",
                 "crest": "https://crests.football-data.org/541.svg",
@@ -329,15 +349,16 @@
             },
             "Nantes": {
                 "id": 543,
-                "address": "Centre Sportif José Arribas, La Jonelière Nantes 44240",
-                "crest": "https://crests.football-data.org/543.png",
-                "website": "http://www.fcnantes.com",
-                "venue": "Stade de la Beaujoire - Louis Fonteneau",
-                "founded": 1943,
-                "coach": "Antoine Kombouare",
-                "area": "France"
+                "position": 14,
+                "team_crest": "https://crests.football-data.org/543.png",
+                "points": 33,
+                "games_won": 9,
+                "games_lost": 19,
+                "goals_for": 30,
+                "goals_against": 55,
+                "goal_difference": -25
             },
-            "Metz": {
+            "FC Metz": {
                 "id": 545,
                 "address": "3, allée Saint Symphonien, BP 40292 Metz 5700",
                 "crest": "https://crests.football-data.org/545.svg",
@@ -347,7 +368,7 @@
                 "coach": "László Bölöni",
                 "area": "France"
             },
-            "Lens": {
+            "Racing Club de Lens": {
                 "id": 546,
                 "address": "33 rue Arthur Lamendin Avion 62210",
                 "crest": "https://crests.football-data.org/546.png",
@@ -357,7 +378,7 @@
                 "coach": "Will Still",
                 "area": "France"
             },
-            "Reims": {
+            "Stade de Reims": {
                 "id": 547,
                 "address": "26 rue Robert-Fulton Reims 51100",
                 "crest": "https://crests.football-data.org/547.png",
@@ -367,7 +388,7 @@
                 "coach": "Luka Elsner",
                 "area": "France"
             },
-            "Monaco": {
+            "AS Monaco FC": {
                 "id": 548,
                 "address": "Avenue des Castellans Monaco 98000",
                 "crest": "https://crests.football-data.org/548.png",
@@ -377,7 +398,7 @@
                 "coach": "Adi Hütter",
                 "area": "Monaco"
             },
-            "Strasbourg": {
+            "RC Strasbourg Alsace": {
                 "id": 576,
                 "address": "12 Rue Extenwoerth Strasbourg 67000",
                 "crest": "https://crests.football-data.org/576.png",
@@ -392,7 +413,7 @@
     "Bundesliga": {
         "id": 3,
         "teams": {
-            "FC Köln": {
+            "1. FC Köln": {
                 "id": 1,
                 "address": "Franz-Kremer-Allee 1 Köln 50937",
                 "crest": "https://crests.football-data.org/1.png",
@@ -402,7 +423,7 @@
                 "coach": "Gerhard Struber",
                 "area": "Germany"
             },
-            "1899 Hoffenheim": {
+            "TSG 1899 Hoffenheim": {
                 "id": 2,
                 "address": "Horrenberger Straße 58 Zuzenhausen 74939",
                 "crest": "https://crests.football-data.org/2.png",
@@ -412,7 +433,7 @@
                 "coach": "Pellegrino Matarazzo",
                 "area": "Germany"
             },
-            "Bayer Leverkusen": {
+            "Bayer 04 Leverkusen": {
                 "id": 3,
                 "address": "Bismarckstr. 122-124 Leverkusen 51373",
                 "crest": "https://crests.football-data.org/3.png",
@@ -432,7 +453,7 @@
                 "coach": "Nuri Şahin",
                 "area": "Germany"
             },
-            "Bayern Munchen": {
+            "FC Bayern München": {
                 "id": 5,
                 "address": "Säbenerstr. 51 München 81547",
                 "crest": "https://crests.football-data.org/5.svg",
@@ -444,35 +465,93 @@
             },
             "VfB Stuttgart": {
                 "id": 10,
-                "address": "Mercedesstraße 109 Stuttgart 70372",
-                "crest": "https://crests.football-data.org/10.png",
-                "website": "http://www.vfb.de",
-                "venue": "Mercedes-Benz Arena",
-                "founded": 1893,
-                "coach": "Sebastian Hoeneß",
-                "area": "Germany"
+                "position": 2,
+                "team_crest": "https://crests.football-data.org/10.png",
+                "points": 73,
+                "games_won": 23,
+                "games_lost": 7,
+                "goals_for": 78,
+                "goals_against": 39,
+                "goal_difference": 39
             },
-            "VfL Wolfsburg": {
-                "id": 11,
-                "address": "In den Allerwiesen 1 Wolfsburg 38446",
-                "crest": "https://crests.football-data.org/11.svg",
-                "website": "http://www.vfl-wolfsburg.de",
-                "venue": "Volkswagen Arena",
-                "founded": 1945,
-                "coach": "Ralph Hasenhüttl",
-                "area": "Germany"
+            "Bayern M\u00fcnchen": {
+                "id": 5,
+                "position": 3,
+                "team_crest": "https://crests.football-data.org/5.svg",
+                "points": 72,
+                "games_won": 23,
+                "games_lost": 8,
+                "goals_for": 94,
+                "goals_against": 45,
+                "goal_difference": 49
+            },
+            "RB Leipzig": {
+                "id": 721,
+                "position": 4,
+                "team_crest": "https://crests.football-data.org/721.png",
+                "points": 65,
+                "games_won": 19,
+                "games_lost": 7,
+                "goals_for": 77,
+                "goals_against": 39,
+                "goal_difference": 38
+            },
+            "Borussia Dortmund": {
+                "id": 4,
+                "position": 5,
+                "team_crest": "https://crests.football-data.org/4.png",
+                "points": 63,
+                "games_won": 18,
+                "games_lost": 7,
+                "goals_for": 68,
+                "goals_against": 43,
+                "goal_difference": 25
+            },
+            "Eintracht Frankfurt": {
+                "id": 19,
+                "position": 6,
+                "team_crest": "https://crests.football-data.org/19.svg",
+                "points": 47,
+                "games_won": 11,
+                "games_lost": 9,
+                "goals_for": 51,
+                "goals_against": 50,
+                "goal_difference": 1
+            },
+            "1899 Hoffenheim": {
+                "id": 2,
+                "position": 7,
+                "team_crest": "https://crests.football-data.org/2.png",
+                "points": 46,
+                "games_won": 13,
+                "games_lost": 14,
+                "goals_for": 66,
+                "goals_against": 66,
+                "goal_difference": 0
+            },
+            "FC Heidenheim": {
+                "id": 44,
+                "position": 8,
+                "team_crest": "https://crests.football-data.org/44.svg",
+                "points": 42,
+                "games_won": 10,
+                "games_lost": 12,
+                "goals_for": 50,
+                "goals_against": 55,
+                "goal_difference": -5
             },
             "Werder Bremen": {
                 "id": 12,
-                "address": "Franz-Böhmert-Str. 1c Bremen 28205",
-                "crest": "https://crests.football-data.org/12.svg",
-                "website": "http://www.werder.de",
-                "venue": "Weserstadion",
-                "founded": 1899,
-                "coach": "Ole Werner",
-                "area": "Germany"
+                "position": 9,
+                "team_crest": "https://crests.football-data.org/12.svg",
+                "points": 42,
+                "games_won": 11,
+                "games_lost": 14,
+                "goals_for": 48,
+                "goals_against": 54,
+                "goal_difference": -6
             },
-            "FSV Mainz 05": {
+            "1. FSV Mainz 05": {
                 "id": 15,
                 "address": "Dr.-Martin-Luther-King-Weg 20 Mainz 55122",
                 "crest": "https://crests.football-data.org/15.png",
@@ -484,65 +563,71 @@
             },
             "FC Augsburg": {
                 "id": 16,
-                "address": "Donauwörther Straße 170 Augsburg 86154",
-                "crest": "https://crests.football-data.org/16.png",
-                "website": "http://www.fcaugsburg.de",
-                "venue": "WWK Arena",
-                "founded": 1907,
-                "coach": "Jess Thorup",
-                "area": "Germany"
+                "position": 11,
+                "team_crest": "https://crests.football-data.org/16.png",
+                "points": 39,
+                "games_won": 10,
+                "games_lost": 15,
+                "goals_for": 50,
+                "goals_against": 60,
+                "goal_difference": -10
             },
-            "SC Freiburg": {
-                "id": 17,
-                "address": "Schwarzwaldstraße 193 Freiburg 79117",
-                "crest": "https://crests.football-data.org/17.svg",
-                "website": "http://www.scfreiburg.com",
-                "venue": "Schwarzwald-Stadion",
-                "founded": 1912,
-                "coach": "Julian Schuster",
-                "area": "Germany"
+            "VfL Wolfsburg": {
+                "id": 11,
+                "position": 12,
+                "team_crest": "https://crests.football-data.org/11.svg",
+                "points": 37,
+                "games_won": 10,
+                "games_lost": 17,
+                "goals_for": 41,
+                "goals_against": 56,
+                "goal_difference": -15
+            },
+            "FSV Mainz 05": {
+                "id": 15,
+                "position": 13,
+                "team_crest": "https://crests.football-data.org/15.png",
+                "points": 35,
+                "games_won": 7,
+                "games_lost": 13,
+                "goals_for": 39,
+                "goals_against": 51,
+                "goal_difference": -12
             },
             "Borussia Monchengladbach": {
                 "id": 18,
-                "address": "Hennes-Weisweiler-Allee 1 Mönchengladbach 41179",
-                "crest": "https://crests.football-data.org/18.png",
-                "website": "http://www.borussia.de",
-                "venue": "Stadion im Borussia-Park",
-                "founded": 1900,
-                "coach": "Gerardo Seoane",
-                "area": "Germany"
-            },
-            "Eintracht Frankfurt": {
-                "id": 19,
-                "address": "Mörfelder Landstraße 362 Frankfurt am Main 60528",
-                "crest": "https://crests.football-data.org/19.svg",
-                "website": "http://www.eintracht.de",
-                "venue": "Deutsche Bank Park",
-                "founded": 1899,
-                "coach": "Dino Toppmöller",
-                "area": "Germany"
+                "position": 14,
+                "team_crest": "https://crests.football-data.org/18.png",
+                "points": 34,
+                "games_won": 7,
+                "games_lost": 14,
+                "goals_for": 56,
+                "goals_against": 67,
+                "goal_difference": -11
             },
             "Union Berlin": {
                 "id": 28,
-                "address": "An der Wuhlheide 263 Berlin 12555",
-                "crest": "https://crests.football-data.org/28.svg",
-                "website": "http://www.fc-union-berlin.de",
-                "venue": "Stadion An der Alten Försterei",
-                "founded": 1906,
-                "coach": "Bo Svensson",
-                "area": "Germany"
+                "position": 15,
+                "team_crest": "https://crests.football-data.org/28.svg",
+                "points": 33,
+                "games_won": 9,
+                "games_lost": 19,
+                "goals_for": 33,
+                "goals_against": 58,
+                "goal_difference": -25
             },
             "Vfl Bochum": {
                 "id": 36,
-                "address": "Castroper Straße 145 Bochum 44791",
-                "crest": "https://crests.football-data.org/36.png",
-                "website": "http://www.vfl-bochum.de",
-                "venue": "Vonovia Ruhrstadion",
-                "founded": 1849,
-                "coach": "Peter Zeidler",
-                "area": "Germany"
+                "position": 16,
+                "team_crest": "https://crests.football-data.org/36.png",
+                "points": 33,
+                "games_won": 7,
+                "games_lost": 15,
+                "goals_for": 42,
+                "goals_against": 74,
+                "goal_difference": -32
             },
-            "FC Heidenheim": {
+            "1. FC Heidenheim 1846": {
                 "id": 44,
                 "address": "Schloßhaustraße 162 Heidenheim 89522",
                 "crest": "https://crests.football-data.org/44.svg",
@@ -554,29 +639,31 @@
             },
             "SV Darmstadt 98": {
                 "id": 55,
-                "address": "Nieder-Ramstädter-Straße 170 Darmstadt 64285",
-                "crest": "https://crests.football-data.org/55.png",
-                "website": "http://www.sv98.de",
-                "venue": "Merck-Stadion am Böllenfalltor",
-                "founded": 1898,
-                "coach": "Torsten Lieberknecht",
-                "area": "Germany"
-            },
-            "RB Leipzig": {
-                "id": 721,
-                "address": "Neumarkt 29-33 Leipzig 04109",
-                "crest": "https://crests.football-data.org/721.png",
-                "website": "http://www.dierotenbullen.com",
-                "venue": "Red Bull Arena",
-                "founded": 2009,
-                "coach": "Marco Rose",
-                "area": "Germany"
+                "position": 18,
+                "team_crest": "https://crests.football-data.org/55.png",
+                "points": 17,
+                "games_won": 3,
+                "games_lost": 23,
+                "goals_for": 30,
+                "goals_against": 86,
+                "goal_difference": -56
             }
         }
     },
     "Serie A": {
         "id": 4,
-        "teams": {
+        "standings": {
+            "Inter": {
+                "id": 108,
+                "position": 1,
+                "team_crest": "https://crests.football-data.org/108.png",
+                "points": 94,
+                "games_won": 29,
+                "games_lost": 2,
+                "goals_for": 89,
+                "goals_against": 22,
+                "goal_difference": 67
+            },
             "AC Milan": {
                 "id": 98,
                 "address": "Via Filippo Turati 3 Milano 20121",
@@ -587,7 +674,7 @@
                 "coach": null,
                 "area": "Italy"
             },
-            "Fiorentina": {
+            "ACF Fiorentina": {
                 "id": 99,
                 "address": "Viale Manfredo Fanti 4 Firenze 50137",
                 "crest": "https://crests.football-data.org/99.png",
@@ -599,15 +686,16 @@
             },
             "AS Roma": {
                 "id": 100,
-                "address": "Via di Trigoria km. 3,600 Roma 00128",
-                "crest": "https://crests.football-data.org/100.png",
-                "website": "http://www.asroma.it",
-                "venue": "Stadio Olimpico",
-                "founded": 1927,
-                "coach": null,
-                "area": "Italy"
+                "position": 6,
+                "team_crest": "https://crests.football-data.org/100.png",
+                "points": 63,
+                "games_won": 18,
+                "games_lost": 11,
+                "goals_for": 65,
+                "goals_against": 46,
+                "goal_difference": 19
             },
-            "Atalanta": {
+            "Atalanta BC": {
                 "id": 102,
                 "address": "Corso Europa, 46, Zingonia Ciserano 24040",
                 "crest": "https://crests.football-data.org/102.png",
@@ -617,7 +705,7 @@
                 "coach": null,
                 "area": "Italy"
             },
-            "Bologna": {
+            "Bologna FC 1909": {
                 "id": 103,
                 "address": "Via Casteldebole 10 Bologna 40132",
                 "crest": "https://crests.football-data.org/103.png",
@@ -627,7 +715,7 @@
                 "coach": null,
                 "area": "Italy"
             },
-            "Cagliari": {
+            "Cagliari Calcio": {
                 "id": 104,
                 "address": "Viale la Plaia 15 Cagliari 09123",
                 "crest": "https://crests.football-data.org/104.png",
@@ -639,15 +727,16 @@
             },
             "Genoa": {
                 "id": 107,
-                "address": "Via Ronchi, 67 Genova 16155",
-                "crest": "https://crests.football-data.org/107.png",
-                "website": "http://www.genoacfc.it",
-                "venue": "Stadio Comunale Luigi Ferraris",
-                "founded": 1893,
-                "coach": null,
-                "area": "Italy"
+                "position": 11,
+                "team_crest": "https://crests.football-data.org/107.png",
+                "points": 49,
+                "games_won": 12,
+                "games_lost": 13,
+                "goals_for": 45,
+                "goals_against": 45,
+                "goal_difference": 0
             },
-            "Inter": {
+            "FC Internazionale Milano": {
                 "id": 108,
                 "address": "Corso Vittorio Emanuele II 9 Milano 20122",
                 "crest": "https://crests.football-data.org/108.png",
@@ -657,7 +746,7 @@
                 "coach": null,
                 "area": "Italy"
             },
-            "Juventus": {
+            "Juventus FC": {
                 "id": 109,
                 "address": "Corso Galileo Ferraris, 32 Torino 10128",
                 "crest": "https://crests.football-data.org/109.png",
@@ -667,7 +756,7 @@
                 "coach": null,
                 "area": "Italy"
             },
-            "Lazio": {
+            "SS Lazio": {
                 "id": 110,
                 "address": "Via di Santa Cornelia, 1000 Formello 00060",
                 "crest": "https://crests.football-data.org/110.png",
@@ -677,7 +766,7 @@
                 "coach": null,
                 "area": "Italy"
             },
-            "Napoli": {
+            "SSC Napoli": {
                 "id": 113,
                 "address": "Centro Tecnico di Castel Volturno, Via S.S. Domitana, Km 35 Castel Volturno 81030",
                 "crest": "https://crests.football-data.org/113.png",
@@ -689,25 +778,27 @@
             },
             "Udinese": {
                 "id": 115,
-                "address": "Via Agostino e Angelo Candolini 2 Udine 33100",
-                "crest": "https://crests.football-data.org/115.png",
-                "website": "http://www.udinese.it",
-                "venue": "Dacia Arena",
-                "founded": 1896,
-                "coach": null,
-                "area": "Italy"
+                "position": 15,
+                "team_crest": "https://crests.football-data.org/115.png",
+                "points": 37,
+                "games_won": 6,
+                "games_lost": 13,
+                "goals_for": 37,
+                "goals_against": 53,
+                "goal_difference": -16
             },
             "Empoli": {
                 "id": 445,
-                "address": "Piazza Matteotti Empoli 50053",
-                "crest": "https://crests.football-data.org/445.png",
-                "website": "http://www.empolicalcio.net",
-                "venue": "Stadio Carlo Castellani",
-                "founded": 1920,
-                "coach": null,
-                "area": "Italy"
+                "position": 16,
+                "team_crest": "https://crests.football-data.org/445.png",
+                "points": 36,
+                "games_won": 9,
+                "games_lost": 20,
+                "goals_for": 29,
+                "goals_against": 54,
+                "goal_difference": -25
             },
-            "Verona": {
+            "Hellas Verona FC": {
                 "id": 450,
                 "address": "Via Evangelista Torricelli, 37 Verona 37136",
                 "crest": "https://crests.football-data.org/450.png",
@@ -717,7 +808,7 @@
                 "coach": null,
                 "area": "Italy"
             },
-            "Salernitana": {
+            "US Salernitana 1919": {
                 "id": 455,
                 "address": "Via San Leonardo, 51 Salerno 84131",
                 "crest": "https://crests.football-data.org/455.png",
@@ -729,13 +820,14 @@
             },
             "Frosinone": {
                 "id": 470,
-                "address": "Via Marittima, 2 Frosinone 03100",
-                "crest": "https://crests.football-data.org/470.png",
-                "website": "http://www.frosinonecalcio.com",
-                "venue": "Stadio Benito Stirpe",
-                "founded": 1912,
-                "coach": null,
-                "area": "Italy"
+                "position": 18,
+                "team_crest": "https://crests.football-data.org/470.png",
+                "points": 35,
+                "games_won": 8,
+                "games_lost": 19,
+                "goals_for": 44,
+                "goals_against": 69,
+                "goal_difference": -25
             },
             "Sassuolo": {
                 "id": 471,
@@ -747,7 +839,7 @@
                 "coach": null,
                 "area": "Italy"
             },
-            "Torino": {
+            "Torino FC": {
                 "id": 586,
                 "address": "Via Arcivescovado 1 Torino 10122",
                 "crest": "https://crests.football-data.org/586.png",
@@ -757,7 +849,7 @@
                 "coach": null,
                 "area": "Italy"
             },
-            "Lecce": {
+            "US Lecce": {
                 "id": 5890,
                 "address": "Via Templari 11 Lecce 73100",
                 "crest": "https://crests.football-data.org/5890.png",
@@ -767,7 +859,7 @@
                 "coach": null,
                 "area": "Italy"
             },
-            "Monza": {
+            "AC Monza": {
                 "id": 5911,
                 "address": "Via Ragazzi del '99, 14 Monza 20900",
                 "crest": "https://crests.football-data.org/5911.png",
@@ -792,7 +884,7 @@
                 "coach": "Ernesto Valverde",
                 "area": "Spain"
             },
-            "Atletico Madrid": {
+            "Club Atlético de Madrid": {
                 "id": 78,
                 "address": "Paseo Virgen del Puerto, 67 Madrid 28005",
                 "crest": "https://crests.football-data.org/78.svg",
@@ -802,7 +894,7 @@
                 "coach": "Diego Simeone",
                 "area": "Spain"
             },
-            "Osasuna": {
+            "CA Osasuna": {
                 "id": 79,
                 "address": "Calle del Sadar, s/n Pamplona 31006",
                 "crest": "https://crests.football-data.org/79.svg",
@@ -814,15 +906,16 @@
             },
             "Barcelona": {
                 "id": 81,
-                "address": "Avenida Arístides Maillol s/n Barcelona 08028",
-                "crest": "https://crests.football-data.org/81.svg",
-                "website": "http://www.fcbarcelona.com",
-                "venue": "Camp Nou",
-                "founded": 1899,
-                "coach": "Hansi Flick",
-                "area": "Spain"
+                "position": 2,
+                "team_crest": "https://crests.football-data.org/81.svg",
+                "points": 85,
+                "games_won": 26,
+                "games_lost": 5,
+                "goals_for": 79,
+                "goals_against": 44,
+                "goal_difference": 35
             },
-            "Getafe": {
+            "Getafe CF": {
                 "id": 82,
                 "address": "Avenida Teresa de Calcuta, s/n Getafe 28903",
                 "crest": "https://crests.football-data.org/82.png",
@@ -832,17 +925,18 @@
                 "coach": "Pepe Bordalás",
                 "area": "Spain"
             },
-            "Granada CF": {
-                "id": 83,
-                "address": "Calle del Pintor Manuel Maldonado, s/n Granada 18007",
-                "crest": "https://crests.football-data.org/83.svg",
-                "website": "http://www.granadacf.es",
-                "venue": "Estadio Nuevo Los Cármenes",
-                "founded": 1931,
-                "coach": null,
-                "area": "Spain"
+            "Atletico Madrid": {
+                "id": 78,
+                "position": 4,
+                "team_crest": "https://crests.football-data.org/78.svg",
+                "points": 76,
+                "games_won": 24,
+                "games_lost": 10,
+                "goals_for": 70,
+                "goals_against": 43,
+                "goal_difference": 27
             },
-            "Real Madrid": {
+            "Real Madrid CF": {
                 "id": 86,
                 "address": "Avenida Concha Espina, 1 Madrid 28036",
                 "crest": "https://crests.football-data.org/86.png",
@@ -852,7 +946,7 @@
                 "coach": "Carlo Ancelotti",
                 "area": "Spain"
             },
-            "Rayo Vallecano": {
+            "Rayo Vallecano de Madrid": {
                 "id": 87,
                 "address": "Calle del Payaso Fofó, s/n Madrid 28018",
                 "crest": "https://crests.football-data.org/87.svg",
@@ -862,7 +956,7 @@
                 "coach": "Iñigo Pérez",
                 "area": "Spain"
             },
-            "Mallorca": {
+            "RCD Mallorca": {
                 "id": 89,
                 "address": "Son Moix, Calle Camí dels Reis, s/n Palma de Mallorca 07011",
                 "crest": "https://crests.football-data.org/89.png",
@@ -882,7 +976,7 @@
                 "coach": "Manuel Pellegrini",
                 "area": "Spain"
             },
-            "Real Sociedad": {
+            "Real Sociedad de Fútbol": {
                 "id": 92,
                 "address": "Anoeta Pasalekua, 1 San Sebastián 20014",
                 "crest": "https://crests.football-data.org/92.svg",
@@ -894,23 +988,25 @@
             },
             "Villarreal": {
                 "id": 94,
-                "address": "Camino Miralcamp, s/n Villarreal 12540",
-                "crest": "https://crests.football-data.org/94.png",
-                "website": "http://www.villarrealcf.es",
-                "venue": "Estadio de la Cerámica",
-                "founded": 1923,
-                "coach": "Marcelino",
-                "area": "Spain"
+                "position": 8,
+                "team_crest": "https://crests.football-data.org/94.png",
+                "points": 53,
+                "games_won": 14,
+                "games_lost": 13,
+                "goals_for": 65,
+                "goals_against": 65,
+                "goal_difference": 0
             },
             "Valencia": {
                 "id": 95,
-                "address": "Plaza del Valencia Club de Fútbol, 2 Valencia 46010",
-                "crest": "https://crests.football-data.org/95.svg",
-                "website": "http://www.valenciacf.com",
-                "venue": "Estadio de Mestalla",
-                "founded": 1919,
-                "coach": "Rubén Baraja",
-                "area": "Spain"
+                "position": 9,
+                "team_crest": "https://crests.football-data.org/95.svg",
+                "points": 49,
+                "games_won": 13,
+                "games_lost": 15,
+                "goals_for": 40,
+                "goals_against": 45,
+                "goal_difference": -5
             },
             "Alaves": {
                 "id": 263,
@@ -922,7 +1018,7 @@
                 "coach": "Luís García",
                 "area": "Spain"
             },
-            "Cadiz": {
+            "Cádiz CF": {
                 "id": 264,
                 "address": "Plaza de Madrid, s/n Cádiz 11010",
                 "crest": "https://crests.football-data.org/264.png",
@@ -932,7 +1028,7 @@
                 "coach": null,
                 "area": "Spain"
             },
-            "Almeria": {
+            "UD Almería": {
                 "id": 267,
                 "address": "Calle Alcalde Santiago Martínez Cabrejas, 5 Almería 04007",
                 "crest": "https://crests.football-data.org/267.png",
@@ -944,15 +1040,16 @@
             },
             "Las Palmas": {
                 "id": 275,
-                "address": "Calle Pío XII, 29 Las Palmas de Gran Canaria 35005",
-                "crest": "https://crests.football-data.org/275.png",
-                "website": "http://www.udlaspalmas.es",
-                "venue": "Estadio de Gran Canaria",
-                "founded": 1949,
-                "coach": "Luis Carrión",
-                "area": "Spain"
+                "position": 16,
+                "team_crest": "https://crests.football-data.org/275.png",
+                "points": 40,
+                "games_won": 10,
+                "games_lost": 18,
+                "goals_for": 33,
+                "goals_against": 47,
+                "goal_difference": -14
             },
-            "Girona": {
+            "Girona FC": {
                 "id": 298,
                 "address": "Avinguda de Montilivi, 141 Girona 17003",
                 "crest": "https://crests.football-data.org/298.png",
@@ -962,7 +1059,7 @@
                 "coach": "Michel",
                 "area": "Spain"
             },
-            "Celta Vigo": {
+            "RC Celta de Vigo": {
                 "id": 558,
                 "address": "Calle del Conde de Gondomar, 1 Vigo 36203",
                 "crest": "https://crests.football-data.org/558.svg",
@@ -972,7 +1069,7 @@
                 "coach": "Claudio",
                 "area": "Spain"
             },
-            "Sevilla": {
+            "Sevilla FC": {
                 "id": 559,
                 "address": "Calle Sevilla Fútbol Club, s/n Sevilla 41005",
                 "crest": "https://crests.football-data.org/559.svg",

@@ -1,0 +1,1083 @@
+{
+    "Premier League": {
+        "id": 1,
+        "standings": {
+            "Manchester City": {
+                "id": 65,
+                "position": 1,
+                "team_crest": "https://crests.football-data.org/65.png",
+                "points": 91,
+                "games_won": 28,
+                "games_lost": 3,
+                "goals_for": 96,
+                "goals_against": 34,
+                "goal_difference": 62
+            },
+            "Arsenal ": {
+                "id": 57,
+                "position": 2,
+                "team_crest": "https://crests.football-data.org/57.png",
+                "points": 89,
+                "games_won": 28,
+                "games_lost": 5,
+                "goals_for": 91,
+                "goals_against": 29,
+                "goal_difference": 62
+            },
+            "Liverpool": {
+                "id": 64,
+                "position": 3,
+                "team_crest": "https://crests.football-data.org/64.png",
+                "points": 82,
+                "games_won": 24,
+                "games_lost": 4,
+                "goals_for": 86,
+                "goals_against": 41,
+                "goal_difference": 45
+            },
+            "Aston Villa": {
+                "id": 58,
+                "position": 4,
+                "team_crest": "https://crests.football-data.org/58.png",
+                "points": 68,
+                "games_won": 20,
+                "games_lost": 10,
+                "goals_for": 76,
+                "goals_against": 61,
+                "goal_difference": 15
+            },
+            "Tottenham Hotspur": {
+                "id": 73,
+                "position": 5,
+                "team_crest": "https://crests.football-data.org/73.png",
+                "points": 66,
+                "games_won": 20,
+                "games_lost": 12,
+                "goals_for": 74,
+                "goals_against": 61,
+                "goal_difference": 13
+            },
+            "Chelsea": {
+                "id": 61,
+                "position": 6,
+                "team_crest": "https://crests.football-data.org/61.png",
+                "points": 63,
+                "games_won": 18,
+                "games_lost": 11,
+                "goals_for": 77,
+                "goals_against": 63,
+                "goal_difference": 14
+            },
+            "Newcastle United": {
+                "id": 67,
+                "position": 7,
+                "team_crest": "https://crests.football-data.org/67.png",
+                "points": 60,
+                "games_won": 18,
+                "games_lost": 14,
+                "goals_for": 85,
+                "goals_against": 62,
+                "goal_difference": 23
+            },
+            "Manchester United": {
+                "id": 66,
+                "position": 8,
+                "team_crest": "https://crests.football-data.org/66.png",
+                "points": 60,
+                "games_won": 18,
+                "games_lost": 14,
+                "goals_for": 57,
+                "goals_against": 58,
+                "goal_difference": -1
+            },
+            "West Ham": {
+                "id": 563,
+                "position": 9,
+                "team_crest": "https://crests.football-data.org/563.png",
+                "points": 52,
+                "games_won": 14,
+                "games_lost": 14,
+                "goals_for": 60,
+                "goals_against": 74,
+                "goal_difference": -14
+            },
+            "Crystal Palace": {
+                "id": 354,
+                "position": 10,
+                "team_crest": "https://crests.football-data.org/354.png",
+                "points": 49,
+                "games_won": 13,
+                "games_lost": 15,
+                "goals_for": 57,
+                "goals_against": 58,
+                "goal_difference": -1
+            },
+            "Brighton": {
+                "id": 397,
+                "position": 11,
+                "team_crest": "https://crests.football-data.org/397.svg",
+                "points": 48,
+                "games_won": 12,
+                "games_lost": 14,
+                "goals_for": 55,
+                "goals_against": 62,
+                "goal_difference": -7
+            },
+            "Everton": {
+                "id": 62,
+                "position": 12,
+                "team_crest": "https://crests.football-data.org/62.png",
+                "points": 48,
+                "games_won": 13,
+                "games_lost": 16,
+                "goals_for": 40,
+                "goals_against": 51,
+                "goal_difference": -11
+            },
+            "Bournemouth": {
+                "id": 1044,
+                "position": 13,
+                "team_crest": "https://crests.football-data.org/1044.png",
+                "points": 48,
+                "games_won": 13,
+                "games_lost": 16,
+                "goals_for": 54,
+                "goals_against": 67,
+                "goal_difference": -13
+            },
+            "Fulham": {
+                "id": 63,
+                "position": 14,
+                "team_crest": "https://crests.football-data.org/63.svg",
+                "points": 47,
+                "games_won": 13,
+                "games_lost": 17,
+                "goals_for": 55,
+                "goals_against": 61,
+                "goal_difference": -6
+            },
+            "Wolves": {
+                "id": 76,
+                "position": 15,
+                "team_crest": "https://crests.football-data.org/76.svg",
+                "points": 46,
+                "games_won": 13,
+                "games_lost": 18,
+                "goals_for": 50,
+                "goals_against": 65,
+                "goal_difference": -15
+            },
+            "Brentford": {
+                "id": 402,
+                "position": 16,
+                "team_crest": "https://crests.football-data.org/402.png",
+                "points": 39,
+                "games_won": 10,
+                "games_lost": 19,
+                "goals_for": 56,
+                "goals_against": 65,
+                "goal_difference": -9
+            },
+            "Nottingham Forest": {
+                "id": 351,
+                "position": 17,
+                "team_crest": "https://crests.football-data.org/351.png",
+                "points": 36,
+                "games_won": 9,
+                "games_lost": 20,
+                "goals_for": 49,
+                "goals_against": 67,
+                "goal_difference": -18
+            },
+            "Luton": {
+                "id": 389,
+                "position": 18,
+                "team_crest": "https://crests.football-data.org/389.png",
+                "points": 26,
+                "games_won": 6,
+                "games_lost": 24,
+                "goals_for": 52,
+                "goals_against": 85,
+                "goal_difference": -33
+            },
+            "Burnley": {
+                "id": 328,
+                "position": 19,
+                "team_crest": "https://crests.football-data.org/328.png",
+                "points": 24,
+                "games_won": 5,
+                "games_lost": 24,
+                "goals_for": 41,
+                "goals_against": 78,
+                "goal_difference": -37
+            },
+            "Sheffield Utd": {
+                "id": 356,
+                "position": 20,
+                "team_crest": "https://crests.football-data.org/356.svg",
+                "points": 16,
+                "games_won": 3,
+                "games_lost": 28,
+                "goals_for": 35,
+                "goals_against": 104,
+                "goal_difference": -69
+            }
+        }
+    },
+    "Ligue 1": {
+        "id": 2,
+        "standings": {
+            "Paris Saint Germain": {
+                "id": 524,
+                "position": 1,
+                "team_crest": "https://crests.football-data.org/524.png",
+                "points": 76,
+                "games_won": 22,
+                "games_lost": 2,
+                "goals_for": 81,
+                "goals_against": 33,
+                "goal_difference": 48
+            },
+            "Monaco": {
+                "id": 548,
+                "position": 2,
+                "team_crest": "https://crests.football-data.org/548.png",
+                "points": 67,
+                "games_won": 20,
+                "games_lost": 7,
+                "goals_for": 68,
+                "goals_against": 42,
+                "goal_difference": 26
+            },
+            "Stade Brestois 29": {
+                "id": 512,
+                "position": 3,
+                "team_crest": "https://crests.football-data.org/512.png",
+                "points": 61,
+                "games_won": 17,
+                "games_lost": 7,
+                "goals_for": 53,
+                "goals_against": 34,
+                "goal_difference": 19
+            },
+            "Lille": {
+                "id": 521,
+                "position": 4,
+                "team_crest": "https://crests.football-data.org/521.svg",
+                "points": 59,
+                "games_won": 16,
+                "games_lost": 7,
+                "goals_for": 52,
+                "goals_against": 34,
+                "goal_difference": 18
+            },
+            "Nice": {
+                "id": 522,
+                "position": 5,
+                "team_crest": "https://crests.football-data.org/522.png",
+                "points": 55,
+                "games_won": 15,
+                "games_lost": 9,
+                "goals_for": 40,
+                "goals_against": 29,
+                "goal_difference": 11
+            },
+            "Lyon": {
+                "id": 523,
+                "position": 6,
+                "team_crest": "https://crests.football-data.org/523.svg",
+                "points": 53,
+                "games_won": 16,
+                "games_lost": 13,
+                "goals_for": 49,
+                "goals_against": 55,
+                "goal_difference": -6
+            },
+            "Lens": {
+                "id": 546,
+                "position": 7,
+                "team_crest": "https://crests.football-data.org/546.png",
+                "points": 51,
+                "games_won": 14,
+                "games_lost": 11,
+                "goals_for": 45,
+                "goals_against": 37,
+                "goal_difference": 8
+            },
+            "Olympique de Marseille": {
+                "id": 516,
+                "position": 8,
+                "team_crest": "https://crests.football-data.org/516.png",
+                "points": 50,
+                "games_won": 13,
+                "games_lost": 10,
+                "goals_for": 52,
+                "goals_against": 41,
+                "goal_difference": 11
+            },
+            "Reims": {
+                "id": 547,
+                "position": 9,
+                "team_crest": "https://crests.football-data.org/547.png",
+                "points": 47,
+                "games_won": 13,
+                "games_lost": 13,
+                "goals_for": 42,
+                "goals_against": 47,
+                "goal_difference": -5
+            },
+            "Rennes": {
+                "id": 529,
+                "position": 10,
+                "team_crest": "https://crests.football-data.org/529.png",
+                "points": 46,
+                "games_won": 12,
+                "games_lost": 12,
+                "goals_for": 53,
+                "goals_against": 46,
+                "goal_difference": 7
+            },
+            "Toulouse": {
+                "id": 511,
+                "position": 11,
+                "team_crest": "https://crests.football-data.org/511.png",
+                "points": 43,
+                "games_won": 11,
+                "games_lost": 13,
+                "goals_for": 42,
+                "goals_against": 46,
+                "goal_difference": -4
+            },
+            "Montpellier": {
+                "id": 518,
+                "position": 12,
+                "team_crest": "https://crests.football-data.org/518.png",
+                "points": 42,
+                "games_won": 10,
+                "games_lost": 12,
+                "goals_for": 43,
+                "goals_against": 48,
+                "goal_difference": -5
+            },
+            "Strasbourg": {
+                "id": 576,
+                "position": 13,
+                "team_crest": "https://crests.football-data.org/576.png",
+                "points": 39,
+                "games_won": 10,
+                "games_lost": 15,
+                "goals_for": 38,
+                "goals_against": 50,
+                "goal_difference": -12
+            },
+            "Nantes": {
+                "id": 543,
+                "position": 14,
+                "team_crest": "https://crests.football-data.org/543.png",
+                "points": 33,
+                "games_won": 9,
+                "games_lost": 19,
+                "goals_for": 30,
+                "goals_against": 55,
+                "goal_difference": -25
+            },
+            "Le Havre AC": {
+                "id": 533,
+                "position": 15,
+                "team_crest": "https://crests.football-data.org/533.png",
+                "points": 32,
+                "games_won": 7,
+                "games_lost": 16,
+                "goals_for": 34,
+                "goals_against": 45,
+                "goal_difference": -11
+            },
+            "Lorient": {
+                "id": 525,
+                "position": 16,
+                "team_crest": "https://crests.football-data.org/525.png",
+                "points": 29,
+                "games_won": 7,
+                "games_lost": 19,
+                "goals_for": 43,
+                "goals_against": 66,
+                "goal_difference": -23
+            },
+            "Metz": {
+                "id": 545,
+                "position": 17,
+                "team_crest": "https://crests.football-data.org/545.svg",
+                "points": 29,
+                "games_won": 8,
+                "games_lost": 21,
+                "goals_for": 35,
+                "goals_against": 58,
+                "goal_difference": -23
+            },
+            "Clermont Foot": {
+                "id": 541,
+                "position": 18,
+                "team_crest": "https://crests.football-data.org/541.svg",
+                "points": 25,
+                "games_won": 5,
+                "games_lost": 19,
+                "goals_for": 26,
+                "goals_against": 60,
+                "goal_difference": -34
+            }
+        }
+    },
+    "Bundesliga": {
+        "id": 3,
+        "standings": {
+            "Bayer Leverkusen": {
+                "id": 3,
+                "position": 1,
+                "team_crest": "https://crests.football-data.org/3.png",
+                "points": 90,
+                "games_won": 28,
+                "games_lost": 0,
+                "goals_for": 89,
+                "goals_against": 24,
+                "goal_difference": 65
+            },
+            "VfB Stuttgart": {
+                "id": 10,
+                "position": 2,
+                "team_crest": "https://crests.football-data.org/10.png",
+                "points": 73,
+                "games_won": 23,
+                "games_lost": 7,
+                "goals_for": 78,
+                "goals_against": 39,
+                "goal_difference": 39
+            },
+            "Bayern Munchen": {
+                "id": 5,
+                "position": 3,
+                "team_crest": "https://crests.football-data.org/5.svg",
+                "points": 72,
+                "games_won": 23,
+                "games_lost": 8,
+                "goals_for": 94,
+                "goals_against": 45,
+                "goal_difference": 49
+            },
+            "RB Leipzig": {
+                "id": 721,
+                "position": 4,
+                "team_crest": "https://crests.football-data.org/721.png",
+                "points": 65,
+                "games_won": 19,
+                "games_lost": 7,
+                "goals_for": 77,
+                "goals_against": 39,
+                "goal_difference": 38
+            },
+            "Borussia Dortmund": {
+                "id": 4,
+                "position": 5,
+                "team_crest": "https://crests.football-data.org/4.png",
+                "points": 63,
+                "games_won": 18,
+                "games_lost": 7,
+                "goals_for": 68,
+                "goals_against": 43,
+                "goal_difference": 25
+            },
+            "Eintracht Frankfurt": {
+                "id": 19,
+                "position": 6,
+                "team_crest": "https://crests.football-data.org/19.svg",
+                "points": 47,
+                "games_won": 11,
+                "games_lost": 9,
+                "goals_for": 51,
+                "goals_against": 50,
+                "goal_difference": 1
+            },
+            "1899 Hoffenheim": {
+                "id": 2,
+                "position": 7,
+                "team_crest": "https://crests.football-data.org/2.png",
+                "points": 46,
+                "games_won": 13,
+                "games_lost": 14,
+                "goals_for": 66,
+                "goals_against": 66,
+                "goal_difference": 0
+            },
+            "FC Heidenheim": {
+                "id": 44,
+                "position": 8,
+                "team_crest": "https://crests.football-data.org/44.svg",
+                "points": 42,
+                "games_won": 10,
+                "games_lost": 12,
+                "goals_for": 50,
+                "goals_against": 55,
+                "goal_difference": -5
+            },
+            "Werder Bremen": {
+                "id": 12,
+                "position": 9,
+                "team_crest": "https://crests.football-data.org/12.svg",
+                "points": 42,
+                "games_won": 11,
+                "games_lost": 14,
+                "goals_for": 48,
+                "goals_against": 54,
+                "goal_difference": -6
+            },
+            "SC Freiburg": {
+                "id": 17,
+                "position": 10,
+                "team_crest": "https://crests.football-data.org/17.svg",
+                "points": 42,
+                "games_won": 11,
+                "games_lost": 14,
+                "goals_for": 45,
+                "goals_against": 58,
+                "goal_difference": -13
+            },
+            "FC Augsburg": {
+                "id": 16,
+                "position": 11,
+                "team_crest": "https://crests.football-data.org/16.png",
+                "points": 39,
+                "games_won": 10,
+                "games_lost": 15,
+                "goals_for": 50,
+                "goals_against": 60,
+                "goal_difference": -10
+            },
+            "VfL Wolfsburg": {
+                "id": 11,
+                "position": 12,
+                "team_crest": "https://crests.football-data.org/11.svg",
+                "points": 37,
+                "games_won": 10,
+                "games_lost": 17,
+                "goals_for": 41,
+                "goals_against": 56,
+                "goal_difference": -15
+            },
+            "FSV Mainz 05": {
+                "id": 15,
+                "position": 13,
+                "team_crest": "https://crests.football-data.org/15.png",
+                "points": 35,
+                "games_won": 7,
+                "games_lost": 13,
+                "goals_for": 39,
+                "goals_against": 51,
+                "goal_difference": -12
+            },
+            "Borussia Monchengladbach": {
+                "id": 18,
+                "position": 14,
+                "team_crest": "https://crests.football-data.org/18.png",
+                "points": 34,
+                "games_won": 7,
+                "games_lost": 14,
+                "goals_for": 56,
+                "goals_against": 67,
+                "goal_difference": -11
+            },
+            "Union Berlin": {
+                "id": 28,
+                "position": 15,
+                "team_crest": "https://crests.football-data.org/28.svg",
+                "points": 33,
+                "games_won": 9,
+                "games_lost": 19,
+                "goals_for": 33,
+                "goals_against": 58,
+                "goal_difference": -25
+            },
+            "Vfl Bochum": {
+                "id": 36,
+                "position": 16,
+                "team_crest": "https://crests.football-data.org/36.png",
+                "points": 33,
+                "games_won": 7,
+                "games_lost": 15,
+                "goals_for": 42,
+                "goals_against": 74,
+                "goal_difference": -32
+            },
+            "FC K\u00f6ln": {
+                "id": 1,
+                "position": 17,
+                "team_crest": "https://crests.football-data.org/1.png",
+                "points": 27,
+                "games_won": 5,
+                "games_lost": 17,
+                "goals_for": 28,
+                "goals_against": 60,
+                "goal_difference": -32
+            },
+            "SV Darmstadt 98": {
+                "id": 55,
+                "position": 18,
+                "team_crest": "https://crests.football-data.org/55.png",
+                "points": 17,
+                "games_won": 3,
+                "games_lost": 23,
+                "goals_for": 30,
+                "goals_against": 86,
+                "goal_difference": -56
+            }
+        }
+    },
+    "Serie A": {
+        "id": 4,
+        "standings": {
+            "Inter": {
+                "id": 108,
+                "position": 1,
+                "team_crest": "https://crests.football-data.org/108.png",
+                "points": 94,
+                "games_won": 29,
+                "games_lost": 2,
+                "goals_for": 89,
+                "goals_against": 22,
+                "goal_difference": 67
+            },
+            "AC Milan": {
+                "id": 98,
+                "position": 2,
+                "team_crest": "https://crests.football-data.org/98.png",
+                "points": 75,
+                "games_won": 22,
+                "games_lost": 7,
+                "goals_for": 76,
+                "goals_against": 49,
+                "goal_difference": 27
+            },
+            "Juventus": {
+                "id": 109,
+                "position": 3,
+                "team_crest": "https://crests.football-data.org/109.png",
+                "points": 71,
+                "games_won": 19,
+                "games_lost": 5,
+                "goals_for": 54,
+                "goals_against": 31,
+                "goal_difference": 23
+            },
+            "Atalanta": {
+                "id": 102,
+                "position": 4,
+                "team_crest": "https://crests.football-data.org/102.png",
+                "points": 69,
+                "games_won": 21,
+                "games_lost": 11,
+                "goals_for": 72,
+                "goals_against": 42,
+                "goal_difference": 30
+            },
+            "Bologna": {
+                "id": 103,
+                "position": 5,
+                "team_crest": "https://crests.football-data.org/103.png",
+                "points": 68,
+                "games_won": 18,
+                "games_lost": 6,
+                "goals_for": 54,
+                "goals_against": 32,
+                "goal_difference": 22
+            },
+            "AS Roma": {
+                "id": 100,
+                "position": 6,
+                "team_crest": "https://crests.football-data.org/100.png",
+                "points": 63,
+                "games_won": 18,
+                "games_lost": 11,
+                "goals_for": 65,
+                "goals_against": 46,
+                "goal_difference": 19
+            },
+            "Lazio": {
+                "id": 110,
+                "position": 7,
+                "team_crest": "https://crests.football-data.org/110.png",
+                "points": 61,
+                "games_won": 18,
+                "games_lost": 13,
+                "goals_for": 49,
+                "goals_against": 39,
+                "goal_difference": 10
+            },
+            "Fiorentina": {
+                "id": 99,
+                "position": 8,
+                "team_crest": "https://crests.football-data.org/99.png",
+                "points": 60,
+                "games_won": 17,
+                "games_lost": 12,
+                "goals_for": 61,
+                "goals_against": 46,
+                "goal_difference": 15
+            },
+            "Napoli": {
+                "id": 113,
+                "position": 9,
+                "team_crest": "https://crests.football-data.org/113.png",
+                "points": 53,
+                "games_won": 13,
+                "games_lost": 11,
+                "goals_for": 55,
+                "goals_against": 48,
+                "goal_difference": 7
+            },
+            "Torino": {
+                "id": 586,
+                "position": 10,
+                "team_crest": "https://crests.football-data.org/586.png",
+                "points": 53,
+                "games_won": 13,
+                "games_lost": 11,
+                "goals_for": 36,
+                "goals_against": 36,
+                "goal_difference": 0
+            },
+            "Genoa": {
+                "id": 107,
+                "position": 11,
+                "team_crest": "https://crests.football-data.org/107.png",
+                "points": 49,
+                "games_won": 12,
+                "games_lost": 13,
+                "goals_for": 45,
+                "goals_against": 45,
+                "goal_difference": 0
+            },
+            "Monza": {
+                "id": 5911,
+                "position": 12,
+                "team_crest": "https://crests.football-data.org/5911.png",
+                "points": 45,
+                "games_won": 11,
+                "games_lost": 15,
+                "goals_for": 39,
+                "goals_against": 51,
+                "goal_difference": -12
+            },
+            "Verona": {
+                "id": 450,
+                "position": 13,
+                "team_crest": "https://crests.football-data.org/450.png",
+                "points": 38,
+                "games_won": 9,
+                "games_lost": 18,
+                "goals_for": 38,
+                "goals_against": 51,
+                "goal_difference": -13
+            },
+            "Lecce": {
+                "id": 5890,
+                "position": 14,
+                "team_crest": "https://crests.football-data.org/5890.png",
+                "points": 38,
+                "games_won": 8,
+                "games_lost": 16,
+                "goals_for": 32,
+                "goals_against": 54,
+                "goal_difference": -22
+            },
+            "Udinese": {
+                "id": 115,
+                "position": 15,
+                "team_crest": "https://crests.football-data.org/115.png",
+                "points": 37,
+                "games_won": 6,
+                "games_lost": 13,
+                "goals_for": 37,
+                "goals_against": 53,
+                "goal_difference": -16
+            },
+            "Empoli": {
+                "id": 445,
+                "position": 16,
+                "team_crest": "https://crests.football-data.org/445.png",
+                "points": 36,
+                "games_won": 9,
+                "games_lost": 20,
+                "goals_for": 29,
+                "goals_against": 54,
+                "goal_difference": -25
+            },
+            "Cagliari": {
+                "id": 104,
+                "position": 17,
+                "team_crest": "https://crests.football-data.org/104.png",
+                "points": 36,
+                "games_won": 8,
+                "games_lost": 18,
+                "goals_for": 42,
+                "goals_against": 68,
+                "goal_difference": -26
+            },
+            "Frosinone": {
+                "id": 470,
+                "position": 18,
+                "team_crest": "https://crests.football-data.org/470.png",
+                "points": 35,
+                "games_won": 8,
+                "games_lost": 19,
+                "goals_for": 44,
+                "goals_against": 69,
+                "goal_difference": -25
+            },
+            "Sassuolo": {
+                "id": 471,
+                "position": 19,
+                "team_crest": "https://crests.football-data.org/471.png",
+                "points": 30,
+                "games_won": 7,
+                "games_lost": 22,
+                "goals_for": 43,
+                "goals_against": 75,
+                "goal_difference": -32
+            },
+            "Salernitana": {
+                "id": 455,
+                "position": 20,
+                "team_crest": "https://crests.football-data.org/455.png",
+                "points": 17,
+                "games_won": 2,
+                "games_lost": 25,
+                "goals_for": 32,
+                "goals_against": 81,
+                "goal_difference": -49
+            }
+        }
+    },
+    "Primera Division": {
+        "id": 5,
+        "standings": {
+            "Real Madrid": {
+                "id": 86,
+                "position": 1,
+                "team_crest": "https://crests.football-data.org/86.png",
+                "points": 95,
+                "games_won": 29,
+                "games_lost": 1,
+                "goals_for": 87,
+                "goals_against": 26,
+                "goal_difference": 61
+            },
+            "Barcelona": {
+                "id": 81,
+                "position": 2,
+                "team_crest": "https://crests.football-data.org/81.svg",
+                "points": 85,
+                "games_won": 26,
+                "games_lost": 5,
+                "goals_for": 79,
+                "goals_against": 44,
+                "goal_difference": 35
+            },
+            "Girona": {
+                "id": 298,
+                "position": 3,
+                "team_crest": "https://crests.football-data.org/298.png",
+                "points": 81,
+                "games_won": 25,
+                "games_lost": 7,
+                "goals_for": 85,
+                "goals_against": 46,
+                "goal_difference": 39
+            },
+            "Atletico Madrid": {
+                "id": 78,
+                "position": 4,
+                "team_crest": "https://crests.football-data.org/78.svg",
+                "points": 76,
+                "games_won": 24,
+                "games_lost": 10,
+                "goals_for": 70,
+                "goals_against": 43,
+                "goal_difference": 27
+            },
+            "Athletic Club": {
+                "id": 77,
+                "position": 5,
+                "team_crest": "https://crests.football-data.org/77.png",
+                "points": 68,
+                "games_won": 19,
+                "games_lost": 8,
+                "goals_for": 61,
+                "goals_against": 37,
+                "goal_difference": 24
+            },
+            "Real Sociedad": {
+                "id": 92,
+                "position": 6,
+                "team_crest": "https://crests.football-data.org/92.svg",
+                "points": 60,
+                "games_won": 16,
+                "games_lost": 10,
+                "goals_for": 51,
+                "goals_against": 39,
+                "goal_difference": 12
+            },
+            "Real Betis": {
+                "id": 90,
+                "position": 7,
+                "team_crest": "https://crests.football-data.org/90.png",
+                "points": 57,
+                "games_won": 14,
+                "games_lost": 9,
+                "goals_for": 48,
+                "goals_against": 45,
+                "goal_difference": 3
+            },
+            "Villarreal": {
+                "id": 94,
+                "position": 8,
+                "team_crest": "https://crests.football-data.org/94.png",
+                "points": 53,
+                "games_won": 14,
+                "games_lost": 13,
+                "goals_for": 65,
+                "goals_against": 65,
+                "goal_difference": 0
+            },
+            "Valencia": {
+                "id": 95,
+                "position": 9,
+                "team_crest": "https://crests.football-data.org/95.svg",
+                "points": 49,
+                "games_won": 13,
+                "games_lost": 15,
+                "goals_for": 40,
+                "goals_against": 45,
+                "goal_difference": -5
+            },
+            "Alaves": {
+                "id": 263,
+                "position": 10,
+                "team_crest": "https://crests.football-data.org/263.png",
+                "points": 46,
+                "games_won": 12,
+                "games_lost": 16,
+                "goals_for": 36,
+                "goals_against": 46,
+                "goal_difference": -10
+            },
+            "Osasuna": {
+                "id": 79,
+                "position": 11,
+                "team_crest": "https://crests.football-data.org/79.svg",
+                "points": 45,
+                "games_won": 12,
+                "games_lost": 17,
+                "goals_for": 45,
+                "goals_against": 56,
+                "goal_difference": -11
+            },
+            "Getafe": {
+                "id": 82,
+                "position": 12,
+                "team_crest": "https://crests.football-data.org/82.png",
+                "points": 43,
+                "games_won": 10,
+                "games_lost": 15,
+                "goals_for": 42,
+                "goals_against": 54,
+                "goal_difference": -12
+            },
+            "Sevilla": {
+                "id": 559,
+                "position": 13,
+                "team_crest": "https://crests.football-data.org/559.svg",
+                "points": 41,
+                "games_won": 10,
+                "games_lost": 17,
+                "goals_for": 48,
+                "goals_against": 54,
+                "goal_difference": -6
+            },
+            "Celta Vigo": {
+                "id": 558,
+                "position": 14,
+                "team_crest": "https://crests.football-data.org/558.svg",
+                "points": 41,
+                "games_won": 10,
+                "games_lost": 17,
+                "goals_for": 46,
+                "goals_against": 57,
+                "goal_difference": -11
+            },
+            "Mallorca": {
+                "id": 89,
+                "position": 15,
+                "team_crest": "https://crests.football-data.org/89.png",
+                "points": 40,
+                "games_won": 8,
+                "games_lost": 14,
+                "goals_for": 33,
+                "goals_against": 44,
+                "goal_difference": -11
+            },
+            "Las Palmas": {
+                "id": 275,
+                "position": 16,
+                "team_crest": "https://crests.football-data.org/275.png",
+                "points": 40,
+                "games_won": 10,
+                "games_lost": 18,
+                "goals_for": 33,
+                "goals_against": 47,
+                "goal_difference": -14
+            },
+            "Rayo Vallecano": {
+                "id": 87,
+                "position": 17,
+                "team_crest": "https://crests.football-data.org/87.svg",
+                "points": 38,
+                "games_won": 8,
+                "games_lost": 16,
+                "goals_for": 29,
+                "goals_against": 48,
+                "goal_difference": -19
+            },
+            "Cadiz": {
+                "id": 264,
+                "position": 18,
+                "team_crest": "https://crests.football-data.org/264.png",
+                "points": 33,
+                "games_won": 6,
+                "games_lost": 17,
+                "goals_for": 26,
+                "goals_against": 55,
+                "goal_difference": -29
+            },
+            "Almeria": {
+                "id": 267,
+                "position": 19,
+                "team_crest": "https://crests.football-data.org/267.png",
+                "points": 21,
+                "games_won": 3,
+                "games_lost": 23,
+                "goals_for": 43,
+                "goals_against": 75,
+                "goal_difference": -32
+            },
+            "Granada CF": {
+                "id": 83,
+                "position": 20,
+                "team_crest": "https://crests.football-data.org/83.svg",
+                "points": 21,
+                "games_won": 4,
+                "games_lost": 25,
+                "goals_for": 38,
+                "goals_against": 79,
+                "goal_difference": -41
+            }
+        }
+    }
+}
