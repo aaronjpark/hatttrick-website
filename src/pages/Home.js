@@ -43,7 +43,7 @@ function Home() {
       </section>
 
       <footer>
-        <small>Copyright © 2024. Hatttrick. All Rights Reserved.</small>
+        <small>Copyright © { new Date().getFullYear() }. Hatttrick. All Rights Reserved.</small>
       </footer>
 
       <script
