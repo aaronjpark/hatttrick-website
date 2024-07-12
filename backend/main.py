@@ -6,7 +6,7 @@ CORS(app, origins=['http://34.46.199.162:hatrickdb:us-central1:hatttrickdb'])
 
 @app.route('/')
 def index():
-    return render_template('index.js')
+    return render_template('index.html')
 
 @app.route('/teams', methods=['GET'])
 def get_all_teams():
