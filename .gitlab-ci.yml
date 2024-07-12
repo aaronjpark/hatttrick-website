@@ -47,3 +47,14 @@ deploy-job:      # This job runs in the deploy stage.
   script:
     - echo "Deploying application..."
     - echo "Application successfully deployed."
+
+deploy:
+  variables:
+    KUBE_CONTEXT: aguilarcarboni11/cs373-idb:kubernetes-agent:kubernetes-agent
+  image:
+    name: bitnami/kubectl:latest
+    entrypoint: ['']
+  script:
+    - kubectl config get-contexts
+    - kubectl config use-context aguilarcarboni11/cs373-idb:kubernetes-agent
+    - kubectl get pods
