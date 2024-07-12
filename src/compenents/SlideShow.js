@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../styles/slideshow.css';
 
 const Slideshow = ({ videos }) => {
+
     const [currentSlide, setCurrentSlide] = useState(0);
   
     const nextSlide = () => {
@@ -26,7 +27,7 @@ const Slideshow = ({ videos }) => {
               style={{ display: index === currentSlide ? 'block' : 'none' }}
             >
               <div className="numbertext">{index + 1} / {videos.length}</div>
-              <iframe width="500" height="295" src={video} frameBorder="0" allowFullScreen></iframe>
+              {video && <iframe width="500" height="295" src={video} frameBorder="0" allowFullScreen></iframe>}
             </div>
           ))}
           <a className="prev" onClick={prevSlide}>&#10094;</a>

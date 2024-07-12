@@ -10,7 +10,7 @@ app.app_context().push()
 
 # Configuration
 USER = "postgress"
-PASSWORD = "Pozuelo1"
+PASSWORD = "1234"
 PUBLIC_IP_ADDRESS = "34.45.23.119"
 DBNAME = "hatttrickdb"
 
@@ -24,11 +24,6 @@ class League(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), nullable=False)
 
-    def serialize(self):
-        return {
-            'id': self.id,
-            'name': self.name
-        }
 
 # Teams Model
 class Team(db.Model):
@@ -44,19 +39,6 @@ class Team(db.Model):
     coach = db.Column(db.String(80))
     area = db.Column(db.String(80))
 
-    def serialize(self):
-        return {
-            'id': self.id,
-            'name': self.name,
-            'league_id': self.league_id,
-            'address': self.address,
-            'crest': self.crest,
-            'website': self.website,
-            'venue': self.venue,
-            'founded': self.founded,
-            'coach': self.coach,
-            'area': self.area
-        }
 
 # Players Model
 class Player(db.Model):
@@ -68,17 +50,6 @@ class Player(db.Model):
     position = db.Column(db.String(80))
     photo = db.Column(db.String(200))
     club = db.Column(db.String(80))
-
-    def serialize(self):
-        return {
-            'id': self.id,
-            'name': self.name,
-            'age': self.age,
-            'number': self.number,
-            'position': self.position,
-            'photo': self.photo,
-            'club': self.club
-        }
 
 # Standings Model
 class Standing(db.Model):
@@ -94,18 +65,5 @@ class Standing(db.Model):
     goals_against = db.Column(db.Integer)
     goal_difference = db.Column(db.Integer)
 
-    def serialize(self):
-        return {
-            'team_id': self.team_id,
-            'league_id': self.league_id,
-            'position': self.position,
-            'team_crest': self.team_crest,
-            'points': self.points,
-            'games_won': self.games_won,
-            'games_lost': self.games_lost,
-            'goals_for': self.goals_for,
-            'goals_against': self.goals_against,
-            'goal_difference': self.goal_difference
-        }
 
 db.create_all()
