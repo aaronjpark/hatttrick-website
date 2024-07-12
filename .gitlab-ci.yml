@@ -23,6 +23,8 @@ stages:          # List of stages for jobs, and their order of execution
 
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
+  include:
+    - template: Auto-DevOps.gitlab-ci.yml
   script:
     - echo "Compiling the code..."
     - echo "Compile complete."
@@ -58,12 +60,3 @@ deploy:
     - kubectl config get-contexts
     - kubectl config use-context diegocampos2/cs373-idb:kubernetes-agent
     - kubectl get pods
-
-
-# NOTE: These links point to the latest templates for development in GitLab canonical project,
-# therefore the actual templates that were included for Auto DevOps pipelines
-# could be different from the contents in the links.
-# To view the actual templates, please replace `master` to the specific GitLab version when
-# the Auto DevOps pipeline started running e.g. `v13.0.2-ee`.
-include:
-- template: Auto-DevOps.gitlab-ci.yml
