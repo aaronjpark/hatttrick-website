@@ -50,11 +50,11 @@ deploy-job:      # This job runs in the deploy stage.
 
 deploy:
   variables:
-    KUBE_CONTEXT: gke_hatrickdb_us-central1_hattrickdb-cluster:kubernetes-agent
+    KUBE_CONTEXT: cs373-idb:kubernetes-agent
   image:
     name: bitnami/kubectl:latest
     entrypoint: ['']
   script:
     - kubectl config get-contexts
-    - kubectl config use-context gke_hatrickdb_us-central1_hattrickdb-cluster:kubernetes-agent
+    - kubectl config use-context cs373-idb:kubernetes-agent
     - kubectl get pods
