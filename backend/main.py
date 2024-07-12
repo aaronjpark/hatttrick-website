@@ -2,11 +2,11 @@ from flask import Flask, jsonify, render_template
 from flask_cors import CORS
 from create_db import app, db, League, Team, Player, Standing
 
-CORS(app, origins=['http://34.45.23.119:hattrick-428116:us-central1:hatttrickdb'])
+CORS(app, origins=['http://34.46.199.162:hatrickdb:us-central1:hatttrickdb'])
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.js')
 
 @app.route('/teams', methods=['GET'])
 def get_all_teams():
