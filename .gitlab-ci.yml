@@ -50,11 +50,11 @@ deploy-job:      # This job runs in the deploy stage.
 
 deploy:
   variables:
-    KUBE_CONTEXT: cs373-idb:kubernetes-agent
+    KUBE_CONTEXT: aguilarcarboni11/cs373-idb:kubernetes-agent:kubernetes-agent
   image:
     name: bitnami/kubectl:latest
     entrypoint: ['']
   script:
     - kubectl config get-contexts
-    - kubectl config use-context cs373-idb:kubernetes-agent
+    - kubectl config use-context aguilarcarboni11/cs373-idb:kubernetes-agent:kubernetes-agent
     - kubectl get pods
