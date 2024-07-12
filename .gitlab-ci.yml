@@ -21,7 +21,7 @@ stages:          # List of stages for jobs, and their order of execution
   - test
   - deploy
 
-include: 
+include:
   - template: Auto-DevOps.gitlab-ci.yml
 
 build-job:       # This job runs in the build stage, which runs first.
