@@ -652,7 +652,7 @@
     },
     "Serie A": {
         "id": 4,
-        "standings": {
+        "teams": {
             "Inter": {
                 "id": 108,
                 "position": 1,
