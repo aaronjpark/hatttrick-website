@@ -1,0 +1,13 @@
+
+Click
+Flask
+Flask-SQLAlchemy
+Flask-Cors
+Jinja2
+pep8
+psycopg2
+requests
+SQLAlchemy
+gunicorn
+coverage
+werkzeug==2.0.3

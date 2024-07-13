@@ -12,7 +12,7 @@ function Players() {
   }, [currentPage]); // Fetch players whenever currentPage changes
 
   const fetchPlayers = () => {
-    fetch(`http://127.0.0.1:5000/players?page=${currentPage}`)
+    fetch(`https://hatrickdb.wn.r.appspot.com/players?page=${currentPage}`)
       .then(response => response.json())
       .then(data => {
         console.log('Fetched players:', data); // Debugging to see fetched data structure

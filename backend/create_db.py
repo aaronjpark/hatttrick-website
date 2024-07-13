@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 
 import json
-from backend.models import app, db, League, Team, Player, Standing
+import os
+from models import app, db, League, Team, Player, Standing
 
 def load_json(filename):
     try:
-        with open(filename) as file:
+        base_path = os.path.dirname(__file__)
+        file_path = os.path.join(base_path, 'modelsInfo', filename)
+        with open(file_path) as file:
             data = json.load(file)
         return data
     except Exception as e:
@@ -13,7 +16,7 @@ def load_json(filename):
         return {}
 
 def populate_leagues():
-    leagues = load_json('backend/modelsInfo/leagues.json')
+    leagues = load_json('leagues.json')
     for league_name, league_info in leagues.items():
         try:
             league_id = league_info['id']
@@ -24,12 +27,17 @@ def populate_leagues():
     db.session.commit()
 
 def populate_teams():
-    leagues = load_json('backend/modelsInfo/teams.json')
+    leagues = load_json('teams.json')
     for league_name, league_info in leagues.items():
         league_id = league_info['id']
+        if 'teams' not in league_info:
+            continue
         for team_name, team_info in league_info['teams'].items():
             try:
                 team_id = team_info['id']
+                if db.session.query(Team).filter_by(id=team_id).first():
+                    continue
+                
                 team = Team(
                     id=team_id, name=team_name, league_id=league_id,
                     address=team_info.get('address'), crest=team_info.get('crest'),
@@ -43,7 +51,7 @@ def populate_teams():
     db.session.commit()
 
 def populate_players():
-    players = load_json('backend/modelsInfo/combined_teams_players.json')
+    players = load_json('combined_teams_players.json')
     for player_info in players:
         try:
             player = Player(
@@ -57,9 +65,12 @@ def populate_players():
     db.session.commit()
 
 def populate_standings():
-    leagues = load_json('backend/modelsInfo/leagues.json')
+    leagues = load_json('leagues.json')
     for league_name, league_info in leagues.items():
         league_id = league_info['id']
+        if 'standings' not in league_info:
+            continue
+        
         for team_name, team_info in league_info['standings'].items():
             try:
                 team_id = team_info['id']
@@ -70,10 +81,13 @@ def populate_standings():
                     goals_for=team_info.get('goals_for'), goals_against=team_info.get('goals_against'),
                     goal_difference=team_info.get('goal_difference')
                 )
+                # Save the team name as an additional column
+                standing.team_name = team_name
                 db.session.add(standing)
             except Exception as e:
                 print(f"Error adding standing for team {team_name} in league {league_name}: {e}")
     db.session.commit()
+
 
 # Use the app context explicitly to address the warning
 with app.app_context():

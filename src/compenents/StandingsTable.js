@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'; // Import Link
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TableComponent = ({ data }) => {
+  if (!Array.isArray(data)) {
+    return <div>No data available</div>;
+  }
+
   return (
     <div className="table-container">
       <table className="table table-striped table-bordered text-center">
@@ -20,23 +24,23 @@ const TableComponent = ({ data }) => {
           </tr>
         </thead>
         <tbody>
-          {Object.keys(data).map((teamName, index) => (
+          {data.map((team, index) => (
             <tr key={index}>
-              <td>{data[teamName].position}</td>
+              <td>{team.position}</td>
               <td>
-                <Link to={`/club/${teamName}`} className="link">
-                  {teamName}
+                <Link to={`/club/${team.team_name}`} className="link">
+                  {team.team_name}
                 </Link>
               </td>
               <td>
-                <img src={data[teamName].team_crest} alt={teamName} className="team-crest" />
+                <img src={team.team_crest} alt={team.team_name} className="team-crest" />
               </td>
-              <td>{data[teamName].points}</td>
-              <td>{data[teamName].games_won}</td>
-              <td>{data[teamName].games_lost}</td>
-              <td>{data[teamName].goals_for}</td>
-              <td>{data[teamName].goals_against}</td>
-              <td>{data[teamName].goal_difference}</td>
+              <td>{team.points}</td>
+              <td>{team.games_won}</td>
+              <td>{team.games_lost}</td>
+              <td>{team.goals_for}</td>
+              <td>{team.goals_against}</td>
+              <td>{team.goal_difference}</td>
             </tr>
           ))}
         </tbody>

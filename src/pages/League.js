@@ -12,7 +12,7 @@ const League = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:5002/standings/${id}`);
+        const response = await axios.get(`https://hatrickdb.wn.r.appspot.com/standings/${id}`);
         setStandingsData(response.data);
         console.log(response)
       } catch (error) {
