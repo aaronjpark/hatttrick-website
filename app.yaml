@@ -6,11 +6,11 @@ runtime_config:
   operating_system: ubuntu22
 
 env_variables:
-  DB_STRING: 'postgresql+psycopg2://postgres:Pozuelo1@/hatttrickdb?host=/cloudsql/hattrick-428116:us-central1:hatttrickdb'
+  DB_STRING: 'postgresql+psycopg2://postgres:Pozuelo1@/hatttrickdb?host=/cloudsql/hatrickdb:us-central1:hatttrickdb'
   PYTHONPATH: '/workspace/backend'
 
 beta_settings:
-  cloud_sql_instances: hattrick-428116:us-central1:hatttrickdb
+  cloud_sql_instances: hatrickdb:us-central1:hatttrickdb
 
 manual_scaling:
   instances: 1

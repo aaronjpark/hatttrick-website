@@ -4,40 +4,28 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import os
 
-# Initializing SQLAlchemy
-db = SQLAlchemy()
+# Initializing Flask app
+app = Flask(__name__)
+app.app_context().push()
 
-def create_app():
-    app = Flask(__name__)
-    
-    # Configuration
-    # USER = "postgress"
-    # PASSWORD = "pozuelo1"
-    # PUBLIC_IP_ADDRESS = "34.45.23.119"
-    # DBNAME = "hatttrickdb"
+# Configuration
+USER = "postgress"
+PASSWORD = "Pozuelo1"
+PUBLIC_IP_ADDRESS = "34.46.199.162"
+DBNAME = "hatttrickdb"
 
-    # LOCAL_DB_PATH = f"postgresql://{USER}:{PASSWORD}@{PUBLIC_IP_ADDRESS}/{DBNAME}"
-    # app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_STRING", LOCAL_DB_PATH)
-    
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://cerda086:1234@localhost/hattrickdb'
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    
-    db.init_app(app)
-    
-    # Create database tables within the application context
-    with app.app_context():
-        db.create_all()
+LOCAL_DB_PATH = f"postgresql://{USER}:{PASSWORD}@{PUBLIC_IP_ADDRESS}/{DBNAME}"
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_STRING", LOCAL_DB_PATH)
+app.config['JSON_SORT_KEYS'] = False
 
-    return app
-
-# Initialize the app
-app = create_app()
+db = SQLAlchemy(app)
 
 # Leagues Model
 class League(db.Model):
     __tablename__ = 'leagues'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), nullable=False)
+
 
 # Teams Model
 class Team(db.Model):
@@ -52,6 +40,7 @@ class Team(db.Model):
     founded = db.Column(db.Integer)
     coach = db.Column(db.String(80))
     area = db.Column(db.String(80))
+
 
 # Players Model
 class Player(db.Model):
@@ -80,6 +69,4 @@ class Standing(db.Model):
     team_name = db.Column(db.String(80))  # Added team_name field
 
 
-# Now you can run any additional setup or script you need
-if __name__ == "__main__":
-    app.run(debug=True)
+db.create_all()
