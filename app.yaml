@@ -1,21 +1,6 @@
-runtime: python
-env: flex
-entrypoint: gunicorn -b :$PORT backend.main:app
+  runtime: nodejs
+  env: flex
 
-runtime_config:
-  operating_system: ubuntu22
-
-env_variables:
-  DB_STRING: 'postgresql+psycopg2://postgres:Pozuelo1@/hatttrickdb?host=/cloudsql/hatrickdb:us-central1:hatttrickdb'
-  PYTHONPATH: '/workspace/backend'
-
-beta_settings:
-  cloud_sql_instances: hatrickdb:us-central1:hatttrickdb
-
-manual_scaling:
-  instances: 1
-
-resources:
-  cpu: 1
-  memory_gb: 0.5
-  disk_size_gb: 10
+  runtime_config:
+      operating_system: "ubuntu22"
+      runtime_version: "22"

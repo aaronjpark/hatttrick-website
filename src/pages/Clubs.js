@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import '../styles/clubs.css';
 
 function Clubs() {
-  const [teamsData, setTeamsData] = useState({});
+  const [teamsData, setTeamsData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const perPage = 12; // Number of teams per page
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5001/teams')
+    fetch('https://hatrickdb.wn.r.appspot.com/teams')
       .then(response => response.json())
       .then(data => {
         console.log('Fetched data:', data); // Debugging to see fetched data structure
@@ -24,22 +24,12 @@ function Clubs() {
 
   // Function to slice teams for pagination
   const sliceTeamsForPage = () => {
-    const teams = Object.keys(teamsData).flatMap(league => {
-      return Object.entries(teamsData[league].teams).map(([teamName, team]) => {
-        return { league, teamName, team };
-      });
-    });
-
     const startIndex = (currentPage - 1) * perPage;
-    return teams.slice(startIndex, startIndex + perPage);
+    return teamsData.slice(startIndex, startIndex + perPage);
   };
 
   // Total number of pages
-  const totalPages = Math.ceil(
-    Object.keys(teamsData).reduce((total, league) => {
-      return total + Object.keys(teamsData[league].teams).length;
-    }, 0) / perPage
-  );
+  const totalPages = Math.ceil(teamsData.length / perPage);
 
   // Centered pagination style
   const paginationStyle = {
@@ -55,21 +45,21 @@ function Clubs() {
       </header>
       <div className="teams-grid">
         <div className="teams-row">
-          {sliceTeamsForPage().map(({ league, teamName, team }) => (
+          {sliceTeamsForPage().map((team) => (
             <div className="team-card card" key={team.id}>
               <img
                 src={team.crest}
                 className="card-img-top img-fluid"
-                alt={teamName}
+                alt={team.name}
               />
               <div className="card-body">
                 <h3 className="card-title">
-                  <Link to={`/club/${encodeURIComponent(teamName)}`} className="link">
-                    {teamName}
+                  <Link to={`/club/${encodeURIComponent(team.name)}`} className="link">
+                    {team.name}
                   </Link>
                 </h3>
                 <p className="card-text">
-                  League: <Link to={`/league/${encodeURIComponent(league)}`} className="link">{league}</Link>
+                  League: <Link to={`/league/${encodeURIComponent(team.league_id)}`} className="link">{team.league_id}</Link>
                 </p>
                 <p className="card-text">Coach: {team.coach}</p>
                 <p className="card-text">Founded: {team.founded}</p>

@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import os
@@ -8,10 +6,11 @@ import os
 app = Flask(__name__)
 app.app_context().push()
 
+
 # Configuration
 USER = "postgress"
-PASSWORD = "1234"
-PUBLIC_IP_ADDRESS = "34.45.23.119"
+PASSWORD = "Pozuelo1"
+PUBLIC_IP_ADDRESS = "34.46.199.162"
 DBNAME = "hatttrickdb"
 
 LOCAL_DB_PATH = f"postgresql://{USER}:{PASSWORD}@{PUBLIC_IP_ADDRESS}/{DBNAME}"
@@ -64,6 +63,7 @@ class Standing(db.Model):
     goals_for = db.Column(db.Integer)
     goals_against = db.Column(db.Integer)
     goal_difference = db.Column(db.Integer)
+    team_name = db.Column(db.String(80))  # Added team_name field
 
 
 db.create_all()

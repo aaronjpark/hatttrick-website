@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import json
 from models import app, db, League, Team, Player, Standing
 

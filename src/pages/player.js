@@ -11,10 +11,10 @@ const PlayerInfo = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const playerResponse = await axios.get(`http://127.0.0.1:5000/players/${name}`);
+        const playerResponse = await axios.get(`https://hatrickdb.wn.r.appspot.com/players/${name}`);
         setPlayer(playerResponse.data);
 
-        const teammatesResponse = await axios.get(`http://127.0.0.1:5000/teammates/${name}`);
+        const teammatesResponse = await axios.get(`https://hatrickdb.wn.r.appspot.com/teammates/${name}`);
         setTeammates(teammatesResponse.data);
       } catch (error) {
         console.error('Error fetching data:', error);
