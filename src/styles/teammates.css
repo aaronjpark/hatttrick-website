@@ -34,8 +34,8 @@
     font-weight: bold; /* Optional: if you want the name to be bold */
   }
 
-  .link {
-    text-decoration: none;
+  .teammate-card .link {
+    text-decoration: underline;
     color: #000; /* Normal color */
     transition: all 0.3s ease; /* Smooth transition */
   }

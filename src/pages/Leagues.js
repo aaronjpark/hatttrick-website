@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';  // Import Link
+import { Link } from 'react-router-dom';
 import '../styles/leagues.css';
-import leaguesData from '../data/leagueinfo.json'; // Adjust the path as necessary
+import leaguesData from '../data/leagueinfo.json';
 
 function Leagues() {
   return (
@@ -12,11 +12,27 @@ function Leagues() {
           <div className="row g-0">
             <div className="col-md-8">
               <div className="card-body">
-                {/* Make league name clickable */}
-                <h2><Link to={`/league/${league.League}`}className="link">{league.League}</Link></h2>
+                {/* Make league name more clickable */}
+                <h2>
+                  <Link to={`/league/${league.League}`} className="link link-btn">
+                    {league.League}
+                  </Link>
+                </h2>
                 <p><strong>Country:</strong> {league.Country}</p>
-                <p><strong>Current Champion:</strong> <Link to={`/club/${league['Current Champion']}`} className="link">{league['Current Champion']}</Link></p>
-                <p><strong>Top Scorer:</strong> <Link to={`/player/${league['Top Scorer']}`}  className="link" >{league['Top Scorer']}</Link></p>
+                <div className="league-name">
+                  <p>
+                    <strong>Current Champion: </strong>
+                    <Link to={`/club/${league['Current Champion']}`} className="link hidden-link">
+                      {league['Current Champion']}
+                    </Link>
+                  </p>
+                  <p>
+                    <strong>Top Scorer: </strong>
+                    <Link to={`/player/${league['Top Scorer']}`} className="link hidden-link">
+                      {league['Top Scorer']}
+                    </Link>
+                  </p>
+                </div>
                 <p><strong>Year Founded:</strong> {league['Year Founded']}</p>
                 <p><strong>Games Per Season:</strong> {league['Games Per Season']}</p>
               </div>

@@ -61,13 +61,13 @@ body, html {
   }
   
   /* clubs.css */
-  .link {
-    text-decoration: none;
-    color: #000; /* Normal color */
+  .club-details-card .link {
+    text-decoration: underline;
+    color: #0240f8; /* Normal color */
     transition: all 0.3s ease; /* Smooth transition */
   }
 
   .link:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
-    color: #000000; /* Change color on hover, if desired */
+    color: #2d04f6; /* Change color on hover, if desired */
   }

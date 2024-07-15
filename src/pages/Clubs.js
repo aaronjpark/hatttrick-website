@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/clubs.css';
+import leaguesData from '../data/leagueinfo.json';
 
 function Clubs() {
   const [teamsData, setTeamsData] = useState([]);
@@ -60,6 +61,8 @@ function Clubs() {
       <header className="header">
         <h1>Clubs Information</h1>
       </header>
+      {leaguesData.Leagues.map((league, index) => (
+        <div key={index} className="card mb-3 league-card">
       <div className="teams-grid">
         <div className="teams-row">
           {sliceTeamsForPage().map((team) => (
@@ -76,7 +79,8 @@ function Clubs() {
                   </Link>
                 </h3>
                 <p className="card-text">
-                  League: <Link to={`/league/${encodeURIComponent(team.league_id)}`} className="link">{leagueNames[team.league_id] || 'Loading...'}</Link>
+                  League: <Link to={`/league/${league.League}`} className="link">
+                    {league.League || 'Loading...'}</Link>
                 </p>
                 <p className="card-text">Coach: {team.coach}</p>
                 <p className="card-text">Founded: {team.founded}</p>
@@ -111,7 +115,9 @@ function Clubs() {
             </ul>
           </nav>
         </div>
+        </div>
       </div>
+      ))}
     </div>
   );
 }

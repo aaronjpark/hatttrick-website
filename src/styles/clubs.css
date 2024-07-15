@@ -45,7 +45,7 @@ body, html {
 }
 
 .team-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
 }
 
 /* Image styles */
@@ -64,8 +64,13 @@ body, html {
 
 /* Card title styles */
 .team-card .card-title {
-  margin-top: 10px;
-  font-size: 1.5rem;
+  visibility: visible;
+  opacity: 1;
+  text-decoration: underline;
+  color: #007bff;
+  transition: opacity 0.3s ease;
+  /* margin-top: 10px;
+  font-size: 1.5rem; */
   font-weight: bold;
 }
 
@@ -76,20 +81,32 @@ body, html {
 }
 
 /* Link styles */
-.team-card .btn {
-  margin-top: 10px;
-}
-
-/* clubs.css */
 .link {
-  text-decoration: none;
-  color: #000; /* Normal color */
-  transition: all 0.3s ease; /* Smooth transition */
+  visibility: visible;
+  opacity: 1;
+  text-decoration: underline;
+  color: #075cfb; /* Always blue */
 }
 
-.link:hover {
+ .team-card .link {
+  text-decoration: underline;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
-  color: #000000; /* Change color on hover, if desired */
+  color: #1967f8; /* Ensures the color remains blue on hover */
+ }
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
 }
 
+.page-item.disabled .page-link {
+  pointer-events: none;
+  opacity: 0.5;
+}
 
+.page-item.active .page-link {
+  background-color: #075cfb;
+  border-color: #075cfb;
+  color: white;
+}
