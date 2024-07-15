@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/clubs.css';
+import SearchBar from '../compenents/searchBar';
 
 function Clubs() {
   const [teamsData, setTeamsData] = useState([]);
+  const [filteredTeams, setFilteredTeams] = useState([]);
   const [leagueNames, setLeagueNames] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
+  const [selectedLeague, setSelectedLeague] = useState('');
   const perPage = 12; // Number of teams per page
 
   useEffect(() => {
@@ -14,6 +17,7 @@ function Clubs() {
       .then(data => {
         console.log('Fetched data:', data); // Debugging to see fetched data structure
         setTeamsData(data);
+        setFilteredTeams(data); // Initialize filtered teams with all data
       })
       .catch(error => console.error('Error:', error));
   }, []);
@@ -31,8 +35,8 @@ function Clubs() {
       }
     };
 
-    teamsData.forEach(team => fetchLeagueName(team.league_id));
-  }, [teamsData, leagueNames]);
+    filteredTeams.forEach(team => fetchLeagueName(team.league_id));
+  }, [filteredTeams, leagueNames]);
 
   // Function to handle page change
   const handlePageChange = (pageNumber) => {
@@ -42,11 +46,41 @@ function Clubs() {
   // Function to slice teams for pagination
   const sliceTeamsForPage = () => {
     const startIndex = (currentPage - 1) * perPage;
-    return teamsData.slice(startIndex, startIndex + perPage);
+    return filteredTeams.slice(startIndex, startIndex + perPage);
+  };
+
+  // Function to handle search
+  const handleSearch = (query) => {
+    filterTeams(query, selectedLeague);
+  };
+
+  // Function to handle league filter
+  const handleFilter = (league) => {
+    setSelectedLeague(league);
+    filterTeams('', league);
+  };
+
+  // Function to filter teams based on query and league
+  const filterTeams = (query, league) => {
+    let filtered = teamsData;
+
+    if (query) {
+      filtered = filtered.filter(team =>
+        team.name.toLowerCase().includes(query.toLowerCase()) ||
+        (leagueNames[team.league_id] && leagueNames[team.league_id].toLowerCase().includes(query.toLowerCase()))
+      );
+    }
+
+    if (league) {
+      filtered = filtered.filter(team => team.league_id === parseInt(league, 10));
+    }
+
+    setFilteredTeams(filtered);
+    setCurrentPage(1); // Reset to first page on filter
   };
 
   // Total number of pages
-  const totalPages = Math.ceil(teamsData.length / perPage);
+  const totalPages = Math.ceil(filteredTeams.length / perPage);
 
   // Centered pagination style
   const paginationStyle = {
@@ -59,6 +93,7 @@ function Clubs() {
     <div className="clubs-container">
       <header className="header">
         <h1>Clubs Information</h1>
+        <SearchBar onSearch={handleSearch} onFilter={handleFilter} />
       </header>
       <div className="teams-grid">
         <div className="teams-row">
@@ -76,7 +111,7 @@ function Clubs() {
                   </Link>
                 </h3>
                 <p className="card-text">
-                  League: <Link to={`/league/${encodeURIComponent(team.league_id)}`} className="link">{leagueNames[team.league_id] || 'Loading...'}</Link>
+                  League: <Link to={`/league/${encodeURIComponent(leagueNames[team.league_id])}`} className="link">{leagueNames[team.league_id] || 'Loading...'}</Link>
                 </p>
                 <p className="card-text">Coach: {team.coach}</p>
                 <p className="card-text">Founded: {team.founded}</p>
