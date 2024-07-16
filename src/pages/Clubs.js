@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/clubs.css';
 import SearchBar from '../compenents/searchBar';
+import Pagination from '../compenents/Pagination';
+import '../styles/clubs.css';
 
 function Clubs() {
   const [teamsData, setTeamsData] = useState([]);
   const [filteredTeams, setFilteredTeams] = useState([]);
   const [leagueNames, setLeagueNames] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
-  const [selectedLeague, setSelectedLeague] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
   const perPage = 12; // Number of teams per page
 
   useEffect(() => {
@@ -51,49 +52,46 @@ function Clubs() {
 
   // Function to handle search
   const handleSearch = (query) => {
-    filterTeams(query, selectedLeague);
-  };
-
-  // Function to handle league filter
-  const handleFilter = (league) => {
-    setSelectedLeague(league);
-    filterTeams('', league);
-  };
-
-  // Function to filter teams based on query and league
-  const filterTeams = (query, league) => {
-    let filtered = teamsData;
-
-    if (query) {
-      filtered = filtered.filter(team =>
-        team.name.toLowerCase().includes(query.toLowerCase()) ||
-        (leagueNames[team.league_id] && leagueNames[team.league_id].toLowerCase().includes(query.toLowerCase()))
+    setSearchQuery(query.toLowerCase());
+    const filtered = teamsData.filter(team => {
+      const queryLower = query.toLowerCase();
+      return (
+        team.name.toLowerCase().includes(queryLower) ||
+        (leagueNames[team.league_id] && leagueNames[team.league_id].toLowerCase().includes(queryLower)) ||
+        (team.coach && team.coach.toLowerCase().includes(queryLower)) ||
+        (team.founded && team.founded.toString().includes(queryLower)) ||
+        (team.venue && team.venue.toLowerCase().includes(queryLower))
       );
-    }
-
-    if (league) {
-      filtered = filtered.filter(team => team.league_id === parseInt(league, 10));
-    }
-
+    });
     setFilteredTeams(filtered);
-    setCurrentPage(1); // Reset to first page on filter
+    setCurrentPage(1); // Reset to first page on search
+  };
+
+  // Function to highlight search term
+  const highlightText = (text, highlight) => {
+    if (!highlight) return text;
+    const parts = text.split(new RegExp(`(${highlight})`, 'gi'));
+    return (
+      <>
+        {parts.map((part, index) => 
+          part.toLowerCase() === highlight.toLowerCase() ? (
+            <span key={index} className="highlight">{part}</span>
+          ) : (
+            part
+          )
+        )}
+      </>
+    );
   };
 
   // Total number of pages
   const totalPages = Math.ceil(filteredTeams.length / perPage);
 
-  // Centered pagination style
-  const paginationStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    marginTop: '20px', // Adjust margin as needed
-  };
-
   return (
     <div className="clubs-container">
       <header className="header">
         <h1>Clubs Information</h1>
-        <SearchBar onSearch={handleSearch} onFilter={handleFilter} />
+        <SearchBar onSearch={handleSearch} />
       </header>
       <div className="teams-grid">
         <div className="teams-row">
@@ -107,15 +105,15 @@ function Clubs() {
               <div className="card-body">
                 <h3 className="card-title">
                   <Link to={`/club/${encodeURIComponent(team.name)}`} className="link">
-                    {team.name}
+                    {highlightText(team.name, searchQuery)}
                   </Link>
                 </h3>
                 <p className="card-text">
-                  League: <Link to={`/league/${encodeURIComponent(leagueNames[team.league_id])}`} className="link">{leagueNames[team.league_id] || 'Loading...'}</Link>
+                  League: <Link to={`/league/${encodeURIComponent(team.league_id)}`} className="link">{highlightText(leagueNames[team.league_id] || 'Loading...', searchQuery)}</Link>
                 </p>
-                <p className="card-text">Coach: {team.coach}</p>
-                <p className="card-text">Founded: {team.founded}</p>
-                <p className="card-text">Venue: {team.venue}</p>
+                <p className="card-text">Coach: {highlightText(team.coach || 'currently not available', searchQuery)}</p>
+                <p className="card-text">Founded: {highlightText(team.founded.toString(), searchQuery)}</p>
+                <p className="card-text">Venue: {highlightText(team.venue, searchQuery)}</p>
                 <a
                   href={team.website}
                   className="btn btn-primary"
@@ -128,24 +126,11 @@ function Clubs() {
             </div>
           ))}
         </div>
-        {/* Centered Pagination */}
-        <div style={paginationStyle}>
-          <nav aria-label="Page navigation example">
-            <ul className="pagination">
-              <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
-                <button className="page-link" onClick={() => handlePageChange(currentPage - 1)}>Previous</button>
-              </li>
-              {Array.from({ length: totalPages }, (_, index) => (
-                <li key={index} className={`page-item ${currentPage === index + 1 ? 'active' : ''}`}>
-                  <button className="page-link" onClick={() => handlePageChange(index + 1)}>{index + 1}</button>
-                </li>
-              ))}
-              <li className={`page-item ${currentPage === totalPages ? 'disabled' : ''}`}>
-                <button className="page-link" onClick={() => handlePageChange(currentPage + 1)}>Next</button>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          handlePageChange={handlePageChange}
+        />
       </div>
     </div>
   );

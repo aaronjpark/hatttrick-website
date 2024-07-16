@@ -1,20 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/players.css';
 import SearchBar from '../compenents/searchBar';
+import Pagination from '../compenents/Pagination';
+import '../styles/players.css';
 
 function Players() {
   const [players, setPlayers] = useState([]);
   const [filteredPlayers, setFilteredPlayers] = useState([]);
+  const [clubs, setClubs] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
-  const perPage = 16; // Number of players per page (4 players per row in a 4-column grid)
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedLeague, setSelectedLeague] = useState('');
+  const perPage = 20; // Number of players per page (5 rows of 4)
 
   useEffect(() => {
     fetchPlayers();
-  }, [currentPage]); // Fetch players whenever currentPage changes
+    fetchClubs();
+  }, []);
+
+  useEffect(() => {
+    filterPlayers(searchQuery, selectedLeague);
+  }, [players, searchQuery, selectedLeague]);
 
   const fetchPlayers = () => {
-    fetch(`https://hatrickdb.wn.r.appspot.com/players?page=${currentPage}`)
+    fetch(`https://hatrickdb.wn.r.appspot.com/players`)
       .then(response => response.json())
       .then(data => {
         console.log('Fetched players:', data); // Debugging to see fetched data structure
@@ -24,33 +33,50 @@ function Players() {
       .catch(error => console.error('Error fetching players:', error));
   };
 
+  const fetchClubs = () => {
+    fetch('https://hatrickdb.wn.r.appspot.com/teams')
+      .then(response => response.json())
+      .then(data => {
+        const clubMap = {};
+        data.forEach(club => {
+          clubMap[club.name] = club.league_id;
+        });
+        setClubs(clubMap);
+      })
+      .catch(error => console.error('Error fetching clubs:', error));
+  };
+
   // Function to handle search
   const handleSearch = (query) => {
-    filterPlayers(query, selectedLeague);
+    setSearchQuery(query);
   };
 
   // Function to handle league filter
   const handleFilter = (league) => {
     setSelectedLeague(league);
-    filterPlayers(searchQuery, league);
   };
-
-  // State for search query and selected league
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedLeague, setSelectedLeague] = useState('');
 
   // Function to filter players based on query and league
   const filterPlayers = (query, league) => {
     let filtered = players;
 
     if (query) {
-      filtered = filtered.filter(player =>
-        player.name.toLowerCase().includes(query.toLowerCase())
-      );
+      filtered = filtered.filter(player => {
+        const queryLower = query.toLowerCase();
+        return (
+          (player.name && player.name.toLowerCase().includes(queryLower)) ||
+          (player.age && player.age.toString().toLowerCase().includes(queryLower)) ||
+          (player.number && player.number.toString().toLowerCase().includes(queryLower)) ||
+          (player.position && player.position.toLowerCase().includes(queryLower)) ||
+          (player.club && player.club.toLowerCase().includes(queryLower)) ||
+          (player.nationality && player.nationality.toLowerCase().includes(queryLower)) || // Include additional fields if necessary
+          (player.team && player.team.toLowerCase().includes(queryLower))
+        );
+      });
     }
 
     if (league) {
-      filtered = filtered.filter(player => player.league_id === parseInt(league, 10));
+      filtered = filtered.filter(player => clubs[player.club] === parseInt(league, 10));
     }
 
     setFilteredPlayers(filtered);
@@ -62,6 +88,23 @@ function Players() {
     setCurrentPage(pageNumber);
   };
 
+  // Function to highlight search term
+  const highlightText = (text, highlight) => {
+    if (!text || !highlight) return text;
+    const parts = text.split(new RegExp(`(${highlight})`, 'gi'));
+    return (
+      <>
+        {parts.map((part, index) => 
+          part.toLowerCase() === highlight.toLowerCase() ? (
+            <span key={index} className="highlight">{part}</span>
+          ) : (
+            part
+          )
+        )}
+      </>
+    );
+  };
+
   // Total number of pages
   const totalPages = Math.ceil(filteredPlayers.length / perPage);
 
@@ -70,35 +113,6 @@ function Players() {
     const startIndex = (currentPage - 1) * perPage;
     const endIndex = startIndex + perPage;
     return filteredPlayers.slice(startIndex, endIndex);
-  };
-
-  // Function to handle navigating to previous and next pages
-  const goToPreviousPages = () => {
-    if (currentPage > 2) {
-      setCurrentPage(currentPage - 2);
-    } else if (currentPage === 2) {
-      setCurrentPage(1);
-    }
-  };
-
-  const goToNextPages = () => {
-    if (currentPage < totalPages - 1) {
-      setCurrentPage(currentPage + 2);
-    } else if (currentPage === totalPages - 1) {
-      setCurrentPage(totalPages);
-    }
-  };
-
-  // Function to handle navigating to the last page
-  const goToLastPage = () => {
-    setCurrentPage(totalPages);
-  };
-
-  // Centered pagination style
-  const paginationStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    marginTop: '20px',
   };
 
   return (
@@ -118,45 +132,27 @@ function Players() {
             <div className="card-body">
               <h3 className="card-title">
                 <Link to={`/player/${encodeURIComponent(player.name)}`} className="link">
-                  {player.name}
+                  {highlightText(player.name, searchQuery)}
                 </Link>
               </h3>
-              <p className="card-text"><b>Age:</b> {player.age}</p>
-              <p className="card-text"><b>Number:</b> {player.number}</p>
-              <p className="card-text"><b>Position:</b> {player.position}</p>
+              <p className="card-text"><b>Age:</b> {highlightText(player.age?.toString() || '', searchQuery)}</p>
+              <p className="card-text"><b>Number:</b> {highlightText(player.number?.toString() || '', searchQuery)}</p>
+              <p className="card-text"><b>Position:</b> {highlightText(player.position || '', searchQuery)}</p>
               <p className="card-text"><b>Club:</b>
                 <Link to={`/club/${encodeURIComponent(player.club)}`} className="link">
-                  {player.club}
+                  {highlightText(player.club || '', searchQuery)}
                 </Link>
               </p>
+              <p className="card-text"><b>Nationality:</b> {highlightText(player.nationality || '', searchQuery)}</p>
             </div>
           </div>
         ))}
       </div>
-      <div style={paginationStyle}>
-        <nav aria-label="Page navigation example">
-          <ul className="pagination">
-            <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
-              <button className="page-link" onClick={() => handlePageChange(1)}>First</button>
-            </li>
-            <li className={`page-item ${currentPage <= 2 ? 'disabled' : ''}`}>
-              <button className="page-link" onClick={goToPreviousPages}>Previous</button>
-            </li>
-            <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
-              <button className="page-link" onClick={() => handlePageChange(currentPage - 1)}>{currentPage - 1}</button>
-            </li>
-            <li className={`page-item ${currentPage === totalPages ? 'disabled' : ''}`}>
-              <button className="page-link" onClick={() => handlePageChange(currentPage + 1)}>{currentPage + 1}</button>
-            </li>
-            <li className={`page-item ${currentPage === totalPages ? 'disabled' : ''}`}>
-              <button className="page-link" onClick={goToNextPages}>Next</button>
-            </li>
-            <li className={`page-item ${currentPage === totalPages ? 'disabled' : ''}`}>
-              <button className="page-link" onClick={goToLastPage}>Last</button>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        handlePageChange={handlePageChange}
+      />
     </div>
   );
 }

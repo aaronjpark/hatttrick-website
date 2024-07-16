@@ -25,18 +25,48 @@ body, html {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px; /* Adjust as needed for spacing between cards */
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1600px; /* Adjust max-width to fit 5 cards per row */
 }
 
 /* Individual player card */
 .player-card {
-  width: calc(25% - 20px); /* 25% width for each player card with 20px gap */
+  width: calc(20% - 20px); /* 20% width for each player card with 20px gap */
   margin-bottom: 20px;
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   transition: box-shadow 0.3s ease-in-out;
+  max-width: calc(20% - 20px); /* Ensure max width */
+}
+
+@media (max-width: 1600px) {
+  .player-card {
+    flex: 1 1 calc(25% - 20px); /* 4 cards per row on medium screens */
+    max-width: calc(25% - 20px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .player-card {
+    flex: 1 1 calc(33.33% - 20px); /* 3 cards per row on small screens */
+    max-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 800px) {
+  .player-card {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row on smaller screens */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 500px) {
+  .player-card {
+    flex: 1 1 calc(100% - 20px); /* 1 card per row on extra small screens */
+    max-width: calc(100% - 20px);
+  }
 }
 
 .player-card:hover {
@@ -75,7 +105,6 @@ body, html {
   margin-top: 10px;
 }
 
-
 .link {
   text-decoration: none;
   color: #000; /* Normal color */
@@ -85,4 +114,8 @@ body, html {
 .link:hover {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
   color: #000000; /* Change color on hover, if desired */
+}
+
+.highlight {
+  background-color: rgb(82, 192, 255);
 }

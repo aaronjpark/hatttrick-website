@@ -26,7 +26,7 @@ function About() {
       let commits = 0;
       data.forEach((member) => {
         const teamMember = teamData.find(
-          (teamMember) => teamMember.email === member.email
+          (teamMember) => teamMember.email.toLowerCase() === member.email.toLowerCase()
         );
         if (teamMember && member.commits) {
           teamMember.commits = member.commits;
