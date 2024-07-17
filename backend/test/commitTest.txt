@@ -1,0 +1,30 @@
+pm.test("Response status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+
+pm.test("Response time is less than 500ms", function () {
+  pm.expect(pm.response.responseTime).to.be.below(500);
+});
+
+
+pm.test("Validate the response schema for required fields", function () {
+    const responseData = pm.response.json();
+    
+    pm.expect(responseData).to.be.an('object');
+    pm.expect(responseData.teams).to.be.an('array');
+    
+    responseData.teams.forEach(function(team) {
+        pm.expect(team).to.have.property('id');
+        pm.expect(team).to.have.property('name');
+        pm.expect(team).to.have.property('shortName');
+        pm.expect(team).to.have.property('tla');
+        pm.expect(team).to.have.property('crest');
+        pm.expect(team).to.have.property('address');
+        pm.expect(team).to.have.property('website');
+        pm.expect(team).to.have.property('founded');
+        pm.expect(team).to.have.property('clubColors');
+        pm.expect(team).to.have.property('venue');
+        pm.expect(team).to.have.property('lastUpdated');
+    });
+});

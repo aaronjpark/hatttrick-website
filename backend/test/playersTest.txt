@@ -1,0 +1,26 @@
+pm.test("Response status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+
+pm.test("Response time is less than 500ms", function () {
+  pm.expect(pm.response.responseTime).to.be.below(500);
+});
+
+
+pm.test("Validate the response schema for the required fields", function () {
+    const responseData = pm.response.json();
+
+    pm.expect(responseData).to.be.an('object');
+    pm.expect(responseData.id).to.exist.and.to.be.a('number');
+    pm.expect(responseData.name).to.exist.and.to.be.a('string');
+    pm.expect(responseData.firstName).to.exist.and.to.be.a('string');
+    pm.expect(responseData.lastName).to.exist.and.to.be.a('string');
+    pm.expect(responseData.dateOfBirth).to.exist.and.to.be.a('string');
+    pm.expect(responseData.nationality).to.exist.and.to.be.a('string');
+    pm.expect(responseData.section).to.exist.and.to.be.a('string');
+    pm.expect(responseData.position).to.exist.and.to.be.a('string');
+    pm.expect(responseData.shirtNumber).to.exist.and.to.be.a('number');
+    pm.expect(responseData.lastUpdated).to.exist.and.to.be.a('string');
+    pm.expect(responseData.currentTeam).to.exist.and.to.be.an('object');
+});
