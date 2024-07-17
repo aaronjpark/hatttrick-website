@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import '../styles/SearchBar.css';
 
 const leagues = [
-    { name: "Premier League", value: "1" },
-    { name: "Primera Division", value: "5" },
-    { name: "Bundesliga", value: "3" },
-    { name: "Serie A", value: "4" },
-    { name: "Ligue 1", value: "2" }
+    { name: "Premier League", value: "Premier League" },
+    { name: "Primera Division", value: "Primera Division" },
+    { name: "Bundesliga", value: "Bundesliga" },
+    { name: "Serie A", value: "Serie A" },
+    { name: "Ligue 1", value: "Ligue 1" }
 ];
 
-const SearchBar = ({ onSearch, onFilter }) => {
+const SearchBar = ({ onSearch, onFilter, onSort }) => {
     const [query, setQuery] = useState('');
     const [selectedLeague, setSelectedLeague] = useState('');
 
@@ -41,6 +41,7 @@ const SearchBar = ({ onSearch, onFilter }) => {
                     <option key={league.value} value={league.value}>{league.name}</option>
                 ))}
             </select>
+            <button onClick={onSort}>Sort by Name</button>
         </div>
     );
 };

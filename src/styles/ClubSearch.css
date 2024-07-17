@@ -1,0 +1,64 @@
+/* Add these styles to your CSS file */
+
+/* Styles for the search bar container */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the search input */
+  .search-bar input[type="text"] {
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+  }
+  
+  /* Styles for the team select dropdown */
+  .team-select {
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px; /* Fixed width for the dropdown */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+  }
+  
+  /* Optional: Add some basic styles for the dropdown options */
+  .team-select option {
+    padding: 5px;
+  }
+  
+  /* Styles for the search button */
+  .search-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styles for the sort button */
+  .sort-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .sort-button:hover {
+    background-color: #218838;
+  }

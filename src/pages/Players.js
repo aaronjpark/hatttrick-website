@@ -1,49 +1,34 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import SearchBar from '../compenents/searchBar';
+import ClubSearch from '../compenents/ClubSearch';
 import Pagination from '../compenents/Pagination';
 import '../styles/players.css';
 
 function Players() {
   const [players, setPlayers] = useState([]);
   const [filteredPlayers, setFilteredPlayers] = useState([]);
-  const [clubs, setClubs] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedLeague, setSelectedLeague] = useState('');
+  const [selectedTeam, setSelectedTeam] = useState('');
+  const [sortOrder, setSortOrder] = useState('asc');
   const perPage = 20; // Number of players per page (5 rows of 4)
 
   useEffect(() => {
     fetchPlayers();
-    fetchClubs();
   }, []);
 
   useEffect(() => {
-    filterPlayers(searchQuery, selectedLeague);
-  }, [players, searchQuery, selectedLeague]);
+    filterPlayers(searchQuery, selectedTeam, sortOrder);
+  }, [players, searchQuery, selectedTeam, sortOrder]);
 
   const fetchPlayers = () => {
     fetch(`https://hatrickdb.wn.r.appspot.com/players`)
       .then(response => response.json())
       .then(data => {
-        console.log('Fetched players:', data); // Debugging to see fetched data structure
         setPlayers(data);
         setFilteredPlayers(data); // Initialize filtered players with all data
       })
       .catch(error => console.error('Error fetching players:', error));
-  };
-
-  const fetchClubs = () => {
-    fetch('https://hatrickdb.wn.r.appspot.com/teams')
-      .then(response => response.json())
-      .then(data => {
-        const clubMap = {};
-        data.forEach(club => {
-          clubMap[club.name] = club.league_id;
-        });
-        setClubs(clubMap);
-      })
-      .catch(error => console.error('Error fetching clubs:', error));
   };
 
   // Function to handle search
@@ -51,13 +36,18 @@ function Players() {
     setSearchQuery(query);
   };
 
-  // Function to handle league filter
-  const handleFilter = (league) => {
-    setSelectedLeague(league);
+  // Function to handle team filter
+  const handleFilter = (team) => {
+    setSelectedTeam(team);
   };
 
-  // Function to filter players based on query and league
-  const filterPlayers = (query, league) => {
+  // Function to handle sort
+  const handleSort = (order) => {
+    setSortOrder(order);
+  };
+
+  // Function to filter and sort players based on query, team, and sort order
+  const filterPlayers = (query, team, order) => {
     let filtered = players;
 
     if (query) {
@@ -69,15 +59,22 @@ function Players() {
           (player.number && player.number.toString().toLowerCase().includes(queryLower)) ||
           (player.position && player.position.toLowerCase().includes(queryLower)) ||
           (player.club && player.club.toLowerCase().includes(queryLower)) ||
-          (player.nationality && player.nationality.toLowerCase().includes(queryLower)) || // Include additional fields if necessary
           (player.team && player.team.toLowerCase().includes(queryLower))
         );
       });
     }
 
-    if (league) {
-      filtered = filtered.filter(player => clubs[player.club] === parseInt(league, 10));
+    if (team) {
+      filtered = filtered.filter(player => player.club === team);
     }
+
+    filtered = filtered.sort((a, b) => {
+      if (order === 'asc') {
+        return a.name.localeCompare(b.name);
+      } else {
+        return b.name.localeCompare(a.name);
+      }
+    });
 
     setFilteredPlayers(filtered);
     setCurrentPage(1); // Reset to first page on filter
@@ -119,7 +116,7 @@ function Players() {
     <div className="players-container">
       <header className="header">
         <h1>Players Information</h1>
-        <SearchBar onSearch={handleSearch} onFilter={handleFilter} />
+        <ClubSearch onSearch={handleSearch} onFilter={handleFilter} onSort={handleSort} />
       </header>
       <div className="players-grid">
         {slicePlayersForPage().map(player => (
@@ -143,7 +140,6 @@ function Players() {
                   {highlightText(player.club || '', searchQuery)}
                 </Link>
               </p>
-              <p className="card-text"><b>Nationality:</b> {highlightText(player.nationality || '', searchQuery)}</p>
             </div>
           </div>
         ))}

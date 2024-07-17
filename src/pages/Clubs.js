@@ -10,13 +10,13 @@ function Clubs() {
   const [leagueNames, setLeagueNames] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState('');
+  const [sortOrder, setSortOrder] = useState('asc');
   const perPage = 12; // Number of teams per page
 
   useEffect(() => {
     fetch('https://hatrickdb.wn.r.appspot.com/teams')
       .then(response => response.json())
       .then(data => {
-        console.log('Fetched data:', data); // Debugging to see fetched data structure
         setTeamsData(data);
         setFilteredTeams(data); // Initialize filtered teams with all data
       })
@@ -39,18 +39,15 @@ function Clubs() {
     filteredTeams.forEach(team => fetchLeagueName(team.league_id));
   }, [filteredTeams, leagueNames]);
 
-  // Function to handle page change
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
 
-  // Function to slice teams for pagination
   const sliceTeamsForPage = () => {
     const startIndex = (currentPage - 1) * perPage;
     return filteredTeams.slice(startIndex, startIndex + perPage);
   };
 
-  // Function to handle search
   const handleSearch = (query) => {
     setSearchQuery(query.toLowerCase());
     const filtered = teamsData.filter(team => {
@@ -67,7 +64,33 @@ function Clubs() {
     setCurrentPage(1); // Reset to first page on search
   };
 
-  // Function to highlight search term
+  const handleFilter = (leagueName) => {
+    if (leagueName === '') {
+      setFilteredTeams(teamsData);
+    } else {
+      fetch(`https://hatrickdb.wn.r.appspot.com/leagues/${leagueName}`)
+        .then(response => response.json())
+        .then(data => {
+          setFilteredTeams(data);
+          setCurrentPage(1); // Reset to first page on filter
+        })
+        .catch(error => console.error('Error fetching teams for league:', error));
+    }
+  };
+
+  const handleSort = () => {
+    const newSortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
+    setSortOrder(newSortOrder);
+    const sortedTeams = [...filteredTeams].sort((a, b) => {
+      if (newSortOrder === 'asc') {
+        return a.name.localeCompare(b.name);
+      } else {
+        return b.name.localeCompare(a.name);
+      }
+    });
+    setFilteredTeams(sortedTeams);
+  };
+
   const highlightText = (text, highlight) => {
     if (!highlight) return text;
     const parts = text.split(new RegExp(`(${highlight})`, 'gi'));
@@ -84,14 +107,13 @@ function Clubs() {
     );
   };
 
-  // Total number of pages
   const totalPages = Math.ceil(filteredTeams.length / perPage);
 
   return (
     <div className="clubs-container">
       <header className="header">
         <h1>Clubs Information</h1>
-        <SearchBar onSearch={handleSearch} />
+        <SearchBar onSearch={handleSearch} onFilter={handleFilter} onSort={handleSort} />
       </header>
       <div className="teams-grid">
         <div className="teams-row">
@@ -100,20 +122,20 @@ function Clubs() {
               <img
                 src={team.crest}
                 className="card-img-top img-fluid"
-                alt={team.name}
+                alt={team.name || 'No name available'}
               />
               <div className="card-body">
                 <h3 className="card-title">
                   <Link to={`/club/${encodeURIComponent(team.name)}`} className="link">
-                    {highlightText(team.name, searchQuery)}
+                    {highlightText(team.name || 'No name available', searchQuery)}
                   </Link>
                 </h3>
                 <p className="card-text">
-                  League: <Link to={`/league/${encodeURIComponent(team.league_id)}`} className="link">{highlightText(leagueNames[team.league_id] || 'Loading...', searchQuery)}</Link>
+                  League: <Link to={`/league/${encodeURIComponent(leagueNames[team.league_id] )}`} className="link">{highlightText(leagueNames[team.league_id] || 'Loading...', searchQuery)}</Link>
                 </p>
                 <p className="card-text">Coach: {highlightText(team.coach || 'currently not available', searchQuery)}</p>
-                <p className="card-text">Founded: {highlightText(team.founded.toString(), searchQuery)}</p>
-                <p className="card-text">Venue: {highlightText(team.venue, searchQuery)}</p>
+                <p className="card-text">Founded: {highlightText(team.founded ? team.founded.toString() : 'N/A', searchQuery)}</p>
+                <p className="card-text">Venue: {highlightText(team.venue || 'N/A', searchQuery)}</p>
                 <a
                   href={team.website}
                   className="btn btn-primary"

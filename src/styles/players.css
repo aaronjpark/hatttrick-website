@@ -105,15 +105,16 @@ body, html {
   margin-top: 10px;
 }
 
-.link {
+/* Increased specificity for link styles */
+.players-container .players-grid .player-card .link {
   text-decoration: none;
-  color: #000; /* Normal color */
+  color: #2362ff; /* Idle color */
   transition: all 0.3s ease; /* Smooth transition */
 }
 
-.link:hover {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
-  color: #000000; /* Change color on hover, if desired */
+.players-container .players-grid .player-card .link:hover {
+  color: #00008B; /* Hover color */
+  text-shadow: none; /* Remove shadow effect */
 }
 
 .highlight {

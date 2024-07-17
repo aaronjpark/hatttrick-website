@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'; // Import Link
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TableComponent = ({ data }) => {
-  if (!Array.isArray(data)) {
-    return <div>No data available</div>;
+  if (!Array.isArray(data) || data.length === 0) {
+    return <div>Loading...</div>;
   }
 
   return (
@@ -28,7 +28,13 @@ const TableComponent = ({ data }) => {
             <tr key={index}>
               <td>{team.position}</td>
               <td>
-                <Link to={`/club/${team.team_name}`} className="link">
+                <Link
+                  to={`/club/${team.team_name}`}
+                  className="link"
+                  style={{ color: '#2362ff', transition: 'all 0.3s ease' }}
+                  onMouseOver={(e) => e.currentTarget.style.color = '#00008B'}
+                  onMouseOut={(e) => e.currentTarget.style.color = '#2362ff'}
+                >
                   {team.team_name}
                 </Link>
               </td>

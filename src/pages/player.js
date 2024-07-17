@@ -47,7 +47,13 @@ const PlayerInfo = () => {
                 <li className="list-group-item"><strong>Position:</strong> {player.position}</li>
                 <li className="list-group-item">
                   <strong>Club: </strong> 
-                  <Link to={`/club/${player.club}`} className='link'>
+                  <Link
+                    to={`/club/${player.club}`}
+                    className="link"
+                    style={{ color: '#2362ff', transition: 'all 0.3s ease' }}
+                    onMouseOver={(e) => e.currentTarget.style.color = '#00008B'}
+                    onMouseOut={(e) => e.currentTarget.style.color = '#2362ff'}
+                  >
                     {player.club}
                   </Link>
                 </li>

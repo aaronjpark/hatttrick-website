@@ -19,7 +19,6 @@ const Club = () => {
         const clubResponse = await axios.get(`https://hatrickdb.wn.r.appspot.com/club/${name}`);
         const clubData = clubResponse.data;
 
-        console.log(clubData); // Debugging line
 
         if (clubData) {
           setClubInfo(clubData);
@@ -33,12 +32,10 @@ const Club = () => {
         const teamsResponse = await axios.get('https://hatrickdb.wn.r.appspot.com/teams');
         const teamsData = teamsResponse.data;
 
-        console.log(teamsData); // Debugging line
 
         if (Array.isArray(teamsData)) {
           const leagueId = teamsData.find(team => team.name === name)?.league_id;
           setLeague(leagueId);
-          console.log(leagueId); // Debugging line
 
           if (leagueId) {
             const leagueResponse = await axios.get(`https://hatrickdb.wn.r.appspot.com/league/${leagueId}`);
@@ -82,13 +79,13 @@ const Club = () => {
             <p className="card-text"><strong>Address:</strong>
               <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(clubInfo.address)}`}
                  target="_blank"
-                 rel="noopener noreferrer">
+                 rel="noopener noreferrer" className="link">
                 {clubInfo.address}
               </a>
             </p>
             <p className="card-text"><strong>Website:</strong>
               <a href={/^https?:\/\//.test(clubInfo.website) ? clubInfo.website : `http://${clubInfo.website}`}
-                 className='li'>
+                 className="link">
                 {clubInfo.website}
               </a>
             </p>

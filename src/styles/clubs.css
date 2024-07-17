@@ -80,18 +80,17 @@ body, html {
   margin-top: 10px;
 }
 
-/* clubs.css */
-.link {
+/* Increased specificity for link styles */
+.clubs-container .teams-grid .teams-row .team-card .link {
   text-decoration: none;
-  color: #000; /* Normal color */
+  color: #2362ff; /* Idle color */
   transition: all 0.3s ease; /* Smooth transition */
 }
 
-.link:hover {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
-  color: #000000; /* Change color on hover, if desired */
+.clubs-container .teams-grid .teams-row .team-card .link:hover {
+  color: #00008B; /* Hover color */
+  text-shadow: none; /* Remove shadow effect */
 }
-
 
 .highlight {
   background-color: rgb(0, 156, 246);

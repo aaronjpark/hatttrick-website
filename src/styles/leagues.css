@@ -1,32 +1,32 @@
 .league-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .league-img {
-    object-fit: cover;
-    height: 100%;
-    width: 300px;
-    max-height: 300px; /* Adjust as necessary */
-  }
-  
-  .container {
-    margin-top: 50px;
-  }
-  
-  footer {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .link {
-    text-decoration: none;
-    color: #000; /* Normal color */
-    transition: all 0.3s ease; /* Smooth transition */
-  }
-  
-  .link:hover {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
-    color: #000000; /* Change color on hover, if desired */
-  }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.league-img {
+  object-fit: cover;
+  height: 100%;
+  width: 300px;
+  max-height: 300px; /* Adjust as necessary */
+}
+
+.container {
+  margin-top: 50px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container .league-card .link {
+  color: #2362ff !important; /* Light blue color */
+  transition: all 0.3s ease !important; /* Smooth transition */
+}
+
+.container .league-card .link:hover {
+  color: #00008B !important; /* Dark blue color on hover */
+  text-shadow: none !important; /* Remove shadow effect */
+}
