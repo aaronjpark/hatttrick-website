@@ -27,7 +27,8 @@ function About() {
       let commits = 0;
       data.forEach((member) => {
         const teamMember = teamData.find(
-          (teamMember) => teamMember.email.toLowerCase() === member.email.toLowerCase()
+          (teamMember) =>
+            teamMember.email.toLowerCase() === member.email.toLowerCase()
         );
         if (teamMember && member.commits) {
           teamMember.commits = member.commits;
@@ -282,6 +283,23 @@ function About() {
             </a>
           </div>
         </div>
+      </div>
+      <div className="container px-4 py-5" id="data-scraping">
+        <h2 className="pb-2 border-bottom">How We Scraped Our Data</h2>
+        <p>
+          We collectively scraped the data on football clubs, leagues, and
+          players using various APIs. The clubScraper.py script fetches team
+          data from different leagues such as the Premier League and Ligue 1
+          using the Football Data API, retrieving details like team names,
+          addresses, and crests. The leagueScraper.py script gathers information
+          on football leagues, including team statistics and fixtures, using the
+          API Sports data provider, and saves this data in a JSON file. Lastly,
+          the playerScraper.py script uses the team data from clubScraper.py to
+          fetch detailed player information, such as names, ages, and positions,
+          saving the player data along with team associations in a JSON file.
+          Together, these scripts automate the comprehensive collection of
+          football data, organizing it efficiently for further use or analysis.
+        </p>
       </div>
     </div>
   );
