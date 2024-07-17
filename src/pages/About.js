@@ -7,6 +7,7 @@ import "../styles/about.css";
 function About() {
   const [totalCommits, setTotalCommits] = useState(0);
   const [totalIssues, setTotalIssues] = useState(0);
+  const [totalUnitTests, setTotalUnitTests] = useState(0);
   const [commitsFetched, setCommitsFetched] = useState(false);
   const [issuesFetched, setIssuesFetched] = useState(false);
 
@@ -103,7 +104,8 @@ function About() {
         <h5>
           <strong>
             Total Commits: {totalCommits} <br />
-            Total Issues: {totalIssues}
+            Total Issues: {totalIssues} <br />
+            Total Unit Tests: 20
           </strong>
         </h5>
       </center>
