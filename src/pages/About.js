@@ -227,7 +227,7 @@ function About() {
               projects, facilitating collaboration and testing.
             </p>
             <a
-              href="https://software-engineering-3016.postman.co/workspace/Software-Engineering-Workspace~3f64ce8f-8b3b-487e-a067-56d3a2e3d512/collection/36528627-9970bfc9-552b-4d2f-9543-d02690a67499?action=share&creator=36528627"
+              href="https://www.postman.com/hatttrick/workspace/hatttrick-workspace/collection/36528627-66c99eba-e737-43e3-bcd3-5a0e56c25fab?action=share&creator=36528627"
               target="_blank"
               rel="noopener noreferrer"
               className="icon-link"
