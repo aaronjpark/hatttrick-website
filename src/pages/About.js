@@ -284,7 +284,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="container px-4 py-5" id="data-scraping">
+      <div className="container px-4 pb-5" id="data-scraping">
         <h2 className="pb-2 border-bottom">How We Scraped Our Data</h2>
         <p>
           We collectively scraped the data on football clubs, leagues, and
