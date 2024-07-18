@@ -67,6 +67,21 @@ We welcome contributions! Please follow these steps to contribute:
     ```
 5. Create a pull request.
 
+## Introduction
+
+Problem: Have you ever wondered about the performance of your favorite soccer player, such as the number of goals they've scored, their team's standing among others, or the league to which a club belongs? Tracking this information can be challenging due to the scattered nature of sports data across various sources and having to keep track of multiple tabs open for different information.
+
+Solution: Hatttrick is designed to address this problem by providing a comprehensive platform that consolidates soccer statistics and information in one place. Our website streamlines the process of accessing soccer data, making it easier for fans, analysts, and enthusiasts to stay informed and engaged with the sport.
+
+Hatttrick offers the following capabilities:
+
+- Player Information: Easily look up the performance statistics of your favorite soccer players, including position, age, current club, and other key metrics.
+- Club Details: Find out which league a club is a part of and explore the club's history, location, roster, and rank.
+- League Information: Access detailed information about various soccer leagues, including participating teams, teams standings, top scorers, and current champions.
+
+## Design
+
+
 ## Authors and Acknowledgments
 - Diego Campos
 - Diego Pozuelo Clachar
