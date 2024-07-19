@@ -1,0 +1,43 @@
+682f127f fixed some typos
+4ad51ac0 finished about
+433cce42 Update teaminfo.json
+02b29112 Final touches to about
+e7a95beb Update app.yaml
+7f92046a Add new file
+3c844181 Merge branch 'Angel' into 'main'
+52bc8a8b finished about and made the project node.js instead of simple html
+a1229111 Merge branch 'angel' into 'main'
+959015cc test
+450b6968 Merge branch 'angel' into 'main'
+b88ffdf4 Merge branch 'main' into 'angel'
+12bf1f05 about
+dfcf6c10 Merge branch 'main' of https://gitlab.com/diegocampos2/cs373-idb
+0dcad11b commit to the main
+f2db50fe Merge branch 'angel' into 'main'
+6cced9ad added some assets
+3df14ee7 added info on the about page
+b39b213c Merge branch 'diego2' into 'main'
+87bc6304 Added 5th attribute to leagues
+284f312a Failed pipeline correction
+18440bec leagues txt
+05c92bde uploaded information and attributes
+fdcdd664 Update README.md
+73ba83fa Delete app.py
+de579189 API connection test 1
+3c3fcf3e Merge branch 'dev-aaron' into 'main'
+7a10767e index and players files
+737a987d header body footer
+bb9bd709 Update .gitlab-ci.yml file
+cc0964f6 Uploading example_photo
+504d5c65 Adding Assets Directory
+8e66af3c Adding styles.css file
+5851c688 Adding index.html
+406cee08 Delete styles.css
+b977e799 Adding Back End Directory
+0797e3ac Add Front End Directory
+7223bc77 Upload New File
+1fee1cab Delete Assets
+17a2feab Upload New File
+37919eba Delete gitignore
+e96846a0 Update gitignore
+b3407135 Add new file
