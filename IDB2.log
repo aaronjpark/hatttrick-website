@@ -1,0 +1,89 @@
+9a28bb36 clean up
+1548b2c3 Update Clubs.js
+1ea70995 fixed some front end
+cc2f24bf test
+b957ff68 fixed api and calls to it
+e953c15d Update .gitlab-ci.yml
+1a48fb93 fixed gitlab ci
+fd02703a added a gitignore
+a432be7e vzcv
+9572ddc6 front end dev
+9e591d9e Update create_db.py
+0adc7d87 Update create_db.py
+b3b2c689 Update main.py
+b82e76ce Update main.py
+8d466d23 Update create_db.py
+7c5f8ffd Update main.py
+2b795990 Update create_db.py
+65298693 Update create_db.py
+b33af535 Update create_db.py
+0c7ed639 Update models.py
+d44469ea fixed files for gcdp
+b9bde618 check
+7142a1f7 another try
+791f7783 final fixes
+3a492646 fixes
+c2c5606f Requirements added
+9a851a06 last commit of API
+78d0dcfe fixed api
+4aa6b324 last commit of db
+f8b06988 Working database for GCP
+7f070d9a Merge branch 'diego4' into 'main'
+a1fb4c50 Merge branch 'main' into 'diego4'
+dbcc053a final database and connection
+8a4e64b2 final DATABASE and API connection
+2cd2b42f fixed team names
+9b6f59ca dependencies
+1e0f93fc added some styling
+c3db31e6 added some styling
+b62c74b0 API settup to test if working
+2c3a5c51 finished home page and touched up others
+33c50a11 API added and connected to the hatttrick_db
+30e2ef03 database hatttrick_db added and working with info
+d1b66167 Update teams.json
+05831489 Merge branch 'Angel' into 'main'
+f398d88d added some backedn and formatted the pages some more
+74fd6aa0 added two scrappers
+682f127f fixed some typos
+4ad51ac0 finished about
+433cce42 Update teaminfo.json
+02b29112 Final touches to about
+e7a95beb Update app.yaml
+7f92046a Add new file
+3c844181 Merge branch 'Angel' into 'main'
+52bc8a8b finished about and made the project node.js instead of simple html
+a1229111 Merge branch 'angel' into 'main'
+959015cc test
+450b6968 Merge branch 'angel' into 'main'
+b88ffdf4 Merge branch 'main' into 'angel'
+12bf1f05 about
+dfcf6c10 Merge branch 'main' of https://gitlab.com/diegocampos2/cs373-idb
+0dcad11b commit to the main
+f2db50fe Merge branch 'angel' into 'main'
+6cced9ad added some assets
+3df14ee7 added info on the about page
+b39b213c Merge branch 'diego2' into 'main'
+87bc6304 Added 5th attribute to leagues
+284f312a Failed pipeline correction
+18440bec leagues txt
+05c92bde uploaded information and attributes
+fdcdd664 Update README.md
+73ba83fa Delete app.py
+de579189 API connection test 1
+3c3fcf3e Merge branch 'dev-aaron' into 'main'
+7a10767e index and players files
+737a987d header body footer
+bb9bd709 Update .gitlab-ci.yml file
+cc0964f6 Uploading example_photo
+504d5c65 Adding Assets Directory
+8e66af3c Adding styles.css file
+5851c688 Adding index.html
+406cee08 Delete styles.css
+b977e799 Adding Back End Directory
+0797e3ac Add Front End Directory
+7223bc77 Upload New File
+1fee1cab Delete Assets
+17a2feab Upload New File
+37919eba Delete gitignore
+e96846a0 Update gitignore
+b3407135 Add new file
