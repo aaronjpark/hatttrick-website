@@ -1,20 +1,24 @@
+#!/usr/bin/env python3
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+import os
 
-db = SQLAlchemy()
+# Initializing Flask app
+app = Flask(__name__)
+app.app_context().push()
 
-def create_app():
-    app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://cerda086:1234@localhost/hattrickdb'
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    db.init_app(app)
+# Configuration
+USER = "postgress"
+PASSWORD = "Pozuelo1"
+PUBLIC_IP_ADDRESS = "34.46.199.162"
+DBNAME = "hatttrickdb"
 
-    with app.app_context():
-        db.create_all()
+LOCAL_DB_PATH = f"postgresql://{USER}:{PASSWORD}@{PUBLIC_IP_ADDRESS}/{DBNAME}"
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_STRING", LOCAL_DB_PATH)
+app.config['JSON_SORT_KEYS'] = False
 
-    return app
-
-app = create_app()
+db = SQLAlchemy(app)
 
 # Leagues Model
 class League(db.Model):
@@ -63,3 +67,6 @@ class Standing(db.Model):
     goals_against = db.Column(db.Integer)
     goal_difference = db.Column(db.Integer)
     team_name = db.Column(db.String(80))  # Added team_name field
+
+
+db.create_all()
