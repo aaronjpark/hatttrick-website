@@ -1,6 +1,4 @@
-# cs373-idb
-
-## Canvas Group Number 2
+# Hatttrick Website
 
 ### Team Members:
 - Diego Campos
